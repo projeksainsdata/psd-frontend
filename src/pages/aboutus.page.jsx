@@ -69,14 +69,14 @@ const AboutUsPage = () => {
           <Col>
           <ul className="list-disc pl-5 text-base"></ul>
           <p>Jadwal Projek Sains Data:</p>
-            <li>Senin Belajar Data.</li>
-            <il>Senin Artikel Ilmiah.</il>
-            <il>Rabu Cari Data.</il>
-            <il>Rabu Solusi Statistik.</il>
-            <li>Kamis Infografis.</li>
-            <li>Kamis Codingan Manis.</li>
-            <li>Sabtu Codingan Pintar.</li>
-            <li>Sabtu SDGs.</li>
+            <li>Senin Belajar Data. </li>
+            <il>Senin Artikel Ilmiah. </il>
+            <il>Rabu Cari Data. </il>
+            <il>Rabu Solusi Statistik. </il>
+            <li>Kamis Infografis. </li>
+            <li>Kamis Codingan Manis. </li>
+            <li>Sabtu Codingan Pintar. </li>
+            <li>Sabtu SDGs. </li>
           </Col>
         </Row>
         <Row className="mt-5">
