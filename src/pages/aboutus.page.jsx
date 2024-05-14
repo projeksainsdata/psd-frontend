@@ -58,23 +58,25 @@ const AboutUsPage = () => {
           <Col>
             <h3 className="text-xl font-semibold">Jadwal dan Program Projek Sains Data</h3>
             <ul className="list-disc pl-5 text-base">
-              <li>Pembelajaran (Learning Path) merupakan program yang memuat jalur-jalur belajar sains data yang disusun dalam kurikulum projek sains data yaitu BARISTA (Basic - Analytics - Robotic - Intelligence - Softskill - Technology - Advanced Value), bentuk keluaran program ini adalah artikel ilmiah atau video</li>
-              <li>Inovasi (Roadmap Projek Sains Data) program ini merupakan penelitian yang menekankan pada inovasi dalam ilmu data. Keluaran berupa Artikel Ilmiah, Essay, Dataset, Perangkat Pintar, Aplikasi Perangkat Lunak</li>
-              <li>Sustainable (Aksi untuk SDGs) Sebagai generasi muda tentunya memiliki peran penting untuk menentukan nasib dari sebuah negara. Berlandasan SDGs, kami para generasi muda akan memberikan kontribusi nyata untuk mewujudkan SDGs demi kepentingan perdamaian dan kesejahteraan dunia. Kegiatan disajikan dalam Artikel, Podcast dan Webinar</li>
-              <li>Responsible (Pengabdian Masyarakat dan Kegiatan Bersama Anggota) Program ini bertujuan untuk meningkatkan solidaritas dan membagi ilmu pengetahuan kepada para anggota serta melatih kemampuan para anggota untuk menciptakan portofolio di bidang ilmu data. Kemudian ikut serta dalam membantu dan memecahkan masalah yang ada di sekitar kita melalui ilmu data. Kegiatan dibuat dalam Workshop, Meeting, Podcast, Pengabdian, dan Proyek</li>
+              <li>Pembelajaran (Learning Path) merupakan program yang memuat jalur-jalur belajar sains data yang disusun dalam kurikulum projek sains data yaitu BARISTA (Basic - Analytics - Robotic - Intelligence - Softskill - Technology - Advanced Value), bentuk keluaran program ini adalah artikel ilmiah atau video.</li>
+              <li>Inovasi (Roadmap Projek Sains Data) program ini merupakan penelitian yang menekankan pada inovasi dalam ilmu data. Keluaran berupa Artikel Ilmiah, Essay, Dataset, Perangkat Pintar, Aplikasi Perangkat Lunak.</li>
+              <li>Sustainable (Aksi untuk SDGs) Sebagai generasi muda tentunya memiliki peran penting untuk menentukan nasib dari sebuah negara. Berlandasan SDGs, kami para generasi muda akan memberikan kontribusi nyata untuk mewujudkan SDGs demi kepentingan perdamaian dan kesejahteraan dunia. Kegiatan disajikan dalam Artikel, Podcast dan Webinar.</li>
+              <li>Responsible (Pengabdian Masyarakat dan Kegiatan Bersama Anggota) Program ini bertujuan untuk meningkatkan solidaritas dan membagi ilmu pengetahuan kepada para anggota serta melatih kemampuan para anggota untuk menciptakan portofolio di bidang ilmu data. Kemudian ikut serta dalam membantu dan memecahkan masalah yang ada di sekitar kita melalui ilmu data. Kegiatan dibuat dalam Workshop, Meeting, Podcast, Pengabdian, dan Proyek.</li>
             </ul>
           </Col>
+        </Row>
+        <Row className="mt-5">
           <Col>
           <ul className="list-disc pl-5 text-base"></ul>
-          <p>Jadwal Projek Sains Data</p>
-            <li>Senin Belajar Data</li>
-            <il>Senin Artikel Ilmiah</il>
-            <il>Rabu Cari Data</il>
-            <il>Rabu Solusi Statistik</il>
-            <li>Kamis Infografis</li>
-            <li>Kamis Codingan Manis</li>
-            <li>Sabtu Codingan Pintar</li>
-            <li>Sabtu SDGs</li>
+          <p>Jadwal Projek Sains Data:</p>
+            <li>Senin Belajar Data.</li>
+            <il>Senin Artikel Ilmiah.</il>
+            <il>Rabu Cari Data.</il>
+            <il>Rabu Solusi Statistik.</il>
+            <li>Kamis Infografis.</li>
+            <li>Kamis Codingan Manis.</li>
+            <li>Sabtu Codingan Pintar.</li>
+            <li>Sabtu SDGs.</li>
           </Col>
         </Row>
         <Row className="mt-5">
