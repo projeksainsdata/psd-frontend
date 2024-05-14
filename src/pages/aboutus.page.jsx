@@ -67,7 +67,7 @@ const AboutUsPage = () => {
         </Row>
         <Row className="mt-5">
           <Col>
-          <ul className="list-disc pl-5 text-base"></ul>
+          <ul className="list-disc pl-8 text-base"></ul>
           <p>Jadwal Projek Sains Data:</p>
             <li>Senin Belajar Data. </li>
             <il>Senin Artikel Ilmiah. </il>
