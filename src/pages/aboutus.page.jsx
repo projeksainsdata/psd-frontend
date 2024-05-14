@@ -70,9 +70,9 @@ const AboutUsPage = () => {
           <ul className="list-disc pl-8 text-base"></ul>
           <p>Jadwal Projek Sains Data:</p>
             <li>Senin Belajar Data. </li>
-            <il>Senin Artikel Ilmiah. </il>
-            <il>Rabu Cari Data. </il>
-            <il>Rabu Solusi Statistik. </il>
+            <li>Senin Artikel Ilmiah. </li>
+            <li>Rabu Cari Data. </li>
+            <li>Rabu Solusi Statistik. </li>
             <li>Kamis Infografis. </li>
             <li>Kamis Codingan Manis. </li>
             <li>Sabtu Codingan Pintar. </li>
