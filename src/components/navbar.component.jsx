@@ -122,7 +122,7 @@ const Navbar = () => {
                     </button>
 
                     <Link to="/profile" className="flex-none w-10">
-                    <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10" onClick={changeTheme}>
+                    <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10">
                         <i className="fi fi-sr-grid text-2xl block mt-1 bg-dark"></i>
                     </button>
                     </Link>
