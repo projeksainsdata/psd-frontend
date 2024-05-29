@@ -83,6 +83,10 @@ const Navbar = () => {
                     <img src={ theme == "light" ? darkLogo : lightLogo } className="w-full" />
                 </Link>
 
+                <Link to="/profile" className="flex-none w-10">
+                    <i className="fi fi-sr-grid text-2xl block mt-1 bg-dark"></i>
+                </Link>
+
                 
                 <div className={"absolute w-full left-0 top-full mt-0.5 border-b border-grey py-4 px-[5vw] md:border-0 md:block md:relative md:inset-0 md:p-0 md:w-auto md:show " + ( searchBoxVisibility ? "show" : "hide" )}>
                     <input 
@@ -136,16 +140,6 @@ const Navbar = () => {
                                 </button>
                             </Link>
 
-                            <Link to="/profile">
-                                <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10">
-                                    <i className="fi fi-sr-grid text-2xl block mt-1 bg-dark"></i>
-                                    {
-                                        new_notification_available ? 
-                                        <span className="bg-red w-3 h-3 rounded-full absolute z-10 top-2 right-2"></span> : ""
-                                    }
-                                    
-                                </button>
-                            </Link>
 
                             <div className="relative" onClick={handleUserNavPanel} onBlur={handleBlur}>
                                 <button className="w-12 h-12 mt-1">
