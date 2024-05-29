@@ -71,9 +71,9 @@ const OurProjek = () => {
                 <div className="flex justify-center items-center">
                     <img src="/dashboard-projek.png" className="max-w-[500px] max-h-[500px]"/>
                 </div>
-                <h1 className="text-3xl font-bold">Projek Sains Data Portofolio</h1>
+                <h1 className="text-3xl font-bold">Projek Sains Data Repository</h1>
                 <div className="mt-5">
-                    <p className="mt-3"> Created and Modifying by Ardika Satria, Miftahul Huda, Shula Talitha. </p>
+                    <p className="mt-3"> Last Updated February 2024 </p>
                 </div>
                 
                 <div className="my-8 flex flex-wrap gap-5">
