@@ -95,29 +95,29 @@ const Navbar = () => {
                     <i className="fi fi-rr-search absolute right-[10%] md:pointer-events-none md:left-5 top-1/2 -translate-y-1/2 text-xl text-dark-grey"></i>
                 </div>
 
-                <div className="flex items-center gap-3 md:gap-2 ml-auto">
+                <div className="flex items-center gap-3 md:gap-3 ml-auto">
                     <button className="md:hidden bg-grey w-12 h-12 rounded-full flex items-center justify-center"
                     onClick={() => setSearchBoxVisibility(currentVal => !currentVal)}
                     >
                         <i className="fi fi-rr-search text-xl"></i>
                     </button>
 
-                    <Link to="/projek-kami" className="hidden md:flex gap-2 link">
+                    <Link to="/projek-kami" className="hidden md:flex gap-1 link">
                         <i className="fi fi-rr-workflow-alt"></i>
                         <strong >Projek</strong>
                     </Link>
 
-                    <Link to="/studi-kasus" className="hidden md:flex gap-2 link">
+                    <Link to="/studi-kasus" className="hidden md:flex gap-1 link">
                         <i className="fi fi-rr-key"></i>
                         <strong >Case Study</strong>
                     </Link>
 
-                    <Link to="/learn" className="hidden md:flex gap-2 link">
+                    <Link to="/learn" className="hidden md:flex gap-1 link">
                         <i className="fi fi-rr-books"></i>
                         <strong >Learn</strong>
                     </Link>
 
-                    <Link to="/dashboard/tanya-psd" className="hidden md:flex gap-2 link" onClick={handleNavLinkClick}>
+                    <Link to="/dashboard/tanya-psd" className="hidden md:flex gap-1 link" onClick={handleNavLinkClick}>
                         <i className="fi fi-rr-brain-circuit"></i>
                         <strong >PSD-GPT</strong>
                     </Link>
