@@ -114,7 +114,7 @@ const Navbar = () => {
 
                     <Link to="/learn" className="hidden md:flex gap-2 link">
                         <i className="fi fi-rr-books"></i>
-                        <strong >PSD-Learn</strong>
+                        <strong >Learn</strong>
                     </Link>
 
                     <Link to="/dashboard/tanya-psd" className="hidden md:flex gap-2 link" onClick={handleNavLinkClick}>
