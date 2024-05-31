@@ -123,7 +123,7 @@ const Navbar = () => {
                     </Link>
 
                     <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10" onClick={changeTheme}>
-                        <i className={"fi fi-rr-" + ( theme == "light" ?  "bulb" : "brightness" ) + " text-2xl block mt-1 bg-dark" }></i>
+                        <i className={"fi fi-rr-" + ( theme == "light" ?  "moon" : "brightness" ) + " text-2xl block mt-1 bg-dark" }></i>
                     </button>
                     
 
