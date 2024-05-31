@@ -183,7 +183,7 @@ const HomePage = () => {
                         Technology Data and Computing.
                     </p>
                     <h1 className="font-medium text-xl mt-7 mb-5 flex items-center gap-3 text-light-green">
-                        <i className="fi fi-rs-digital-tachograph"></i>
+                        <i className="fi fi-rr-user-robot"></i>
                         <span>Try out our new technology integrated with artificial intelligence for your projects in the industry</span>
                     </h1>
                     <Link className="btn-dark gap-10 mb-10 py-2" to="/center" onClick={handleNavLinkClick}>
