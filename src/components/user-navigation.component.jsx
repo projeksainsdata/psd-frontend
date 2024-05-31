@@ -22,11 +22,6 @@ const UserNavigationPanel = () => {
             <div className="bg-white abosolute right-0 border border-grey w-60 duration-200">
 
                 
-                <Link to="/editor" className="flex gap-2 link md:hidden pl-8 py-4">
-                    <i className="fi fi-rr-file-edit"></i>
-                    <strong>Tulis</strong>
-                </Link> 
-                
                 <Link to="/projek-kami" className="flex gap-2 link md:hidden pl-8 py-4">
                     <i className="fi fi-rr-workflow-alt"></i>
                     <strong>Projek</strong>
@@ -36,15 +31,15 @@ const UserNavigationPanel = () => {
                     <i className="fi fi-rr-key"></i>
                     <strong>Case Study</strong>
                 </Link>
+                
+                <Link to="/learn" className="flex gap-2 link md:hidden pl-8 py-4">
+                    <i className="fi fi-rr-books"></i>
+                    <strong>PSD-Learn</strong>
+                </Link>
 
                 <Link to="/dashboard/tanya-psd" className="flex gap-2 link md:hidden pl-8 py-4">
                     <i className="fi fi-rr-brain-circuit"></i>
                     <strong>PSD-GPT</strong>
-                </Link>
-
-                <Link to="/learn" className="flex gap-2 link md:hidden pl-8 py-4">
-                    <i className="fi fi-rr-books"></i>
-                    <strong>PSD-Learn</strong>
                 </Link>
 
                 <Link to={`/user/${username}`} className="link pl-8 py-4">
