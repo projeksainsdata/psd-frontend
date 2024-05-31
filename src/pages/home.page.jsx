@@ -163,23 +163,23 @@ const HomePage = () => {
                     </h1>
                     <p className="mt-5 items-center"></p>
                     <Link className="text-xl underline text-light-green gap-10 mx-auto mb-5 py-2" to="/projek-kami" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-workflow-alt mr-2 text-light-green" />
+                            <i className="fi fi-rr-workflow-alt mr-2 text-light-green " />
                             Explore our latest projects and collaborations
                     </Link>
                     <p className="mt-5 items-center"></p>
                     <Link className="text-xl underline text-light-green gap-10 mx-auto mb-5 py-2" to="/studi-kasus" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-key mr-2 text-light-green" />
-                            Unlock Case Study with Our Solution
+                            <i className="fi fi-rr-key mr-2 text-light-green " />
+                             Unlock Case Study with Our Solution
                     </Link>
                     <p className="mt-5 items-center"></p>
                     <Link className="text-xl underline text-light-green gap-10 mx-auto mb-5 py-2" to="/studi-kasus" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-books" />
-                            Enjoy your learning journey in data science with PSD-Learn
+                            <i className="fi fi-rr-books " />
+                             Enjoy your learning journey in data science with PSD-Learn
                     </Link>
                     <p className="mt-5 items-center"></p>
                     <Link className="text-xl underline text-light-green gap-10 mx-auto mb-5 py-2" to="/studi-kasus" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-brain-circuit" />
-                            Any Question? Let's Talk With Our GPT!
+                            <i className="fi fi-rr-brain-circuit " />
+                             Any Question? Let's Talk With Our GPT!
                     </Link>
 
                     <p className='text-gray-500 mt-10 mb-10 text-xl'>
@@ -187,10 +187,9 @@ const HomePage = () => {
                         Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
                         Technology Data and Computing.
                     </p>
-                    <p className="mt-5 items-center"></p>
-                    <p>Try out our new technology integrated with artificial intelligence for your projects in the industry</p>
-                    <Link className="btn-dark gap-10 mb-10 py-2" to="/center" onClick={handleNavLinkClick}>
-                        Go to PSD-Center
+                    
+                    <Link className="btn-dark gap-10 mb-10 py-2 text-sm" to="/center" onClick={handleNavLinkClick}>
+                        Try out our new technology integrated with artificial intelligence for your projects in the industry
                     </Link>
 
                 </div>
