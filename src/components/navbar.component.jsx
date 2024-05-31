@@ -125,12 +125,6 @@ const Navbar = () => {
                     <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10" onClick={changeTheme}>
                         <i className={"fi fi-rr-" + ( theme == "light" ?  "bulb" : "brightness" ) + " text-2xl block mt-1 bg-dark" }></i>
                     </button>
-
-                    <Link to="/editor" className="flex-none w-10">
-                    <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10">
-                        <i className="fi fi-rr-file-edit text-2xl block mt-1 bg-dark"></i>
-                    </button>
-                    </Link>
                     
 
                     <Link to="/center" className="flex-none w-10">
