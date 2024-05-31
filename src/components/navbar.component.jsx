@@ -95,7 +95,7 @@ const Navbar = () => {
                     <i className="fi fi-rr-search absolute right-[10%] md:pointer-events-none md:left-5 top-1/2 -translate-y-1/2 text-xl text-dark-grey"></i>
                 </div>
 
-                <div className="flex items-center gap-3 md:gap-3 ml-auto">
+                <div className="flex items-center gap-3 md:gap-2 ml-auto">
                     <button className="md:hidden bg-grey w-12 h-12 rounded-full flex items-center justify-center"
                     onClick={() => setSearchBoxVisibility(currentVal => !currentVal)}
                     >
@@ -127,7 +127,7 @@ const Navbar = () => {
                     </button>
                     
 
-                    <Link to="/center" className="flex-none w-10">
+                    <Link to="/center" className="flex-none w-10 gap-1">
                     <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10">
                         <i className="fi fi-sr-apps text-2xl block mt-1 bg-dark"></i>
                     </button>
