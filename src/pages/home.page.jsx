@@ -182,12 +182,14 @@ const HomePage = () => {
                         Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
                         Technology Data and Computing.
                     </p>
-                    <h1 className="font-medium text-xl mt-7 mb-5 flex items-center gap-3 text-light-green">
-                        <i className="fi fi-rr-user-robot"></i>
-                        <span>Try out our new technology integrated with artificial intelligence for your projects in the industry</span>
-                    </h1>
-                    <Link className="btn-dark gap-10 mb-10 py-2" to="/center" onClick={handleNavLinkClick}>
-                        Go to PSD-Center
+                    <Link className="gap-10 mx-auto mb-6 py-2" to="/center" onClick={handleNavLinkClick}>
+                        <h1 className="font-medium text-xl mt-7 mb-5 flex items-center gap-3 text-light-green">
+                            <i className="fi fi-rr-user-robot"></i>
+                            <span>Try out our new technology integrated with artificial intelligence for your projects in the industry</span>
+                        </h1>
+                    </Link>
+                    <Link className="btn-dark gap-5 mb-5 py-2" to="/dashboard/tanya-psd" onClick={handleNavLinkClick}>
+                        Any Question? Let's Talk With Our GPT!
                     </Link>
                 </div>
 
