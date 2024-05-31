@@ -166,13 +166,28 @@ const HomePage = () => {
                             <i className="fi fi-rr-workflow-alt mr-2 text-light-green" />
                             Explore our latest projects and collaborations
                     </Link>
+                    <Link className="text-xl underline text-light-green gap-10 mx-auto mb-5 py-2" to="/studi-kasus" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-key mr-2 text-light-green" />
+                            Unlock Case Study with Our Solution
+                    </Link>
+                    <Link className="text-xl underline text-light-green gap-10 mx-auto mb-5 py-2" to="/studi-kasus" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-books" />
+                            Enjoy your learning journey in data science with PSD-Learn
+                    </Link>
+
+                    <Link className="text-xl underline text-light-green gap-10 mx-auto mb-5 py-2" to="/studi-kasus" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-brain-circuit" />
+                            Any Question? Let's Talk With Our GPT!
+                    </Link>
+
                     <p className='text-gray-500 mt-10 mb-10 text-xl'>
                         Here you'll find a variety of articles and tutorials on topics such as Data Science,
                         Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
-                    Technology Data and Computing.
+                        Technology Data and Computing.
                     </p>
-                    <Link className="btn-dark gap-10 mb-10 py-2" to="/dashboard/tanya-psd" onClick={handleNavLinkClick}>
-                            Any Question? Let's Talk With Our GPT!
+                    
+                    <Link className="btn-dark gap-10 mb-10 py-2" to="/center" onClick={handleNavLinkClick}>
+                        Try out our new technology integrated with artificial intelligence for your projects in the industry
                     </Link>
 
                 </div>

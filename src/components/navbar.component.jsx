@@ -132,7 +132,7 @@ const Navbar = () => {
                     </button>
                     </Link>
 
-                    <Link to="/profile" className="flex-none w-10">
+                    <Link to="/center" className="flex-none w-10">
                     <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10">
                         <i className="fi fi-sr-apps text-2xl block mt-1 bg-dark"></i>
                     </button>
