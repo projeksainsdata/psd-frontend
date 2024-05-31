@@ -177,15 +177,21 @@ const HomePage = () => {
                     </Link>
                     <p className="mt-5 items-center"></p>
 
-                    <p className='text-gray-500 mt-10 mb-10 text-xl'>
+                    <p className='text-gray-500 mt-5 mb-5 text-xl'>
                         Here you'll find a variety of articles and tutorials on topics such as Data Science,
                         Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
                         Technology Data and Computing.
                     </p>
-                    <Link className="btn-dark gap-10 mb-10 py-2" to="/dashboard/tanya-psd" onClick={handleNavLinkClick}>
+                    <Link className="btn-dark gap-5 mb-5 py-2" to="/dashboard/tanya-psd" onClick={handleNavLinkClick}>
                         Any Question? Let's Talk With Our GPT!
                     </Link>
-
+                    <h1 className="font-medium text-xl mb-8 flex items-center gap-3 text-light-green">
+                        <i className="fi fi-rr-digital-tachograph"></i>
+                        <span>Try out our new technology integrated with artificial intelligence for your projects in the industry</span>
+                    </h1>
+                    <Link className="btn-dark gap-10 mb-10 py-2" to="/center" onClick={handleNavLinkClick}>
+                        Go to PSD-Center
+                    </Link>
                 </div>
 
                 <div className='lg:w-1/2 w-auto'>
@@ -195,22 +201,7 @@ const HomePage = () => {
                 </div>
             </div>
             </section>
-            <section className="mx-auto">
-            <div className="flex flex-col gap-10 justify-center">
-                <div>
-                    <h1 className="font-medium text-xl mb-8 flex items-center gap-3 text-twitter">
-                        <i className="fi fi-rr-digital-tachograph"></i>
-                        <span>Try out our new technology integrated with artificial intelligence for your projects in the industry</span>
-                    </h1>
 
-                    <div className="flex gap-3 flex-wrap">
-                    <Link className="btn-dark gap-10 mb-10 py-2" to="/center" onClick={handleNavLinkClick}>
-                        Go to PSD-Center
-                    </Link>
-                    </div>
-                </div>
-            </div>
-            </section>
             <section className="mx-auto">
             <div className="flex flex-col gap-10 justify-center">
                 <div>
