@@ -35,6 +35,15 @@ const HomePage = () => {
         "High Performance Computing",
     ];
 
+    let center = [
+        "Energy",
+        "Environment",
+        "Ecology",
+        "Health",
+        "Agriculture",
+        "Manufacture"
+    ];
+
     const fetchLatestBlogs = ({ page = 1 }) => {
         axios
             .post(import.meta.env.VITE_SERVER_DOMAIN + "/latest-blogs", { page })
@@ -167,21 +176,14 @@ const HomePage = () => {
                             Explore our latest projects and collaborations
                     </Link>
                     <p className="mt-5 items-center"></p>
-                    <Link className="text-xl underline text-light-green gap-10 mx-auto mb-5 py-2" to="/dashboard/tanya-psd" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-brain-circuit " />
-                              Any Question? Let's Talk With Our GPT!
-                    </Link>
 
                     <p className='text-gray-500 mt-10 mb-10 text-xl'>
                         Here you'll find a variety of articles and tutorials on topics such as Data Science,
                         Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
                         Technology Data and Computing.
                     </p>
-                    <p className='text-gray-500 mt-3 mb-10 text-xl'>
-                    Try out our new technology integrated with artificial intelligence for your projects in the industry
-                    </p>
-                    <Link className="btn-dark gap-10 mb-10 py-2" to="/center" onClick={handleNavLinkClick}>
-                    Go To PSD-Center   
+                    <Link className="btn-dark gap-10 mb-10 py-2" to="/dashboard/tanya-psd" onClick={handleNavLinkClick}>
+                        Any Question? Let's Talk With Our GPT!
                     </Link>
 
                 </div>
@@ -189,6 +191,22 @@ const HomePage = () => {
                 <div className='lg:w-1/2 w-auto'>
                     <div className='banner-img position-relative w-auto'>
                      <img src={ban} alt="PSD" className="img-fluid" />
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section className="mx-auto">
+            <div className="flex flex-col gap-10 justify-center">
+                <div>
+                    <h1 className="font-medium text-xl mb-8 flex items-center gap-3 text-twitter">
+                        <i className="fi fi-rr-digital-tachograph"></i>
+                        <span>Try out our new technology integrated with artificial intelligence for your projects in the industry</span>
+                    </h1>
+
+                    <div className="flex gap-3 flex-wrap">
+                    <Link className="btn-dark gap-10 mb-10 py-2" to="/center" onClick={handleNavLinkClick}>
+                        Go to PSD-Center
+                    </Link>
                     </div>
                 </div>
             </div>
