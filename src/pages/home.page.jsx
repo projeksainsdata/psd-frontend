@@ -171,7 +171,7 @@ const HomePage = () => {
                     />
                     </h1>
                     <p className="mt-5 items-center"></p>
-                    <Link className="text-xl underline text-light-green gap-10 mx-auto mb-5 py-2" to="/projek-kami" onClick={handleNavLinkClick}>
+                    <Link className="text-xl text-light-green gap-10 mx-auto mb-5 py-2" to="/projek-kami" onClick={handleNavLinkClick}>
                             <i className="fi fi-rr-workflow-alt mr-2 text-light-green " />
                             Explore our latest projects and collaborations
                     </Link>
