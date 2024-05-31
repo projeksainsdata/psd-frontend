@@ -108,7 +108,7 @@ const Navbar = () => {
                     </Link>
 
                     <Link to="/learn" className="hidden md:flex gap-2 link">
-                        <i className="fi fi-ts-books"></i>
+                        <i className="fi fi-rr-books"></i>
                         <strong >PSD-Learn</strong>
                     </Link>
 
