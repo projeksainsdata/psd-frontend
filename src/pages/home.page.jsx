@@ -207,8 +207,8 @@ const HomePage = () => {
             <section className="rounded-xl flex p-4 items-center justify-between mb-3">
             <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
                 <div className='lg:w-1/2 w-auto'>
-                        <div className='rounded-xl banner-content position-relative w-auto'>
-                        <img src={band} alt="DPSD" className="banner-content img-fluid" />
+                        <div className=' banner-content position-relative w-auto'>
+                        <img src={band} alt="DPSD" className="banner-content rounded-3xl shadow-2xl img-fluid" />
                         </div>
                 </div>
                 <div className='lg:w-1/2 items-center'>
