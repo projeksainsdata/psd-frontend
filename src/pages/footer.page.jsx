@@ -1,12 +1,8 @@
 import React from 'react';
 import { ThemeContext } from '../App';
 import { useContext } from "react";
-import {
-  FiGithub,
-  FiInstagram,
-  FiYoutube,
-} from "react-icons/fi";
-import { FaXTwitter } from "react-icons/fa6";
+// Import the desired FlatIcon icons here
+import { FaInstagram, FaGithub, FaYoutube, FaDiscord, FaTwitter } from 'react-icons/fa';
 import logoDark from "../imgs/psdDark.png";
 import logoLight from "../imgs/PSDNormal.png";
 import { Link } from 'react-router-dom';
@@ -14,27 +10,33 @@ import { Link } from 'react-router-dom';
 const socialLinks = [
   {
     id: 1,
-    icon: <FiInstagram className='text-2xl' color="#C13584"/>,
+    icon: <FaInstagram className='text-2xl' color="#C13584"/>,
     url: "https://instagram.com/projeksainsdata",
     // Instagram color
   },
   {
     id: 2,
-    icon: <FiGithub className='text-2xl' color="#333" />,
+    icon: <FaGithub className='text-2xl' color="#333" />,
     url: "https://github.com/projeksainsdata",
     // Github color
   },
   {
     id: 3,
-    icon: <FaXTwitter className='text-2xl' color="#333" />,
+    icon: <FaTwitter className='text-2xl' color="#1DA1F2" />,
     url: "https://twitter.com/ProjekData",
      // Twitter color
   },
   {
     id: 4,
-    icon: <FiYoutube className='text-2xl' color="#FF0000" />,
+    icon: <FaYoutube className='text-2xl' color="#FF0000" />,
     url: "https://www.youtube.com/channel/UC2MBB6gj5SoiGZ2m72QlMag",
      // Youtube color
+  },
+  {
+    id: 5,
+    icon: <FaDiscord className='text-2xl' color="#7289da" />,
+    url: "https://discord.gg/9NwY3DXU",
+     // Discord color
   },
 ];
 

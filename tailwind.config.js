@@ -37,7 +37,10 @@ export default {
                 'transparent': 'transparent',
                 'twitter': '#1DA1F2',
                 'purple': '#805AD5',
-                'dark-red': '#8B0000'
+                'dark-red': '#8B0000',
+                'pink':'#FF91D5',
+                'ungu':'#403178',
+                'discord': '#7289da'
             },
             dark: {
                 'white': '#2D3748',
@@ -50,7 +53,10 @@ export default {
                 'transparent': 'transparent',
                 'twitter': '#0E71A8',
                 'purple': '#6B46C1',
-                'dark-red': '#8B0000'
+                'dark-red': '#8B0000',
+                'pink':'#FF91D5',
+                'ungu':'#403178',
+                'discord': '#7289da'
             } 
         })
     ],

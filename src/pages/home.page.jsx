@@ -12,7 +12,10 @@ import LoadMoreDataBtn from "../components/load-more.component";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 import ban from "../imgs/banner.png";
+import band from "../imgs/dpsd.jpg"
 import OurProjek from "./ourprojek.page";
+import React from 'react'
+import { FaDiscord } from 'react-icons/fa'
 
 
 const HomePage = () => {
@@ -196,6 +199,35 @@ const HomePage = () => {
                 <div className='lg:w-1/2 w-auto'>
                     <div className='banner-img position-relative w-auto'>
                      <img src={ban} alt="PSD" className="img-fluid" />
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <section className="rounded-xl flex p-4 items-center justify-between mb-3">
+            <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
+                <div className='lg:w-1/2 w-auto'>
+                        <div className='rounded-xl banner-content position-relative w-auto'>
+                        <img src={band} alt="DPSD" className="banner-content img-fluid" />
+                        </div>
+                </div>
+                <div className='lg:w-1/2 items-center'>
+                    <div className="banner mt-3 rounded-xl bg-grey text-white p-4 items-center justify-between">
+                        <div className="banner-content flex items-center">
+                        <FaDiscord className="text-discord text-4xl mr-4" />
+                            <div>
+                                <p className="text-light-green text-xl font-bold">Join to Our Community</p>
+                                <h3 className="font-bold text-light-green">Diskusi Projek Sains Data</h3>
+                            </div>
+                        </div>
+                            <a
+                            href="https://discord.gg/9NwY3DXU"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex bg-white mt-3 items-center justify-center text-light-green px-4 py-2 rounded-full shadow-md hover:bg-black/10 transition duration-300"
+                            >
+                        Join Now
+                        </a>
                     </div>
                 </div>
             </div>
