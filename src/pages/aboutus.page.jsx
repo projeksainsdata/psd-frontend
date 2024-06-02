@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import AnimationWrapper from '../common/page-animation';
+import logopsd from "../imgs/psd2.png"
+import iconpsd from "../imgs/iconpsd.png"
 
 const TeamMemberCard = ({ name, position }) => {
   return (
@@ -21,13 +23,25 @@ const AboutUsPage = () => {
       <Container className="mx-auto max-w-4xl mt-5">
         <Row className="mt-5">
           <Col>
+          
+            <div className='w-auto'>
+                    <div className='banner-img position-relative w-auto'>
+                     <img src={logopsd} alt="Logo Projek Sains Data" className="img-fluid" />
+                    </div>
+            </div>
             <h2 className="text-2xl font-semibold mb-5">Tentang Projek Sains Data</h2>
-            <p className="text-base mb-5">
-              Projek Sains Data merupakan start up open platform atau platform terbuka untuk penulis yang memiliki peran dan antusias di bidang ilmu data mulai dari akademisi hingga profesional. Projek Sains Data atau PSD membuka ruang untuk belajar sains data yang lebih komprehensif, seperti sumber bacaan dari penulis blog komunitas, pembelajaran yang disusun berdasarkan domain sains data, buku original, tutorial penyelesaian studi kasus dengan real data, dan repositori proyek yang memuat latihan dari penggunaan konsep dan teori di sains data. Selain itu Projek Sains Data memiliki bisnis yang bergerak di bidang teknologi kembaran digital dengan kecerdasan buatan yang disebut Projek Sains Data Craft atau PSD-C. Fokus utama dari PSD-C adalah memberikan solusi untuk keputusan bisnis pada domain Energi, Lingkungan, Pertanian, Kesehatan, dan Manufaktur. PSD-C juga memberikan layanan konsultasi profesional untuk pengerjaan proyek sains data di industri maupun pendampingan riset. PSD memiliki komunitas diskusi yang disebut Diskusi Projek Sains Data atau DPSD. Komunitas ini memuat program yang menghubungkan para anggota untuk mendapatkan pelatihan, seminar, dan event tertentu, serta peluang koneksi kerjasama satu sama lain.
-            </p>
-            <p className="text-base">
-            PSD berkomitmen penuh untuk meningkatkan digital literasi di Indonesia dalam pengetahuan ilmu data agar adaptasi teknologi berbasis kecerdasan buatan yang berkembang menyesuaikan industri dunia saat ini menjadi bagian yang dapat diterima dengan baik khususnya oleh masyarakat Indonesia. Memulai dengan memberikan pemahaman yang terstruktur dan berdasarkan riset, PSD mendorong terciptanya dan terwujudnya inovasi berkelanjutan di bidang ilmu data. Sehingga solusi melalui pendekatan ilmu data tetap berkembang dan penerapannya tidak disalahgunakan. Memprediksi masa depan tentu menjadi bagian penting dalam mempersiapkan masa sekarang dan tidak mengulangi kesalahan di masa lalu, bergabunglah dengan berkontribusi pada blog dan pembelajaran sains data di Projek Sains Data yang terhubung dengan Diskusi Projek Sains Data, lalu ikut menciptakan solusi proyek sains data masa depan dengan PSD-C. Projek Sains Data lahir pada tanggal 03 Oktober 2022. Tempat dan kedudukan berada di Bandar Lampung, Lampung, Indonesia. Sifat dan status dari Projek Sains Data merupakan Start Up bidang data. 
-            </p>
+            <div className='flex flex-col lg:flex-row'>
+              <div className='lg:w-1/2 mr-8 justify-left'>
+                  <p className="text-base mb-5 justify-left">
+                  Projek Sains Data merupakan start up open platform atau platform terbuka untuk penulis yang memiliki peran dan antusias di bidang ilmu data mulai dari akademisi hingga profesional. Projek Sains Data atau PSD membuka ruang untuk belajar sains data yang lebih komprehensif, seperti sumber bacaan dari penulis blog komunitas, pembelajaran yang disusun berdasarkan domain sains data, buku original, tutorial penyelesaian studi kasus dengan real data, dan repositori proyek yang memuat latihan dari penggunaan konsep dan teori di sains data. Selain itu Projek Sains Data memiliki bisnis yang bergerak di bidang teknologi kembaran digital dengan kecerdasan buatan yang disebut Projek Sains Data Craft atau PSD-C. Fokus utama dari PSD-C adalah memberikan solusi untuk keputusan bisnis pada domain Energi, Lingkungan, Pertanian, Kesehatan, dan Manufaktur. PSD-C juga memberikan layanan konsultasi profesional untuk pengerjaan proyek sains data di industri maupun pendampingan riset. PSD memiliki komunitas diskusi yang disebut Diskusi Projek Sains Data atau DPSD. Komunitas ini memuat program yang menghubungkan para anggota untuk mendapatkan pelatihan, seminar, dan event tertentu, serta peluang koneksi kerjasama satu sama lain.
+                  </p>
+              </div>
+              <div className='lg:w-1/2 w-auto justify-left'>
+                <p className="text-base justify-left">
+                PSD berkomitmen penuh untuk meningkatkan digital literasi di Indonesia dalam pengetahuan ilmu data agar adaptasi teknologi berbasis kecerdasan buatan yang berkembang menyesuaikan industri dunia saat ini menjadi bagian yang dapat diterima dengan baik khususnya oleh masyarakat Indonesia. Memulai dengan memberikan pemahaman yang terstruktur dan berdasarkan riset, PSD mendorong terciptanya dan terwujudnya inovasi berkelanjutan di bidang ilmu data. Sehingga solusi melalui pendekatan ilmu data tetap berkembang dan penerapannya tidak disalahgunakan. Memprediksi masa depan tentu menjadi bagian penting dalam mempersiapkan masa sekarang dan tidak mengulangi kesalahan di masa lalu, bergabunglah dengan berkontribusi pada blog dan pembelajaran sains data di Projek Sains Data yang terhubung dengan Diskusi Projek Sains Data, lalu ikut menciptakan solusi proyek sains data masa depan dengan PSD-C. Projek Sains Data lahir pada tanggal 03 Oktober 2022. Tempat dan kedudukan berada di Bandar Lampung, Lampung, Indonesia. Sifat dan status dari Projek Sains Data merupakan Start Up bidang data. 
+                </p>
+              </div>
+          </div>
           </Col>
         </Row>
         <Row className="mt-5">
