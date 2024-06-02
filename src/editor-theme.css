@@ -207,6 +207,30 @@ body[data-theme="dark"] .ce-conversion-tool:hover{
   text-align: center;
 }
 
+.banner-icon {
+  width: 200px; /* Ukuran default untuk layar besar */
+  height: 200px; /* Ukuran default untuk layar besar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media queries untuk ukuran layar yang lebih kecil */
+@media (max-width: 768px) {
+  .banner-icon {
+    width: 150px; /* Ukuran untuk tablet */
+    height: 150px; /* Ukuran untuk tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-icon {
+    width: 50px; /* Ukuran untuk ponsel */
+    height: 50px; /* Ukuran untuk ponsel */
+  }
+}
+
+
 .banner-content {
   max-width: 900px;
   margin: 0 auto;
@@ -867,3 +891,15 @@ body[data-theme="dark"] .ce-conversion-tool:hover{
 }
 
 
+.card-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  text-align: center;
+}
