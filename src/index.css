@@ -7,6 +7,7 @@
 
 
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -86,6 +87,10 @@
 
     .sidebar-link{
         @apply flex gap-4 items-center py-5 text-dark-grey hover:text-black;
+    }
+
+    .sidebar-learn{
+        @apply flex items-center py-5 gap-3 text-light-green hover:text-black;
     }
 
     .sidebar-link.active{

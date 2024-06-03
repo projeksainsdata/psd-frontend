@@ -31,6 +31,8 @@ import ProfilePage4 from "./pages/profile3.page";
 import ForumFrontPage from "./pages/homeforum.page";
 import ForumPage from "./pages/homeforum.page";
 import BookmarkPage from "./pages/bookmark.page";
+import SideLearn from "./components/sidelearn.component";
+import SideCenter from "./components/sidecenter.component";
 
 
 
@@ -104,6 +106,8 @@ const App = () => {
                         <Route path="projek-kami" element={<OurProjek />} />
                         <Route path="tentang-kami" element={<AboutUsPage />} />
                         <Route path="forum" element={<ForumPage />} />
+                        <Route path="learn" element={<SideLearn />} />
+                        <Route path="center" element={<SideCenter />} />
 
                         
                         

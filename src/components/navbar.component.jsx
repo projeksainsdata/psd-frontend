@@ -107,11 +107,6 @@ const Navbar = () => {
                         <strong >Projek</strong>
                     </Link>
 
-                    <Link to="/studi-kasus" className="hidden md:flex gap-1 link">
-                        <i className="fi fi-rr-key"></i>
-                        <strong >Case Study</strong>
-                    </Link>
-
                     <Link to="/learn" className="hidden md:flex gap-1 link">
                         <i className="fi fi-rr-books"></i>
                         <strong >Learn</strong>
@@ -127,7 +122,7 @@ const Navbar = () => {
                     </button>
                     
 
-                    <Link to="/craft" className="flex-none w-10 gap-2">
+                    <Link to="/center" className="flex-none w-10 gap-2">
                     <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10">
                         <i className="fi fi-sr-apps text-2xl block mt-1 bg-dark"></i>
                     </button>

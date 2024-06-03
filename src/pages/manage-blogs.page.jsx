@@ -114,6 +114,7 @@ const ManageBlogs = () => {
                     blogs.results.length ? 
 
                        <>
+                       <div className="mb-4">Published Blogs ({blogs.countRoute})</div>
                         {
                             blogs.results.map((blog, i) => {
                                 return <AnimationWrapper key={i} transition={{ delay: i * 0.04 }}>
@@ -139,6 +140,7 @@ const ManageBlogs = () => {
                     drafts.results.length ? 
 
                     <>
+                        
                         {
                             drafts.results.map((blog, i) => {
                                 return <AnimationWrapper key={i} transition={{ delay: i * 0.04 }}>
