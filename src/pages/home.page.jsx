@@ -13,20 +13,15 @@ import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 import ban from "../imgs/banner.png";
 import band from "../imgs/dpsd.jpg"
-import OurProjek from "./ourprojek.page";
 import React from 'react'
 import { FaDiscord } from 'react-icons/fa'
-
 
 const HomePage = () => {
     let [blogs, setBlog] = useState(null);
     let [trendingBlogs, setTrendingBlog] = useState(null);
-    let [ pageState, setPageState ] = useState("For You");
-    let [followedBlogs, setFollowedBlogs] = useState(null);
-
+    let [ pageState, setPageState ] = useState("beranda");
 
     let categories = [
-        "Analisis Big Data",
         "Pemrograman Berbasis Fungsi",
         "Machine Learning",
         "Deep Learning",
@@ -36,15 +31,6 @@ const HomePage = () => {
         "Data",
         "Artificial Intelligence",
         "High Performance Computing",
-    ];
-
-    let center = [
-        "Energy",
-        "Environment",
-        "Ecology",
-        "Health",
-        "Agriculture",
-        "Manufacture"
     ];
 
     const fetchLatestBlogs = ({ page = 1 }) => {
@@ -104,7 +90,7 @@ const HomePage = () => {
         setBlog(null);
 
         if(pageState == category){
-            setPageState("For You");
+            setPageState("beranda");
             return;
         }
 
@@ -112,41 +98,21 @@ const HomePage = () => {
 
     }
 
-    const fetchFollowedBlogs = ({ page = 1 }) => {
-        axios
-            .post(import.meta.env.VITE_SERVER_DOMAIN + "/followed-blogs", { page })
-            .then(async ({ data }) => {
-                let formatedData = await filterPaginationData({
-                    state: followedBlogs,
-                    data: data.blogs,
-                    page,
-                    countRoute: "/all-followed-blogs-count"
-                });
-                setFollowedBlogs(formatedData);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    };
-    
-
     useEffect(() => {
+
         activeTabRef.current.click();
-    
-        if (pageState === "For You") {
+
+        if(pageState == "beranda"){
             fetchLatestBlogs({ page: 1 });
-        } else if (pageState === "following") {
-            fetchFollowedBlogs({ page: 1 });
         } else {
-            fetchBlogsByCategory({ page: 1 });
+            fetchBlogsByCategory({ page: 1 })
         }
-    
-        if (!trendingBlogs) {
+
+        if(!trendingBlogs){
             fetchTrendingBlogs();
         }
-    
+
     }, [pageState]);
-    
 
     const handleNavLinkClick = (e) => {
         if (!isUserLoggedIn()) {
@@ -159,7 +125,7 @@ const HomePage = () => {
 
     return (
         <AnimationWrapper>
-            <section>
+             <section>
             <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
                 <div className='lg:w-1/2'>
                     <h1 className='text-3xl font-bold lg:text-6xl'>
@@ -232,7 +198,6 @@ const HomePage = () => {
                 </div>
             </div>
             </section>
-
             <section className="mx-auto">
             <div className="flex flex-col gap-10 justify-center">
                 <div>
@@ -255,72 +220,46 @@ const HomePage = () => {
             </div>
             </section>
 
-            
-
 
             
             <section className="h-cover flex justify-center gap-10">
-                        
 
 
 
                 {/* latest blogs */}
 
                 <div className="w-full">
-                <InPageNavigation
-                    routes={[pageState, "trending blogs", "following"]}
-                    defaultHidden={["trending blogs"]}
-                >
-                    <>
-                        {pageState === "For You" && (blogs == null ? (
-                            <Loader />
-                        ) : (
-                            blogs.results.length ? 
-                                blogs.results.map((blog, i) => {
-                                    return (
-                                        <AnimationWrapper
-                                            transition={{
-                                                duration: 1,
-                                                delay: i * 0.1,
-                                            }}
-                                            key={i}
-                                        >
-                                            <BlogPostCard
-                                                content={blog}
-                                                author={blog.author.personal_info}
-                                            />
-                                        </AnimationWrapper>
-                                    );
-                                })
-                            : <NoDataMessage message="No blogs published" />
-                        ))}
-                        {pageState === "following" && (followedBlogs == null ? (
-                            <Loader />
-                        ) : (
-                            followedBlogs.results.length ?
-                                followedBlogs.results.map((blog, i) => {
-                                    return (
-                                        <AnimationWrapper
-                                            transition={{
-                                                duration: 1,
-                                                delay: i * 0.1,
-                                            }}
-                                            key={i}
-                                        >
-                                            <BlogPostCard
-                                                content={blog}
-                                                author={blog.author.personal_info}
-                                            />
-                                        </AnimationWrapper>
-                                    );
-                                })
-                            : <NoDataMessage message="No blogs from followed users" />
-                        ))}
-                        <LoadMoreDataBtn
-                            state={pageState === "For You" ? blogs : followedBlogs}
-                            fetchDataFun={(pageState === "For You" ? fetchLatestBlogs : fetchFollowedBlogs)}
-                        />
-                    </>
+                    <InPageNavigation
+                        routes={[ pageState , "trending blogs"]}
+                        defaultHidden={["trending blogs"]}
+                    >
+                        <>
+                            {blogs == null ? (
+                                <Loader />
+                            ) : (
+                                blogs.results.length ? 
+                                    blogs.results.map((blog, i) => {
+                                        return (
+                                            <AnimationWrapper
+                                                transition={{
+                                                    duration: 1,
+                                                    delay: i * 0.1,
+                                                }}
+                                                key={i}
+                                            >
+                                                <BlogPostCard
+                                                    content={blog}
+                                                    author={
+                                                        blog.author.personal_info
+                                                    }
+                                                />
+                                            </AnimationWrapper>
+                                        );
+                                    })
+                                : <NoDataMessage message="No blogs published" />
+                            )}
+                            <LoadMoreDataBtn state={blogs} fetchDataFun={( pageState == "beranda" ? fetchLatestBlogs : fetchBlogsByCategory )} />
+                        </>
 
                         {trendingBlogs == null ? (
                             <Loader />
@@ -358,7 +297,8 @@ const HomePage = () => {
 
                         <div>
                             <h1 className="font-medium text-xl mb-8 text-light-green">
-                                <i className="fi fi-bs-rocket-lunch"></i> Trending
+                                Trending
+                                <i className="fi fi-rr-arrow-trend-up"></i>
                             </h1>
 
                             {trendingBlogs == null ? (
