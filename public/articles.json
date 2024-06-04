@@ -1,0 +1,12 @@
+{
+    "A": [
+      {"title": "Article 1", "content": "Content of Article 1"},
+      {"title": "Article 2", "content": "Content of Article 2"}
+    ],
+    "B": [
+      {"title": "Article 3", "content": "Content of Article 3"},
+      {"title": "Article 4", "content": "Content of Article 4"}
+    ]
+
+  }
+  

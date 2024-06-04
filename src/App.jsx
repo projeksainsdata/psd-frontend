@@ -33,6 +33,13 @@ import ForumPage from "./pages/homeforum.page";
 import BookmarkPage from "./pages/bookmark.page";
 import SideLearn from "./components/sidelearn.component";
 import SideCenter from "./components/sidecenter.component";
+import LearnDasar from "./components/learndasar.component";
+import LearnAnalitik from "./components/learnanalitik.component";
+import LearnDesain from "./components/learndesain.component";
+import LearnSistem from "./components/learnsistem.component";
+import LearnIot from "./components/learniot.component";
+import LearnRobotik from "./components/learnrobotik.component";
+import LearnNilai from "./components/learnnilai.component";
 
 
 
@@ -97,6 +104,16 @@ const App = () => {
                             <Route path="change-password" element={<ChangePassword />} />
                             <Route path="delete-user" element={<DeleteUserPage />} />
                         </Route>
+                        <Route path="learn" element={<SideLearn />} >
+                            <Route path="dasar" element={<LearnDasar />} />
+                            <Route path="analitik" element={<LearnAnalitik />} />
+                            <Route path="desain" element={<LearnDesain />} />
+                            <Route path="sistem" element={<LearnSistem />} />
+                            <Route path="iot" element={<LearnIot />} />
+                            <Route path="robotik" element={<LearnRobotik />} />
+                            <Route path="nilai" element={<LearnNilai />} />
+
+                        </Route>
                         <Route path="signin" element={<UserAuthForm type="sign-in" />} /> 
                         <Route path="signup" element={<UserAuthForm type="sign-up" />} />
                         <Route path="search/:query" element={<SearchPage />} />
@@ -106,7 +123,6 @@ const App = () => {
                         <Route path="projek-kami" element={<OurProjek />} />
                         <Route path="tentang-kami" element={<AboutUsPage />} />
                         <Route path="forum" element={<ForumPage />} />
-                        <Route path="learn" element={<SideLearn />} />
                         <Route path="center" element={<SideCenter />} />
 
                         

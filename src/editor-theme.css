@@ -903,3 +903,27 @@ body[data-theme="dark"] .ce-conversion-tool:hover{
 .card-content {
   text-align: center;
 }
+
+.letter-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.letter-section {
+  margin-bottom: 10px;
+}
+
+.letter-header {
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.article-list {
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.article-item {
+  margin-bottom: 10px;
+}
