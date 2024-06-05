@@ -101,7 +101,7 @@ const LearnDasar = () => {
         </div>
         <input
           type="text"
-          className="w-full bg-grey p-4 pl-12 pr-6 rounded-full placeholder:text-dark-grey"
+          className="w-full bg-grey p-4 pl-10 pr-6 rounded-full placeholder:text-dark-grey"
           placeholder="Pilih dahulu select letter sebelum mencari artikel"
           onChange={handleSearch}
         />
