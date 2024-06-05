@@ -44,7 +44,7 @@ const LearnDasar = () => {
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
   return (
-    <>
+    <div>
     <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
           <div className='lg:w-1/2'>
               <h1 className='text-3xl font-bold lg:text-6xl'>
@@ -130,7 +130,8 @@ const LearnDasar = () => {
           )}
         </div>
       )}
-    </>
+
+    </div>
   );
 };
 
