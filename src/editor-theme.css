@@ -948,6 +948,6 @@ body[data-theme="dark"] .ce-conversion-tool:hover{
 
 @media (max-width: 480px) {
   .button-container .btn-dark {
-      flex: 1 1 100%; /* 1 button per row */
+      flex: 1 1 (50% - 20px); /* 1 button per row */
   }
 }
