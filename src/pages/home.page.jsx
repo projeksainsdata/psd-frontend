@@ -11,7 +11,7 @@ import { filterPaginationData } from "../common/filter-pagination-data";
 import LoadMoreDataBtn from "../components/load-more.component";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
-import ban from "../imgs/banner.png";
+import ban from "../imgs/hero2.gif";
 import band from "../imgs/dpsd.jpg"
 import React from 'react'
 import { FaDiscord } from 'react-icons/fa'
