@@ -53,23 +53,27 @@ const SideCenter = () => {
                         <h1 className="text-xl font-bold text-dark-grey mb-3">Apps Center</h1>
                         <hr className="border-grey -ml-6 mb-8 mr-6" />
 
-                        <NavLink to="/learn/dasar" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
+                        <NavLink to="/center/learn" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
+                            <i className="fi fi-rr-books text-xl"></i> Learn
+                        </NavLink>
+
+                        <NavLink to="/center/ai" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
                             <i className="fi fi-rr-user-robot text-xl"></i> AI-Center
                         </NavLink>
 
-                        <NavLink to="/learn/dasar" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
+                        <NavLink to="/center/case-study" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
                             <i className="fi fi-rr-key text-xl"></i> Case Study
                         </NavLink>
 
-                        <NavLink to="/learn/analitik" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
+                        <NavLink to="/center/craft" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
                             <i className="fi fi-rr-tour-virtual text-xl"></i> Craft
                         </NavLink>
 
-                        <NavLink to="/learn/desain" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
+                        <NavLink to="/center/consultation" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
                             <i className="fi fi-sr-comments-question-check text-xl"></i> Consultation
                         </NavLink>
 
-                        <NavLink to="/learn/sistem" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
+                        <NavLink to="/center/cryptographyblockhain" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
                             <i className="fi fi-rr-shield-keyhole text-xl"></i> Cryptography Blockchain
                         </NavLink>
 

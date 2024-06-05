@@ -40,6 +40,7 @@ import LearnSistem from "./components/learnsistem.component";
 import LearnIot from "./components/learniot.component";
 import LearnRobotik from "./components/learnrobotik.component";
 import LearnNilai from "./components/learnnilai.component";
+import CenterLearn from "./components/centerlearn.component";
 
 
 export const UserContext = createContext({})
@@ -111,7 +112,9 @@ const App = () => {
                             <Route path="iot" element={<LearnIot />} />
                             <Route path="robotik" element={<LearnRobotik />} />
                             <Route path="nilai" element={<LearnNilai />} />
-
+                        </Route>
+                        <Route path="center" element={<SideCenter />} >
+                            <Route path="learn" element={<CenterLearn />} />
                         </Route>
                         <Route path="signin" element={<UserAuthForm type="sign-in" />} /> 
                         <Route path="signup" element={<UserAuthForm type="sign-up" />} />
