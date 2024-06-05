@@ -40,7 +40,6 @@ import LearnSistem from "./components/learnsistem.component";
 import LearnIot from "./components/learniot.component";
 import LearnRobotik from "./components/learnrobotik.component";
 import LearnNilai from "./components/learnnilai.component";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export const UserContext = createContext({})
@@ -84,7 +83,6 @@ const App = () => {
 
 
     return (
-        <SpeedInsights >
         <ThemeContext.Provider value={{ theme, setTheme }}>
             <UserContext.Provider value={{userAuth, setUserAuth}}>
                 <Routes>
@@ -134,7 +132,6 @@ const App = () => {
             </UserContext.Provider>
         <Footer />
         </ThemeContext.Provider>
-    </SpeedInsights>
     );
 
 }
