@@ -5,6 +5,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import Loader from '../components/loader.component';
 import NoDataMessage from '../components/nodata.component';
 import { Toaster } from 'react-hot-toast';
+import dasar from "../imgs/Manual.gif";
 
 const LearnDasar = () => {
   const [articles, setArticles] = useState({});
@@ -44,6 +45,27 @@ const LearnDasar = () => {
 
   return (
     <>
+    <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
+          <div className='lg:w-1/2'>
+              <h1 className='text-3xl font-bold lg:text-6xl'>
+                  Dasar (Basic)
+              </h1>
+              <p className="mt-5 items-center"></p>
+
+              <p className='text-gray-500 mt-5 mb-5 text-xl'>
+                  Here you'll find a variety of articles and tutorials on topics such as Data Science,
+                  Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
+                  Technology Data and Computing.
+              </p>
+          </div>
+
+          <div className='lg:w-1/2 w-auto'>
+              <div className='banner-img position-relative w-auto'>
+              <img src={dasar} alt="basic" className="img-fluid" />
+              </div>
+          </div>
+      </div>
+
       <div className="container mb-1 mx-auto px-4">
         <Toaster />
         <div className="flex items-center my-4">

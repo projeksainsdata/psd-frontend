@@ -5,6 +5,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import Loader from '../components/loader.component';
 import NoDataMessage from '../components/nodata.component';
 import { Toaster } from 'react-hot-toast';
+import nilai from "../imgs/Protection.gif";
 
 const LearnNilai = () => {
   const [articles, setArticles] = useState({});
@@ -44,6 +45,26 @@ const LearnNilai = () => {
 
   return (
     <>
+        <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
+          <div className='lg:w-1/2'>
+              <h1 className='text-3xl font-bold lg:text-6xl'>
+                  Nilai (Values)
+              </h1>
+              <p className="mt-5 items-center"></p>
+
+              <p className='text-gray-500 mt-5 mb-5 text-xl'>
+                  Here you'll find a variety of articles and tutorials on topics such as Data Science,
+                  Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
+                  Technology Data and Computing.
+              </p>
+          </div>
+
+          <div className='lg:w-1/2 w-auto'>
+              <div className='banner-img position-relative w-auto'>
+              <img src={nilai} alt="nilai" className="img-fluid" />
+              </div>
+          </div>
+    </div>
       <div className="container mx-auto px-4">
         <Toaster />
         <div className="flex items-center my-4">
@@ -70,7 +91,7 @@ const LearnNilai = () => {
                       setDropdownOpen(false);
                     }}
                   >
-                    {letter}
+                    {letter} ({filteredArticles[letter]?.length || 0})
                   </div>
                 ))}
               </div>
@@ -89,7 +110,7 @@ const LearnNilai = () => {
         <div className="letter-section container mx-auto px-4">
           <div className="letter-header flex p-4">
             <h2 className='text-light-green'>{activeLetter}</h2>
-            <h1 className='font-bold text-xl'>Jumlah Artikel ({filteredArticles[activeLetter]?.length || 0})</h1>
+            <h1 className='font-bold text-xl'>Jumlah Artikel :{filteredArticles[activeLetter]?.length || 0}</h1>
           </div>
           <hr className="border-pink -ml-6 mb-4 mr-6" />
           {filteredArticles[activeLetter] == null ? (
