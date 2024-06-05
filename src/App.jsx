@@ -41,7 +41,7 @@ import LearnIot from "./components/learniot.component";
 import LearnRobotik from "./components/learnrobotik.component";
 import LearnNilai from "./components/learnnilai.component";
 import CenterLearn from "./components/centerlearn.component";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 
 export const UserContext = createContext({})
