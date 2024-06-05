@@ -2,15 +2,13 @@ import { useContext, useEffect, useState } from "react";
 import { BlogContext } from "../pages/blog.page";
 import { Link } from "react-router-dom";
 import { UserContext } from "../App";
-import { Toaster, toast } from "react-hot-toast"
+import { Toaster, toast } from "react-hot-toast";
 import axios from "axios";
 
 const BlogInteraction = () => {
-    let { blog, blog: { _id, title, blog_id, activity, activity: { total_likes, total_comments, total_saved }, author: { personal_info: { username: author_username } }  }, setBlog, islikedByUser, setLikedByUser, setCommentsWrapper, issavedByUser, setSavedByUser } = useContext(BlogContext);
+    let { blog, blog: { _id, title, blog_id, activity, activity: { total_likes, total_comments, total_saved }, author: { personal_info: { username: author_username } }, tags  }, setBlog, islikedByUser, setLikedByUser, setCommentsWrapper, issavedByUser, setSavedByUser } = useContext(BlogContext);
 
     let { userAuth: { username, access_token } } = useContext(UserContext);
-
-
 
     useEffect(() => {
         if (access_token) {
@@ -26,7 +24,7 @@ const BlogInteraction = () => {
                 console.log(err);
             });
         }
-    }, [])
+    }, []);
 
     useEffect(() => {
         if (access_token) {
@@ -42,14 +40,11 @@ const BlogInteraction = () => {
                 console.log(err);
             });
         }
-    }, [])
+    }, []);
     
-
     const handleLike = () => {
         if (access_token) {
             setLikedByUser(prevVal => !prevVal);
-            
-
             !islikedByUser ? total_likes++ : total_likes--;
             setBlog({ ...blog, activity: { ...activity, total_likes } });
 
@@ -72,8 +67,6 @@ const BlogInteraction = () => {
     const handleBookmark = () => {
         if (access_token) {
             setSavedByUser(prevVal => !prevVal);
-            
-
             !issavedByUser ? total_saved++ : total_saved--;
             setBlog({ ...blog, activity: { ...activity, total_saved } });
 
@@ -93,12 +86,45 @@ const BlogInteraction = () => {
         }
     }
 
+    const handleCopyLink = () => {
+        navigator.clipboard.writeText(window.location.href)
+            .then(() => {
+                toast.success("Link copied to clipboard");
+            })
+            .catch(err => {
+                toast.error("Failed to copy link");
+                console.error(err);
+            });
+    };
+
+    const fetchBlogsByCategory = (tag) => {
+        axios.post(import.meta.env.VITE_SERVER_DOMAIN + "/search-blogs", { tag })
+            .then(({ data }) => {
+                setBlogs(data.blogs);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    };
+
     return (
         <>
             <Toaster />
+
+            <div className="flex flex-wrap gap-2">
+                    {tags && tags.map(tag => (
+                        <Link
+                            key={tag}
+                            to={`/search/${tag}`}
+                            className="bg-grey rounded-full px-3 py-1 text-base"
+                        >
+                            {tag}
+                        </Link>
+                    ))}
+            </div>
             <hr className="border-grey my-2" />
 
-            <div className="flex gap-6 justify-between">
+            <div className="flex justify-between items-center">
                 <div className="flex gap-3 items-center">
                     <button
                         onClick={handleLike}
@@ -125,30 +151,41 @@ const BlogInteraction = () => {
                 </div>
 
                 <div className="flex gap-6 items-center">
-
-                    {username == author_username ?
-                        <Link to={`/editor/${blog_id}`} className="underline hover:text-purple">Edit</Link> : ""
-                    }
-
-                    <Link to={`https://twitter.com/intent/tweet?text=Read ${title}&url=${location.href}`} target="_blank" rel="noopener noreferrer"><i className="fi fi-brands-twitter text-xl hover:text-twitter"></i></Link>
-                    <Link to={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(location.href)}&title=${encodeURIComponent(title)}`} target="_blank" rel="noopener noreferrer">
-                        <i className="fi fi-brands-linkedin text-xl hover:text-linkedin"></i>
-                    </Link>
-                    <Link to={`https://wa.me/?text=Read ${encodeURIComponent(title)} ${encodeURIComponent(location.href)}`} target="_blank" rel="noopener noreferrer">
-                        <i className="fi fi-brands-whatsapp text-xl hover:text-whatsapp"></i>
-                    </Link>
-                    <Link to={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(location.href)}`} target="_blank" rel="noopener noreferrer">
-                        <i className="fi fi-brands-facebook text-xl hover:text-facebook"></i>
-                    </Link>
-                    <Link to={`https://t.me/share/url?url=${encodeURIComponent(location.href)}&text=${encodeURIComponent(title)}`} target="_blank" rel="noopener noreferrer" aria-label="Share on Telegram">
-                        <i className="fi fi-brands-telegram text-xl hover:text-telegram" aria-hidden="true"></i>
-                    </Link>
+                    {username == author_username ? (
+                        <Link to={`/editor/${blog_id}`} className="underline hover:text-purple">Edit</Link>
+                    ) : ""}
                 </div>
+            </div>
+
+
+
+
+
+            <hr className="border-grey my-2" />
+
+            <div className="flex justify-end gap-6 items-center">
+                <p className="text-dark-grey opacity-75 ">Share on</p>
+                <Link to={`https://twitter.com/intent/tweet?text=Read ${title}&url=${location.href}`} target="_blank" rel="noopener noreferrer"><i className="fi fi-brands-twitter text-xl hover:text-twitter"></i></Link>
+                <Link to={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(location.href)}&title=${encodeURIComponent(title)}`} target="_blank" rel="noopener noreferrer">
+                    <i className="fi fi-brands-linkedin text-xl hover:text-linkedin"></i>
+                </Link>
+                <Link to={`https://wa.me/?text=Read ${encodeURIComponent(title)} ${encodeURIComponent(location.href)}`} target="_blank" rel="noopener noreferrer">
+                    <i className="fi fi-brands-whatsapp text-xl hover:text-whatsapp"></i>
+                </Link>
+                <Link to={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(location.href)}`} target="_blank" rel="noopener noreferrer">
+                    <i className="fi fi-brands-facebook text-xl hover:text-facebook"></i>
+                </Link>
+                <Link to={`https://t.me/share/url?url=${encodeURIComponent(location.href)}&text=${encodeURIComponent(title)}`} target="_blank" rel="noopener noreferrer" aria-label="Share on Telegram">
+                    <i className="fi fi-brands-telegram text-xl hover:text-telegram" aria-hidden="true"></i>
+                </Link>
+                <button onClick={handleCopyLink} className="text-base hover:text-grey">
+                    <i className="fi fi-rr-link"></i> Copy Link
+                </button>
             </div>
 
             <hr className="border-grey my-2" />
         </>
-    )
+    );
 }
 
 export default BlogInteraction;
