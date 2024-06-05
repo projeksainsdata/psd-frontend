@@ -297,8 +297,7 @@ const HomePage = () => {
 
                         <div>
                             <h1 className="font-medium text-xl mb-8 text-light-green">
-                                Trending
-                                <i className="fi fi-rr-arrow-trend-up"></i>
+                                 <i className="fi fi-rs-rocket-lunch"></i> Trending
                             </h1>
 
                             {trendingBlogs == null ? (

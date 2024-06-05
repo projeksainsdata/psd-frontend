@@ -25,9 +25,6 @@ const CenterLearn = () => {
                             Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
                             Technology Data and Computing.
                         </p>
-                        <Link className="btn-dark gap-5 mb-6 py-2" to="/learn/dasar" onClick={handleNavLinkClick}>
-                            Start Learning Now
-                        </Link>
                     </div>
     
                     <div className='lg:w-1/2 w-auto'>
@@ -36,6 +33,39 @@ const CenterLearn = () => {
                         </div>
                     </div>
                 </div>
+                <div>
+                    <h3 className="mb-3 text-center">Start Learning Now</h3>
+                    <div className="button-container">
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/dasar" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-calculator-simple text-xl mr-3"></i> Dasar
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3 " to="/learn/analitik" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-square-poll-vertical text-xl mr-3"></i> Analitik
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/desain" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-microchip text-xl mr-3"></i> Desain
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/sistem" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-database text-xl mr-3"></i> Sistem
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/iot" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-sensor-on text-xl mr-3"></i> IoT
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/robotik" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-robot text-xl mr-3"></i> Robotik
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/nilai" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-unlock text-xl mr-3"></i> Nilai
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-review text-xl mr-3"></i> Feedback
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-interrogation text-xl mr-3"></i> FAQ
+                        </Link>
+                    </div>
+                </div>
+
         </AnimationWrapper>
     )
 }
