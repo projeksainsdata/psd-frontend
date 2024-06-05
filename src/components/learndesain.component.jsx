@@ -68,7 +68,6 @@ const LearnDesain = () => {
       <div className="container mx-auto px-4">
         <Toaster />
         <div className="flex items-center my-4">
-          <h1 className="text-2xl font-semibold justify-left">Learn-Desain</h1>
           <div className="ml-4 bg-light-green text-white text-xl px-4 py-2 rounded-full">
             Total: {Object.values(filteredArticles).reduce((acc, articles) => acc + articles.length, 0)}
           </div>
