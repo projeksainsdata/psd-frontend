@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import AnimationWrapper from "../common/page-animation";
+import projectplan from"../imgs/projectplan2.gif";
 
 const OurProjek = () => {
     const filters = ['Data Science', 'NLP', 'Machine Learning', 'Python', 'Deep Learning', 'Computer Vision'];
@@ -67,10 +68,10 @@ const OurProjek = () => {
 
     return (
         <AnimationWrapper>
-            <div className="container mx-auto max-w-4xl mt-5">
-                <div className="flex justify-center items-center">
-                    <img src="/dashboard-projek.png" className="max-w-[500px] max-h-[500px]"/>
-                </div>
+            <div className=" flex justify-center items-center">
+                    <img src={projectplan} alt="project" className="max-w-[500px] max-h-[500px]" />
+            </div>
+            <div className="container mx-auto max-w-4xl">
                 <h1 className="text-3xl font-bold">Projek Sains Data Repository</h1>
                 <div className="mt-5">
                     <p className="mt-3"> Last Updated February 2024 </p>
