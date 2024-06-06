@@ -46,6 +46,7 @@ import CenterCase from "./components/centercase.component";
 import CenterDT from "./components/centercraft.component";
 import CenterConsul from "./components/centerconsul.component";
 import CenterChain from "./components/centerblockchain.component";
+import CenterRepo from "./components/centerrepo.component";
 
 
 
@@ -126,6 +127,7 @@ const App = () => {
                             <Route path="craft" element={<CenterDT />} />
                             <Route path="consultation" element={<CenterConsul />} />
                             <Route path="cryptography-blockhain" element={<CenterChain />} />
+                            <Route path="repository" element={<CenterRepo />} />
                         </Route>
                         <Route path="signin" element={<UserAuthForm type="sign-in" />} /> 
                         <Route path="signup" element={<UserAuthForm type="sign-up" />} />

@@ -1,9 +1,9 @@
 import React from 'react';
 import AnimationWrapper from "../common/page-animation";
 import { Link } from "react-router-dom";
-import psdchain from "../imgs/blockchain.png"
+import psdrepo from "../imgs/dashboard-projek.png"
 
-const CenterChain = () => {
+const CenterRepo = () => {
     const handleNavLinkClick = (e) => {
         if (!isUserLoggedIn()) {
             e.preventDefault();
@@ -15,14 +15,9 @@ const CenterChain = () => {
     return (
             <AnimationWrapper>
                 <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
-                    <div className='lg:w-1/2 w-auto'>
-                        <div className='banner-img position-relative w-auto'>
-                         <img src={psdchain} alt="PSD-Blockchain" className="img-fluid" />
-                        </div>
-                    </div>
                     <div className='lg:w-1/2'>
                         <h1 className='text-3xl font-bold lg:text-6xl'>
-                            Welcome to Cryptography and Blockchain Center of Information
+                            Welcome to PSD-Repository
                         </h1>
     
                         <p className='text-gray-500 mt-5 mb-5 text-xl'>
@@ -32,15 +27,22 @@ const CenterChain = () => {
                         </p>
                     </div>
     
-
+                    <div className='lg:w-1/2 w-auto'>
+                        <div className='banner-img position-relative w-auto'>
+                         <img src={psdrepo} alt="PSD-Repository" className="img-fluid" />
+                        </div>
+                    </div>
                 </div>
                 <div>
-                    <h3 className="mb-3 text-center">Coming Soon...</h3>
+                    <h3 className="mb-3 text-center">Our Projects is here</h3>
                     <div className="button-container">
-                        <Link className="btn-dark mb-6 py-2 mr-3" to="/feedback/cryptography-blockchain" onClick={handleNavLinkClick}>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/projek-kami" onClick={handleNavLinkClick}>
+                            Go to Projek
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/feedback/consulation" onClick={handleNavLinkClick}>
                             Feedback
                         </Link>
-                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/cryptography-blockchain" onClick={handleNavLinkClick}>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/consultation" onClick={handleNavLinkClick}>
                             FAQ
                         </Link>
                     </div>
@@ -50,4 +52,4 @@ const CenterChain = () => {
     )
 }
 
-export default CenterChain;
+export default CenterRepo;

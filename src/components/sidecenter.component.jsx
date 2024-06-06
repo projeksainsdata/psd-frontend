@@ -77,6 +77,10 @@ const SideCenter = () => {
                             <i className="fi fi-rr-shield-keyhole text-xl"></i> Cryptography Blockchain
                         </NavLink>
 
+                        <NavLink to="/center/repository" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
+                            <i className="fi fi-rr-workflow-alt text-xl"></i> Repository
+                        </NavLink>
+
                     </div>
                 </div>
 
