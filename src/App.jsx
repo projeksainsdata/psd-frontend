@@ -41,6 +41,11 @@ import LearnIot from "./components/learniot.component";
 import LearnRobotik from "./components/learnrobotik.component";
 import LearnNilai from "./components/learnnilai.component";
 import CenterLearn from "./components/centerlearn.component";
+import CenterAI from "./components/centerai.component";
+import CenterCase from "./components/centercase.component";
+import CenterDT from "./components/centercraft.component";
+import CenterConsul from "./components/centerconsul.component";
+import CenterChain from "./components/centerblockchain.component";
 
 
 
@@ -116,6 +121,11 @@ const App = () => {
                         </Route>
                         <Route path="center" element={<SideCenter />} >
                             <Route path="learn" element={<CenterLearn />} />
+                            <Route path="ai" element={<CenterAI />} />
+                            <Route path="case-study" element={<CenterCase />} />
+                            <Route path="craft" element={<CenterDT />} />
+                            <Route path="consultation" element={<CenterConsul />} />
+                            <Route path="cryptography-blockhain" element={<CenterChain />} />
                         </Route>
                         <Route path="signin" element={<UserAuthForm type="sign-in" />} /> 
                         <Route path="signup" element={<UserAuthForm type="sign-up" />} />

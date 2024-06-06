@@ -1,9 +1,9 @@
 import React from 'react';
 import AnimationWrapper from "../common/page-animation";
 import { Link } from "react-router-dom";
-import psdlearn from "../imgs/learn2.png"
+import psdcase from "../imgs/projectman.png"
 
-const CenterLearn = () => {
+const CenterCase = () => {
     const handleNavLinkClick = (e) => {
         if (!isUserLoggedIn()) {
             e.preventDefault();
@@ -17,7 +17,7 @@ const CenterLearn = () => {
                 <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
                     <div className='lg:w-1/2'>
                         <h1 className='text-3xl font-bold lg:text-6xl'>
-                            Welcome to PSD-Learn
+                            Welcome to PSD-Case Study
                         </h1>
     
                         <p className='text-gray-500 mt-5 mb-5 text-xl'>
@@ -29,39 +29,66 @@ const CenterLearn = () => {
     
                     <div className='lg:w-1/2 w-auto'>
                         <div className='banner-img position-relative w-auto'>
-                         <img src={psdlearn} alt="PSD-Learn" className="img-fluid" />
+                         <img src={psdcase} alt="PSD-Case-Study" className="img-fluid" />
                         </div>
                     </div>
                 </div>
                 <div>
-                    <h3 className="mb-3 text-center">Start Learning Now</h3>
+                    <h3 className="mb-3 text-center">Follow Our Solution to Your Case Study</h3>
                     <div className="button-container">
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/dasar" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-calculator-simple text-xl mr-3"></i> Dasar
+                            Agricultural Science
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3 " to="/learn/analitik" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-square-poll-vertical text-xl mr-3"></i> Analitik
+                            Arts and Humanity
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/desain" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-microchip text-xl mr-3"></i> Desain
+                            Biological Science
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/sistem" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-database text-xl mr-3"></i> Sistem
+                            Business
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/iot" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-sensor-on text-xl mr-3"></i> IoT
+                            Chemistry
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/robotik" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-robot text-xl mr-3"></i> Robotik
+                            Computer Science
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/nilai" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-unlock text-xl mr-3"></i> Nilai
-                        </Link>
-                        <Link className="btn-dark mb-6 py-2 mr-3" to="/feedback/learn" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-review text-xl mr-3"></i> Feedback
+                            Data Science
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-interrogation text-xl mr-3"></i> FAQ
+                            Earth and Planetary Science
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                            Economic and Finance
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                            Energy
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                            Engineering
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                            Materials Science
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                            Enviromental Science
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                            Health and Medical Science
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                            Psycology
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                            Social Science
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                            Feedback
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                            FAQ
                         </Link>
                     </div>
                 </div>
@@ -70,4 +97,4 @@ const CenterLearn = () => {
     )
 }
 
-export default CenterLearn;
+export default CenterCase;

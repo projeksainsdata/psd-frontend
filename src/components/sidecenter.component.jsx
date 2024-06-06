@@ -73,7 +73,7 @@ const SideCenter = () => {
                             <i className="fi fi-sr-comments-question-check text-xl"></i> Consultation
                         </NavLink>
 
-                        <NavLink to="/center/cryptographyblockhain" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
+                        <NavLink to="/center/cryptography-blockhain" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-learn">
                             <i className="fi fi-rr-shield-keyhole text-xl"></i> Cryptography Blockchain
                         </NavLink>
 
