@@ -151,7 +151,7 @@ const HomePage = () => {
                         Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
                         Technology Data and Computing.
                     </p>
-                    <Link className="btn-dark gap-5 mb-6 py-2" to="/dashboard/tanya-psd" onClick={handleNavLinkClick}>
+                    <Link className="btn-dark gap-5 mb-6 py-2" to="/ai/tanya-psd" onClick={handleNavLinkClick}>
                         Any Question? Let's Talk With Our GPT!
                     </Link>
                     <Link className="gap-10 mx-auto mb-5 py-2" to="/center/learn" onClick={handleNavLinkClick}>

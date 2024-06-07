@@ -41,7 +41,7 @@ const CenterLearn = () => {
                     </div>
                     <div className='lg:w-1/2 w-auto mb-4 text-center'>
                                 <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
-                                    <i className="fi fi-rr-biking-mountain text-xl mr-3"></i> Test your knowledge with our Exercise Tools
+                                    <i className="fi fi-rr-biking-mountain text-xl mr-3"></i> Try Exercise Tools
                                 </Link>
                     </div>
                 </div>

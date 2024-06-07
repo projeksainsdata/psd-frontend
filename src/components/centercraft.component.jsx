@@ -34,7 +34,7 @@ const CenterDT = () => {
                 </div>
                 <div className='text-right mb-4'>
                     <Link className="text-xl text-light-green mb-6 py-2 mr-3" to="/learn/dasar" onClick={handleNavLinkClick}>
-                        <i className='fi fi-sr-info' /> Check here Our Webinar Digital Twin with AI
+                        <i className='fi fi-sr-info' /> Our Webinar Digital Twin with AI
                     </Link>
                 </div>
                 <div>
