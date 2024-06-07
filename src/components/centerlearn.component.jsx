@@ -33,6 +33,18 @@ const CenterLearn = () => {
                         </div>
                     </div>
                 </div>
+                <div className='flex flex-col lg:flex-row mb-8'>
+                    <div className='lg:w-1/2 w-auto mb-6 text-center'>
+                                <Link className="text-xl text-light-green justify-center mb-6 py-2 mr-3" to="/learn/dasar" onClick={handleNavLinkClick}>
+                                    <i className='fi fi-rr-track' /> Buat Roadmap belajar kamu disini!
+                                </Link>
+                    </div>
+                    <div className='lg:w-1/2 w-auto mb-4 text-center'>
+                                <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                                    <i className="fi fi-rr-biking-mountain text-xl mr-3"></i> Test your knowledge with our Exercise Tools
+                                </Link>
+                    </div>
+                </div>
                 <div>
                     <h3 className="mb-3 text-center">Start Learning Now</h3>
                     <div className="button-container">

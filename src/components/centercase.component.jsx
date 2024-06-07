@@ -33,9 +33,26 @@ const CenterCase = () => {
                         </div>
                     </div>
                 </div>
+                <div className='flex flex-col lg:flex-row mb-8'>
+                    <div className='lg:w-1/2 w-auto mb-6 text-center'>
+                                <Link className="text-xl text-light-green justify-center mb-6 py-2 mr-3" to="/learn/dasar" onClick={handleNavLinkClick}>
+                                    <i className='fi fi-sr-info' /> Check here our Webinar Case-Study
+                                </Link>
+                    </div>
+                    <div className='lg:w-1/2 w-auto mb-4 text-center'>
+                                <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                                    <i className="fi fi-rr-review text-xl mr-3"></i> Feedback
+                                </Link>
+                                <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
+                                    <i className="fi fi-rr-interrogation text-xl mr-3"></i> FAQ
+                                </Link>
+                    </div>
+                </div>
+
                 <div>
                     <h3 className="mb-3 text-center">Follow Our Solution to Your Case Study</h3>
                     <div className="button-container">
+                    
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/learn/dasar" onClick={handleNavLinkClick}>
                             Agricultural Science
                         </Link>
@@ -83,12 +100,6 @@ const CenterCase = () => {
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
                             Social Science
-                        </Link>
-                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
-                            Feedback
-                        </Link>
-                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/learn" onClick={handleNavLinkClick}>
-                            FAQ
                         </Link>
                     </div>
                 </div>

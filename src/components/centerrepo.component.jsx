@@ -37,13 +37,16 @@ const CenterRepo = () => {
                     <h3 className="mb-3 text-center">Our Projects is here</h3>
                     <div className="button-container">
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/projek-kami" onClick={handleNavLinkClick}>
-                            Go to Projek
+                            <i className='fi fi-sr-share-square' ></i> Go to Projek
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/center/repository/contributor" onClick={handleNavLinkClick}>
+                            <i className='fi fi-sr-user-add'></i> Become Contributor
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/feedback/consulation" onClick={handleNavLinkClick}>
-                            Feedback
+                            <i className="fi fi-rr-review text-xl mr-3"></i> Feedback
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/consultation" onClick={handleNavLinkClick}>
-                            FAQ
+                            <i className="fi fi-rr-interrogation text-xl mr-3"></i> FAQ
                         </Link>
                     </div>
                 </div>

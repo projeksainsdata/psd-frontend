@@ -37,13 +37,13 @@ const CenterConsul = () => {
                     <h3 className="mb-3 text-center">We will Helping You to Achieve The Goals of Your Projects</h3>
                     <div className="button-container">
                         <Link className="btn-dark mb-6 py-2 mr-3" to="mailto:timpsd@projeksainsdata.com" onClick={handleNavLinkClick}>
-                            Send Email to Us 
+                            <i className='fi fi-rr-envelope-plus'></i> Send Email to Us 
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/feedback/consulation" onClick={handleNavLinkClick}>
-                            Feedback
+                            <i className="fi fi-rr-review text-xl mr-3"></i> Feedback
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/consultation" onClick={handleNavLinkClick}>
-                            FAQ
+                            <i className="fi fi-rr-interrogation text-xl mr-3"></i> FAQ
                         </Link>
                     </div>
                 </div>
