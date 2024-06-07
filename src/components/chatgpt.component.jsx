@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ChatBubble from './chatbuble.component';
 import ChatInput from './chatinput.component';
+import chatpsd from '../imgs/chattingbot.png'
 
 function ChatAI() {
   const [prompt, updatePrompt] = useState("");
@@ -60,10 +61,15 @@ function ChatAI() {
   };
 
   return (
+    
     <div>
+      <div className='position-relative w-auto flex justify-center items-center'>
+        <img src={chatpsd} alt="PSD-GPT" className="max-w-[200px] max-h-[200px]" />
+      </div>
+
       <div className="flex justify-between items-center p-2">
-        <h1 className="text-xl">Tanya Apa Saja disini...</h1>
-        <p className="text-xl font-bold">PSD-GPT (Model GPT-4 Turbo Preview)</p>
+        <h1 className="text-xl">PSD-GPT</h1>
+        <p className="text-xl font-bold">(Model GPT-4 Turbo Preview)</p>
       </div>
       <div className="chat-container">
         <div className="mx-auto my-10 bg-dark shadow-xl rounded-xl w-full max-w-5xl mt-2">

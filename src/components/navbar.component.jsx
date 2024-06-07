@@ -112,7 +112,7 @@ const Navbar = () => {
                         <strong >Learn</strong>
                     </Link>
 
-                    <Link to="/dashboard/tanya-psd" className="hidden md:flex gap-1 link" onClick={handleNavLinkClick}>
+                    <Link to="/ai/tanya-psd" className="hidden md:flex gap-1 link" onClick={handleNavLinkClick}>
                         <i className="fi fi-rr-brain-circuit"></i>
                         <strong >PSD-GPT</strong>
                     </Link>

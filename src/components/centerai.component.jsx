@@ -35,13 +35,13 @@ const CenterAI = () => {
                 <div>
                     <h3 className="mb-3 text-center">Use our AI Tools for Your Productivity</h3>
                     <div className="button-container">
-                        <Link className="btn-dark mb-6 py-2 mr-3" to="/dashboard/tanya-psd" onClick={handleNavLinkClick}>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/ai/tanya-psd" onClick={handleNavLinkClick}>
                             <i className="fi fi-rr-brain-circuit text-xl mr-3"></i> PSD-GPT
                         </Link>
-                        <Link className="btn-dark mb-6 py-2 mr-3 " to="/dashboard/cover-ai" onClick={handleNavLinkClick}>
+                        <Link className="btn-dark mb-6 py-2 mr-3 " to="/ai/cover" onClick={handleNavLinkClick}>
                             <i className="fi fi-rr-graphic-style text-xl mr-3"></i> PSD-Cover
                         </Link>
-                        <Link className="btn-dark mb-6 py-2 mr-3" to="/dashboard/my-quizai" onClick={handleNavLinkClick}>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/ai/my-quizai" onClick={handleNavLinkClick}>
                             <i className="fi fi-rr-quiz text-xl mr-3"></i> PSD-Quizai
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/feedback/ai-center" onClick={handleNavLinkClick}>

@@ -86,11 +86,6 @@ const SideNav = () => {
                             Members
                         </NavLink>
 
-                        <NavLink to="/dashboard/tanya-psd" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-link">
-                            <i className="fi fi-rr-brain-circuit"></i>
-                            PSD-GPT
-                        </NavLink>
-
                         <NavLink to="/dashboard/to-do" onClick={(e) => setPageState(e.target.innerText)} className="sidebar-link">
                             <i className="fi fi-rr-to-do"></i>
                             To-Do

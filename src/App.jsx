@@ -47,6 +47,7 @@ import CenterDT from "./components/centercraft.component";
 import CenterConsul from "./components/centerconsul.component";
 import CenterChain from "./components/centerblockchain.component";
 import CenterRepo from "./components/centerrepo.component";
+import SideNav4 from "./components/sidenav4.component";
 
 
 
@@ -103,7 +104,6 @@ const App = () => {
                             <Route path="notifications" element={<Notifications />} />
                             <Route path="members" element={<MembersPage />} />
                             <Route path="to-do" element={<TodoList />} />
-                            <Route path="tanya-psd" element={<ChatAI />} />
                             <Route path="bookmark" element={<BookmarkPage />} />
                         </Route>
                         <Route path="settings" element={<SideNav2 />} >  
@@ -128,6 +128,9 @@ const App = () => {
                             <Route path="consultation" element={<CenterConsul />} />
                             <Route path="cryptography-blockhain" element={<CenterChain />} />
                             <Route path="repository" element={<CenterRepo />} />
+                        </Route>
+                        <Route path="ai" element={<SideNav4 />} > 
+                            <Route path="tanya-psd" element={<ChatAI />} />
                         </Route>
                         <Route path="signin" element={<UserAuthForm type="sign-in" />} /> 
                         <Route path="signup" element={<UserAuthForm type="sign-up" />} />
