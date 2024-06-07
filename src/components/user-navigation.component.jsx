@@ -32,7 +32,7 @@ const UserNavigationPanel = () => {
                     <strong>Projek</strong>
                 </Link>
 
-                <Link to="/dashboard/tanya-psd" className="flex gap-2 link md:hidden pl-8 py-4">
+                <Link to="/ai/tanya-psd" className="flex gap-2 link md:hidden pl-8 py-4">
                     <i className="fi fi-rr-brain-circuit"></i>
                     <strong>PSD-GPT</strong>
                 </Link>
