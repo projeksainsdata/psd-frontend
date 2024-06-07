@@ -39,7 +39,7 @@ const CenterDT = () => {
                                 </Link>
                     </div>
                     <div className='lg:w-1/2 w-auto mb-4 text-center'>
-                                <Link className="btn-dark mb-6 py-2 mr-2" to="/faq/learn" onClick={handleNavLinkClick}>
+                                <Link className="btn-dark mb-6 py-2 mr-4" to="/faq/learn" onClick={handleNavLinkClick}>
                                     <i className="fi fi-ss-display-code mr-2"></i> How Our AI Tech Works
                                 </Link>
                                 <Link className="btn-dark mb-6 py-2 mr-2" to="/faq/craft" onClick={handleNavLinkClick}>
