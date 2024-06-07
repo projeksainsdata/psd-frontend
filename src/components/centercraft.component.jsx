@@ -38,7 +38,7 @@ const CenterDT = () => {
                                     <i className='fi fi-sr-info' /> Check Our Webinar Digital Twin with AI
                                 </Link>
                     </div>
-                    <div className='lg:w-1/2 w-auto mb-4 text-center'>
+                    <div className='lg:w-1/2 w-auto mb-4'>
                                 <Link className="btn-dark mb-6 py-2 mr-4" to="/faq/learn" onClick={handleNavLinkClick}>
                                     <i className="fi fi-ss-display-code mr-2"></i> How Our AI Tech Works
                                 </Link>
