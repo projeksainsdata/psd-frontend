@@ -32,10 +32,20 @@ const CenterDT = () => {
                         </p>
                     </div>
                 </div>
-                <div className='text-right mb-4'>
-                    <Link className="text-xl text-light-green mb-6 py-2 mr-3" to="/learn/dasar" onClick={handleNavLinkClick}>
-                        <i className='fi fi-sr-info' /> Our Webinar Digital Twin with AI
-                    </Link>
+                <div className='flex flex-col lg:flex-row mb-8'>
+                    <div className='lg:w-1/2 w-auto mb-6 text-center'>
+                                <Link className="text-xl text-light-green justify-center mb-6 py-2 mr-3" to="/learn/dasar" onClick={handleNavLinkClick}>
+                                    <i className='fi fi-sr-info' /> Check Our Webinar Digital Twin with AI
+                                </Link>
+                    </div>
+                    <div className='lg:w-1/2 w-auto mb-4 text-center'>
+                                <Link className="btn-dark mb-6 py-2 mr-2" to="/faq/learn" onClick={handleNavLinkClick}>
+                                    <i className="fi fi-ss-display-code mr-2"></i> How Our AI Tech Works
+                                </Link>
+                                <Link className="btn-dark mb-6 py-2 mr-2" to="/faq/craft" onClick={handleNavLinkClick}>
+                                    <i className="fi fi-rr-interrogation text-xl mr-2"></i> FAQ
+                                </Link>
+                    </div>
                 </div>
                 <div>
                     <h3 className="mb-3 text-center">New AI Technology is Here</h3>
@@ -48,9 +58,6 @@ const CenterDT = () => {
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/feedback/craft" onClick={handleNavLinkClick}>
                             <i className="fi fi-rr-review text-xl mr-3"></i> Feedback
-                        </Link>
-                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/craft" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-interrogation text-xl mr-3"></i> FAQ
                         </Link>
                     </div>
                 </div>

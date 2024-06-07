@@ -25,6 +25,12 @@ const CenterRepo = () => {
                             Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
                             Technology Data and Computing.
                         </p>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/feedback/consulation" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-review text-xl mr-3"></i> Feedback
+                        </Link>
+                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/consultation" onClick={handleNavLinkClick}>
+                            <i className="fi fi-rr-interrogation text-xl mr-3"></i> FAQ
+                        </Link>
                     </div>
     
                     <div className='lg:w-1/2 w-auto'>
@@ -41,12 +47,6 @@ const CenterRepo = () => {
                         </Link>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/center/repository/contributor" onClick={handleNavLinkClick}>
                             <i className='fi fi-sr-user-add'></i> Become Contributor
-                        </Link>
-                        <Link className="btn-dark mb-6 py-2 mr-3" to="/feedback/consulation" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-review text-xl mr-3"></i> Feedback
-                        </Link>
-                        <Link className="btn-dark mb-6 py-2 mr-3" to="/faq/consultation" onClick={handleNavLinkClick}>
-                            <i className="fi fi-rr-interrogation text-xl mr-3"></i> FAQ
                         </Link>
                     </div>
                 </div>
