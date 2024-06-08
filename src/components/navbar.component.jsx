@@ -117,7 +117,7 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className="flex items-center gap-3 md:gap-3 ml-auto">
+                <div className="flex items-center gap-2 md:gap-2 ml-auto">
 
                     <button className="md:hidden bg-grey w-12 h-12 rounded-full flex items-center justify-center"
                     onClick={() => setSearchBoxVisibility(currentVal => !currentVal)}
