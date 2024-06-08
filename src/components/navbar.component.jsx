@@ -128,7 +128,7 @@ const Navbar = () => {
                     
 
                     <Link to="/center/learn" className="flex-none w-10 gap-2">
-                    <button className="w-12 h-12 rounded-full bg-gradient-to-r from-pink to-blue-300 relative hover:bg-black/10">
+                    <button className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-400 to-pink relative hover:bg-black/10">
                         <i className="fi fi-sr-objects-column text-dark-blue text-2xl mt-1 " ></i>
                     </button>
                     </Link>
