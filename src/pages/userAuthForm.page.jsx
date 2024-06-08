@@ -28,7 +28,7 @@ const UserAuthForm = ({ type }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        let serverRoute = type === "sign-in" ? "/signin" : "/signup";
+        let serverRoute = type === "masuk" ? "/signin" : "/signup";
 
         let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         let passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
@@ -80,16 +80,23 @@ const UserAuthForm = ({ type }) => {
                     <div className="w-full md:w-1/2 flex flex-col justify-center items-center px-4 md:px-0">
                         <img src={logoo} className="w-32 h-32 md:w-48 md:h-48 object-cover" alt="Logo" />
                         <h1 className="text-2xl font-Monaco capitalize mb-6 mt-2">
-                            {type === "sign-in" ? "Wujudkan Proyek Data Masa Depan" : "Gabung di Projek Sains Data"}
+                            {type === "masuk" ? "Wujudkan Proyek Data Masa Depan" : "Gabung di Projek Sains Data"}
                         </h1>
                         <p className="text-xl text-center mb-6 mt-2">
-                            {type === "sign-in" ? 
+                            {type === "masuk" ? 
                                 "Bergabung bersama kami untuk membuat lebih banyak inovasi yang berkelanjutan." : 
                                 "Mulai perjalanan proyek sains data mu di mana pun."}
                         </p>
                     </div>
+
                     <form ref={formRef} className="w-[80%] max-w-[400px] md:w-1/2 px-4 md:px-0" onSubmit={handleSubmit}>
-                        {type !== "sign-in" &&
+                         <button className="mb-10 btn-dark flex text-xl items-center justify-center gap-4 w-[90%] center"
+                            onClick={handleGoogleAuth}
+                        >
+                            <img src={googleIcon} className="w-5" alt="Google Icon" />
+                            Masuk dengan Google
+                            </button>
+                        {type !== "masuk" &&
                             <InputBox
                                 name="fullname"
                                 type="text"
@@ -112,24 +119,14 @@ const UserAuthForm = ({ type }) => {
                             icon="fi-rr-key"
                         />
     
-                        <button className="btn-dark center mt-14" type="submit">
+                        <button className="btn-dark center mt-8" type="submit">
                             {type.replace("-", " ")}
                         </button>
+
     
-                        <div className="relative w-full flex items-center gap-2 my-10 opacity-10 uppercase text-black font-bold">
-                            <hr className="w-1/2 border-black" />
-                            <p>or</p>
-                            <hr className="w-1/2 border-black" />
-                        </div>
+
     
-                        <button className="btn-dark flex items-center justify-center gap-4 w-[90%] center"
-                            onClick={handleGoogleAuth}
-                        >
-                            <img src={googleIcon} className="w-5" alt="Google Icon" />
-                            Lanjutkan dengan Google
-                        </button>
-    
-                        {type === "sign-in" ?
+                        {type === "masuk" ?
                             <p className="mt-6 text-dark-grey text-xl text-center">
                                 Belum memiliki Akun?
                                 <Link to="/signup" className="underline text-black text-xl ml-1">

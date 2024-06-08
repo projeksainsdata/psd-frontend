@@ -83,28 +83,18 @@ const Navbar = () => {
                     <img src={ theme == "light" ? darkLogo : lightLogo } className="w-full" />
                 </Link>
 
-                
-                <div className={"absolute w-full left-0 top-full mt-0.5 border-b border-grey py-4 px-[5vw] md:border-0 md:block md:relative md:inset-0 md:p-0 md:w-auto md:show " + ( searchBoxVisibility ? "show" : "hide" )}>
-                    <input 
-                        type="text"
-                        placeholder="Cari..."
-                        className="w-full md:w-auto bg-grey p-4 pl-6 pr-[12%] md:pr-6 rounded-full placeholder:text-dark-grey md:pl-12"
-                        onKeyDown={handleSearch}
-                    />
+                <label className="switch">
+                        <input type="checkbox" onChange={changeTheme} checked={theme === 'dark'} />
+                        <span className="slider">
+                            <i className={"fi fi-ss-circle icon icon-left"}></i>
+                            <i className={"fi fi-ss-circle icon icon-right"}></i>
+                        </span>
+                </label>
 
-                    <i className="fi fi-rr-search absolute right-[10%] md:pointer-events-none md:left-5 top-1/2 -translate-y-1/2 text-xl text-dark-grey"></i>
-                </div>
-
-                <div className="flex items-center gap-3 md:gap-3 ml-auto">
-                    <button className="md:hidden bg-grey w-12 h-12 rounded-full flex items-center justify-center"
-                    onClick={() => setSearchBoxVisibility(currentVal => !currentVal)}
-                    >
-                        <i className="fi fi-rr-search text-xl"></i>
-                    </button>
-
+                <div className="flex items-left gap-3 md:gap-3 ml-2">
                     <Link to="/projek-kami" className="hidden md:flex gap-1 link">
-                        <i className="fi fi-rr-workflow-alt"></i>
-                        <strong >Projek</strong>
+                            <i className="fi fi-rr-workflow-alt"></i>
+                            <strong >Projek</strong>
                     </Link>
 
                     <Link to="/learn/dasar" className="hidden md:flex gap-1 link">
@@ -121,22 +111,36 @@ const Navbar = () => {
                         <i className="fi fi-br-pen-field"></i>
                         <strong >Tulis</strong>
                     </Link>
+                </div>
 
-                    <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10" onClick={changeTheme}>
-                        <i className={"fi fi-rr-" + ( theme == "light" ?  "moon" : "brightness" ) + " text-2xl block mt-1 bg-dark" }></i>
+                <div className="flex items-center gap-3 md:gap-3 ml-auto">
+
+                    <button className="md:hidden bg-grey w-12 h-12 rounded-full flex items-center justify-center"
+                    onClick={() => setSearchBoxVisibility(currentVal => !currentVal)}
+                    >
+                        <i className="fi fi-rr-search text-xl"></i>
                     </button>
                     
+                    <div className={"absolute w-full left-0 top-full border-b border-grey py-4 px-[5vw] md:border-0 md:block md:relative md:inset-0 md:p-0 md:w-auto md:show " + ( searchBoxVisibility ? "show" : "hide" )}>
+                    <input 
+                        type="text"
+                        placeholder="Cari..."
+                        className="w-full md:w-auto bg-grey p-4 pl-6 pr-[12%] md:pr-6 rounded-full placeholder:text-dark-grey md:pl-12"
+                        onKeyDown={handleSearch}
+                    />
 
-                    <Link to="/center/learn" className="flex-none w-10 gap-2">
-                    <button className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-400 to-pink relative hover:bg-black/10">
-                        <i className="fi fi-sr-objects-column text-dark-blue text-2xl mt-1 " ></i>
-                    </button>
+                    <i className="fi fi-rr-search absolute right-[10%] md:pointer-events-none md:left-5 top-1/2 -translate-y-1/2 text-xl text-dark-grey"></i>
+                    </div>
+                    <div>
+                    <Link to="/center/learn">
+                        <button className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-400 to-pink relative hover:bg-black/10">
+                            <i className="fi fi-sr-objects-column text-dark-blue text-2xl " ></i>
+                        </button>
                     </Link>
-                    
-
-
+                    </div>
 
                     {
+                        
                         access_token ? 
                         <>
                             <Link to="/dashboard/notifications">
@@ -164,11 +168,10 @@ const Navbar = () => {
                         </>
                         :
                         <>
-                            <Link className="btn-dark py-2" to="/signin">
-                            Masuk
-                            </Link>
-                            <Link className="btn-light py-2 hidden md:block" to="/signup">
-                                Daftar
+                            <Link to="/signin">
+                                <button className="w-12 h-12 bg-grey rounded-full relative hover:bg-black/10">
+                                    <i className="fi fi-sr-user text-xl" ></i>
+                                </button>
                             </Link>
                         </>
                     }

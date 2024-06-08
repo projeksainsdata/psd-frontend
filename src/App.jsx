@@ -132,8 +132,8 @@ const App = () => {
                         <Route path="ai" element={<SideNav4 />} > 
                             <Route path="tanya-psd" element={<ChatAI />} />
                         </Route>
-                        <Route path="signin" element={<UserAuthForm type="sign-in" />} /> 
-                        <Route path="signup" element={<UserAuthForm type="sign-up" />} />
+                        <Route path="signin" element={<UserAuthForm type="masuk" />} /> 
+                        <Route path="signup" element={<UserAuthForm type="daftar" />} />
                         <Route path="search/:query" element={<SearchPage />} />
                         <Route path="user/:id" element={<ProfilePage />} />
                         <Route path="blog/:blog_id" element={<BlogPage />}/>
