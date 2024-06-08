@@ -82,7 +82,7 @@ const UserAuthForm = ({ type }) => {
                         <h1 className="text-2xl font-bold font-Monaco capitalize mb-6 mt-2">
                             {type === "masuk" ? "Buat Proyek Data Masa Depan" : "Gabung di Projek Sains Data"}
                         </h1>
-                        <p className="text-xl text-center mb-6 mt-2">
+                        <p className="text-xl text-gray-500 text-center mb-6 mt-2">
                             {type === "masuk" ? 
                                 "Bergabung bersama kami untuk membuat lebih banyak inovasi yang berkelanjutan." : 
                                 "Mulai perjalanan proyek sains data mu di mana pun."}
