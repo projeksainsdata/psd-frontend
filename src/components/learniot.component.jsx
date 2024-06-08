@@ -53,9 +53,7 @@ const LearnIot = () => {
               <p className="mt-5 items-center"></p>
 
               <p className='text-gray-500 mt-5 mb-5 text-xl'>
-                  Here you'll find a variety of articles and tutorials on topics such as Data Science,
-                  Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
-                  Technology Data and Computing.
+              Temukan teknologi sensor dan jaringan komunikasi untuk perangkat pintar, serta aplikasi dalam edge computing, automation, dan industri perangkat cerdas. Pelajari bagaimana perangkat cerdas mengumpulkan dan mengolah data untuk berbagai aplikasi inovatif.
               </p>
           </div>
 

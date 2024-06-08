@@ -53,9 +53,7 @@ const LearnRobotik = () => {
               <p className="mt-5 items-center"></p>
 
               <p className='text-gray-500 mt-5 mb-5 text-xl'>
-                  Here you'll find a variety of articles and tutorials on topics such as Data Science,
-                  Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
-                  Technology Data and Computing.
+              Disini Anda akan menemukan dasar-dasar robotika, termasuk kinematika, dinamika, sistem kontrol, dan interaksi manusia-robot. Eksplorasi juga sistem otonom seperti perencanaan jalur dan SLAM, serta aplikasi robotika dalam berbagai bidang.
               </p>
           </div>
 
