@@ -61,6 +61,10 @@
         @apply btn-dark bg-grey text-black ;
     }
 
+    .btn-google{
+        @apply whitespace-nowrap bg-grey rounded-full py-3 px-6 text-xl capitalize hover:bg-opacity-80;
+    }
+
     .input-box {
         @apply w-[100%] rounded-md p-4 bg-grey pl-12 border border-grey focus:bg-transparent placeholder:text-black;
     }

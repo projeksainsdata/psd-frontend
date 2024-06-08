@@ -8,7 +8,7 @@ import axios from "axios";
 import { storeInSession } from "../common/session";
 import { UserContext } from "../App";
 import { authWithGoogle } from "../common/firebase";
-import logoo from "../imgs/logo-dark.png";
+import logoo from "../imgs/iconpsd.png";
 
 const UserAuthForm = ({ type }) => {
     let { userAuth: { access_token }, setUserAuth } = useContext(UserContext);
@@ -79,8 +79,8 @@ const UserAuthForm = ({ type }) => {
                     <Toaster />
                     <div className="w-full md:w-1/2 flex flex-col justify-center items-center px-4 md:px-0">
                         <img src={logoo} className="w-32 h-32 md:w-48 md:h-48 object-cover" alt="Logo" />
-                        <h1 className="text-2xl font-Monaco capitalize mb-6 mt-2">
-                            {type === "masuk" ? "Wujudkan Proyek Data Masa Depan" : "Gabung di Projek Sains Data"}
+                        <h1 className="text-2xl font-bold font-Monaco capitalize mb-6 mt-2">
+                            {type === "masuk" ? "Buat Proyek Data Masa Depan" : "Gabung di Projek Sains Data"}
                         </h1>
                         <p className="text-xl text-center mb-6 mt-2">
                             {type === "masuk" ? 
@@ -90,7 +90,7 @@ const UserAuthForm = ({ type }) => {
                     </div>
 
                     <form ref={formRef} className="w-[80%] max-w-[400px] md:w-1/2 px-4 md:px-0" onSubmit={handleSubmit}>
-                         <button className="mb-10 btn-dark flex text-xl items-center justify-center gap-4 w-[90%] center"
+                         <button className="mb-10 btn-google flex text-xl items-center justify-center gap-4 w-[90%] center"
                             onClick={handleGoogleAuth}
                         >
                             <img src={googleIcon} className="w-5" alt="Google Icon" />

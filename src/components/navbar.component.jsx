@@ -134,7 +134,7 @@ const Navbar = () => {
                     <div>
                     <Link to="/center/learn">
                         <button className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-400 to-pink relative hover:bg-black/10">
-                            <i className="fi fi-sr-objects-column text-dark-blue text-2xl " ></i>
+                            <i className="fi fi-sr-objects-column text-center text-dark-blue text-2xl " ></i>
                         </button>
                     </Link>
                     </div>
