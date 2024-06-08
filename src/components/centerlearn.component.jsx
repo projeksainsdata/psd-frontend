@@ -21,9 +21,7 @@ const CenterLearn = () => {
                         </h1>
     
                         <p className='text-gray-500 mt-5 mb-5 text-xl'>
-                            Here you'll find a variety of articles and tutorials on topics such as Data Science,
-                            Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
-                            Technology Data and Computing.
+                        Tingkatkan keterampilan dan wawasan Anda dengan belajar melalui jalur pembelajaran data science dan teknologi terbaru. Dapatkan pelatihan mandiri dengan mengikuti exercise yang terpersonalisasi untuk jalur pembelajaran Anda.
                         </p>
                     </div>
     

@@ -21,9 +21,7 @@ const CenterRepo = () => {
                         </h1>
     
                         <p className='text-gray-500 mt-5 mb-5 text-xl'>
-                            Here you'll find a variety of articles and tutorials on topics such as Data Science,
-                            Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
-                            Technology Data and Computing.
+                        Temukan koleksi proyek, kode, dan sumber data. Akses berbagai skrip untuk mendukung penelitian dan pengembangan Anda. Kolaborasi dan inovasi dimulai di sini dengan PSD-Repository!
                         </p>
                         <Link className="btn-dark mb-6 py-2 mr-3" to="/feedback/consulation" onClick={handleNavLinkClick}>
                             <i className="fi fi-rr-review text-xl mr-3"></i> Feedback

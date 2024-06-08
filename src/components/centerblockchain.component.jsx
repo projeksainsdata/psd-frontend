@@ -26,9 +26,7 @@ const CenterChain = () => {
                         </h1>
     
                         <p className='text-gray-500 mt-5 mb-5 text-xl'>
-                            Here you'll find a variety of articles and tutorials on topics such as Data Science,
-                            Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
-                            Technology Data and Computing.
+                        Jelajahi dunia keamanan informasi dengan kami. Temukan solusi kriptografi dan blockchain terbaru untuk melindungi data Anda. Dapatkan pengetahuan mendalam dan aplikasi praktis di sini!
                         </p>
                     </div>
     

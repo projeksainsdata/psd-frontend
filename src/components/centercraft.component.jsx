@@ -26,9 +26,7 @@ const CenterDT = () => {
                         </h1>
     
                         <p className='text-gray-500 mt-5 mb-5 text-xl'>
-                            Here you'll find a variety of articles and tutorials on topics such as Data Science,
-                            Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
-                            Technology Data and Computing.
+                        Rasakan inovasi dengan replika digital aset fisik. Pantau kinerja real-time, tingkatkan efisiensi, dan kurangi biaya. Dapatkan pelatihan ahli dan akses perangkat lunak canggih. Daftar sekarang untuk transformasi bisnis Anda!
                         </p>
                     </div>
                 </div>

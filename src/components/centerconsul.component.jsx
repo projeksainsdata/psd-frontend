@@ -21,9 +21,7 @@ const CenterConsul = () => {
                         </h1>
     
                         <p className='text-gray-500 mt-5 mb-5 text-xl'>
-                            Here you'll find a variety of articles and tutorials on topics such as Data Science,
-                            Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
-                            Technology Data and Computing.
+                        Solusi terbaik untuk masalah penelitian dan proyek Anda dengan data science. Hubungi kami untuk konsultasi ahli, optimasi data, dan inovasi teknologi. Jadikan proyek Anda sukses bersama PSD-Consultation!
                         </p>
                     </div>
     
