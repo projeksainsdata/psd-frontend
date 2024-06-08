@@ -84,10 +84,10 @@ const Navbar = () => {
                 </Link>
 
                 <label className="switch">
-                        <input type="checkbox" onChange={changeTheme} checked={theme === 'dark'} />
-                        <span className="slider">
-                            <i className={"fi fi-ss-circle icon icon-left"}></i>
-                            <i className={"fi fi-ss-circle icon icon-right"}></i>
+                        <input type="checkbox" onChange={changeTheme} checked={theme === 'light'} />
+                        <span className="slider bg-grey">
+                            <i className={"fi fi-ss-sun icon icon-left"}></i>
+                            <i className={"fi fi-ss-moon icon icon-right"}></i>
                         </span>
                 </label>
 
