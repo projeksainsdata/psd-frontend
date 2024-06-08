@@ -83,13 +83,17 @@ const Navbar = () => {
                     <img src={ theme == "light" ? darkLogo : lightLogo } className="w-full" />
                 </Link>
 
-                <label className="switch">
+                <label className="hidden md:flex switch">
                         <input type="checkbox" onChange={changeTheme} checked={theme === 'light'} />
                         <span className="slider bg-grey">
                             <i className={"fi fi-ss-sun icon icon-left"}></i>
                             <i className={"fi fi-ss-moon icon icon-right"}></i>
                         </span>
                 </label>
+
+                <button className="text-left items-end w-12 h-12 rounded-full relative md:hidden" onClick={changeTheme}>
+                        <i className={"fi fi-ss-" + ( theme == "light" ?  "moon" : "sun" ) + " text-base mt-1" }></i>
+                </button>
 
                 <div className="flex items-left gap-3 md:gap-3 ml-2">
                     <Link to="/projek-kami" className="hidden md:flex gap-1 link">
