@@ -1014,7 +1014,6 @@ input:checked + .slider:before {
 
 input:checked + .slider .icon-left {
   opacity: 0;
-  color : #403279;
 }
 
 input:checked + .slider .icon-right {
