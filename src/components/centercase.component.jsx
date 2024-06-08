@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimationWrapper from "../common/page-animation";
 import { Link } from "react-router-dom";
-import psdcase from "../imgs/projectman.png"
+import psdcase from "../imgs/pmpsd.png"
 
 const CenterCase = () => {
     const handleNavLinkClick = (e) => {
