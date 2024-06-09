@@ -72,7 +72,7 @@ function ChatAI() {
           ))}
           {loading && <div className="loading-text">{loadingText}</div>}
         </div>
-        <div className="bg-white p-4 flex-grow max-h-[40v]">
+        <div className="bg-white p-4">
           <ChatInput onSubmit={sendMessage} />
         </div>
       </div>
