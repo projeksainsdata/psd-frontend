@@ -91,9 +91,6 @@ const Navbar = () => {
                         </span>
                 </label>
 
-                <button className="text-left items-end w-12 h-12 rounded-sm relative md:hidden" onClick={changeTheme}>
-                        <i className={"fi fi-ss-" + ( theme == "light" ?  "moon" : "sun" ) + " text-xl mt-1" }></i>
-                </button>
 
                 <div className="flex items-left gap-3 md:gap-3 ml-2">
                     <Link to="/projek-kami" className="hidden md:flex gap-1 link">
@@ -118,6 +115,10 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex items-center gap-2 md:gap-2 ml-auto">
+
+                    <button className="text-center items-end w-12 h-12 rounded-sm relative md:hidden" onClick={changeTheme}>
+                            <i className={"fi fi-ss-" + ( theme == "light" ?  "moon" : "sun" ) + " text-xl mt-1" }></i>
+                    </button>
 
                     <button className="md:hidden bg-grey w-12 h-12 rounded-full flex items-center justify-center"
                     onClick={() => setSearchBoxVisibility(currentVal => !currentVal)}
