@@ -88,7 +88,7 @@ const OurProjek = () => {
                 <div className='lg:w-1/2 w-auto'>
                     <h1 className="text-3xl font-bold">Projek Sains Data Repository</h1>
                     <div className="mt-3">
-                        <p className="mt-3"> Version 1 - Last Updated February 2024 </p>
+                        <p className="mt-3"> Version 1.0 - Last Updated February 2024 </p>
                         <div className="mt-3 flex gap-2">
                                 <p className="font-bold text-xl">Contributor : </p>
                                 <img src={ardikasatria} className="w-6 h-6 rounded-full" />
@@ -102,7 +102,7 @@ const OurProjek = () => {
                     </p>
                     <Link className="text-xl flex items-center text-light-green gap-2 mx-auto mb-5 py-2" to="/repository/2" onClick={handleNavLinkClick}>
                             <i className="fi fi-sr-folder-open text-light-green text-xl " />
-                            Version 2.0
+                            Coming Soon Version 2.0
                     </Link>
                 </div>
             </div>
