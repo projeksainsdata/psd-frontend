@@ -88,14 +88,15 @@ const UserAuthForm = ({ type }) => {
                                 "Mulai perjalanan proyek sains data mu di mana pun."}
                         </p>
                     </div>
-
                     <form ref={formRef} className="w-[80%] max-w-[400px] md:w-1/2 px-4 md:px-0" onSubmit={handleSubmit}>
-                         <button className="mb-10 btn-google flex text-xl items-center justify-center gap-4 w-[90%] center"
+                        <button className="mb-10 btn-google flex text-xl items-center justify-center gap-4 w-[90%] center"
                             onClick={handleGoogleAuth}
+                            type="button"
                         >
                             <img src={googleIcon} className="w-5" alt="Google Icon" />
                             Masuk dengan Google
-                            </button>
+                        </button>
+
                         {type !== "masuk" &&
                             <InputBox
                                 name="fullname"
@@ -104,28 +105,25 @@ const UserAuthForm = ({ type }) => {
                                 icon="fi-rr-user"
                             />
                         }
-    
+
                         <InputBox
                             name="email"
                             type="email"
                             placeholder="Email"
                             icon="fi-rr-envelope"
                         />
-    
+
                         <InputBox
                             name="password"
                             type="password"
                             placeholder="Password"
                             icon="fi-rr-key"
                         />
-    
+
                         <button className="btn-dark center mt-8" type="submit">
                             {type.replace("-", " ")}
                         </button>
 
-    
-
-    
                         {type === "masuk" ?
                             <p className="mt-6 text-dark-grey text-xl text-center">
                                 Belum memiliki Akun?
@@ -144,7 +142,7 @@ const UserAuthForm = ({ type }) => {
                     </form>
                 </section>
             </AnimationWrapper>
-    );    
+    );
 };
 
 export default UserAuthForm;
