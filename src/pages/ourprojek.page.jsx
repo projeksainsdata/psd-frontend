@@ -88,7 +88,8 @@ const OurProjek = () => {
                 <div className='lg:w-1/2 w-auto'>
                     <h1 className="text-3xl font-bold">Projek Sains Data Repository</h1>
                     <div className="mt-3">
-                        <p className="mt-3"> Version 1.0 - Last Updated February 2024 </p>
+                        <h1 className="text-2xl text-light-green font-bold">Version 1.0</h1>
+                        <p className="mt-2 text-sm"> Last Updated February 2024 </p>
                         <div className="mt-3 flex gap-2">
                                 <p className="font-bold text-xl">Contributor : </p>
                                 <img src={ardikasatria} className="w-6 h-6 rounded-full" />
