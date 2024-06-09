@@ -3,7 +3,7 @@ import AnimationWrapper from "../common/page-animation";
 import projectplan from"../imgs/projectplan2.gif";
 
 const OurProjek = () => {
-    const filters = ['Data Science', 'NLP', 'Machine Learning', 'Python', 'Deep Learning', 'Computer Vision'];
+    const filters = ['Data Science', 'Natural Language Processing', 'Machine Learning', 'Python', 'Deep Learning', 'Computer Vision'];
     const [selectedFilter, setSelectedFilter] = useState('Data Science');
     const [projek, setProjek] = useState(null);
     const [searchQuery, setSearchQuery] = useState('');
