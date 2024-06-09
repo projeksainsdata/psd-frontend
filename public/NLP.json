@@ -3,154 +3,154 @@
       "ID": 1,
       "name": "Resume Screening",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%201%20Resume%20Screening/resumeScreening.ipynb",
-      "description": "Description of Project 1",
+      "description": "NLP Resume Screening menggunakan teknologi pemrosesan bahasa alami untuk menganalisis dan memilah resume secara otomatis, meningkatkan efisiensi dalam proses rekrutmen dengan mengidentifikasi kandidat yang paling sesuai berdasarkan kriteria yang ditentukan.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wWPKSoR92y1AkWuw?e=n0UEQE"
     },
     {
       "ID": 2,
       "name": "Named Entity Recognition",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%202%20Named%20Entity%20Recognition/NameEnitityRecognition.ipynb",
-      "description": "Description of Project 2",
+      "description": "Named Entity Recognition (NER) adalah teknik pemrosesan bahasa alami yang mengidentifikasi dan mengklasifikasikan entitas bernama dalam teks menjadi kategori seperti nama orang, organisasi, lokasi, ekspresi waktu, kuantitas, nilai moneter, persentase, dll. Ini membantu dalam ekstraksi informasi yang terstruktur dari data tidak terstruktur.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-whCQ1q82rMlDA3PQ?e=GzypX2"
     },
     {
       "ID": 3,
       "name": "Sentiment Analysis",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%203%20Sentiment%20Analysis/centimentAnalysis.ipynb",
-      "description": "Description of Project 3",
+      "description": "Sentiment Analysis adalah proses komputasi untuk mengidentifikasi dan mengklasifikasikan opini dalam teks sebagai positif, negatif, atau netral, menggunakan algoritma machine learning dan natural language processing.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wj11MYeSMMg4MBgQ?e=7Upq2Y"
     },
     {
       "ID": 4,
       "name": "Keyword Extraction",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%204%20Keyword%20Extraction/4.KeywordExtraction.ipynb",
-      "description": "Description of Project 4",
+      "description": "Keyword Extraction adalah proses otomatis untuk mengidentifikasi kata atau frasa penting dari teks yang memberikan ringkasan tentang konten utama. Teknik ini memudahkan pemahaman konteks secara cepat.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wktjIX1E0xRr2ljA?e=d6XLUe"
     },
     {
       "ID": 5,
       "name": "Correct Spelling",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%205%20Correct%20Spelling/CorrectSpelling.ipynb",
-      "description": "Description of Project 5",
+      "description": "Pemeriksaan ejaan dan koreksi diperlukan untuk memastikan keakuratan dan kesesuaian bahasa dalam tulisan. Hal ini penting untuk meningkatkan kredibilitas dan pemahaman pembaca terhadap konten yang disajikan.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wljwE9PL6otPzSRQ?e=6o9VMh"
     },
     {
       "ID": 6,
       "name": "Autocorrect",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%206%20Autocorrect/Autocorrect%20.ipynb",
-      "description": "Description of Project 6",
+      "description": "Autocorrect adalah fitur yang secara otomatis memperbaiki ejaan atau kesalahan pengetikan dalam teks. Ini membantu meningkatkan kecepatan dan akurasi pengetikan, serta memastikan kejelasan dalam komunikasi.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wmNZaIopvdAjVCwQ?e=Nx1yFc"
     },
     {
       "ID": 7,
-      "name": "Predict_US_election",
+      "name": "Predict US Election",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%207%20Predict_US_election/PredictUSelection.ipynb",
-      "description": "Description of Project 7",
+      "description": "Predict US election adalah model prediksi yang menggunakan data historis, survei, dan analisis statistik untuk memperkirakan hasil pemilihan presiden di Amerika Serikat. Alat ini membantu memahami tren politik dan kemungkinan pemenang.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wnM0lIbCSiK6jNWA?e=P1q6sG"
     },
     {
       "ID": 8,
       "name": "NLP for other languages",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%208%20NLP%20for%20other%20languages/NLP_for_Other_languages.ipynb",
-      "description": "Description of Project 8",
+      "description": "NLP for other languages is a technology that processes and understands natural language text in multiple languages, enabling tasks like translation, sentiment analysis, and information extraction across diverse linguistic contexts.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wosPJlWpoOUL_gHQ?e=IolcRe"
     },
     {
       "ID": 9,
       "name": "Text Classification",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%209%20Text%20Classification/textClassification.ipynb",
-      "description": "Description of Project 9",
+      "description": "Text Classification adalah teknik pemrosesan bahasa alami yang mengelompokkan teks ke dalam kategori yang telah ditentukan sebelumnya. Ini berguna untuk analisis sentimen, pengelompokan topik, dan penyaringan konten.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wpQE7YEzSKXIYb4g?e=M5MJta"
     },
     {
       "ID": 10,
       "name": "Text Summarization",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2010%20Text%20Summarization/TextSummarization.ipynb",
-      "description": "Description of Project 10",
+      "description": "Text Summarization adalah teknik pemrosesan bahasa alami yang menghasilkan ringkasan singkat dari teks panjang. Ini membantu menghemat waktu pembaca dengan menyajikan informasi inti secara ringkas dan efisien.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wXlOP9L6_pLrmnKw?e=wm8soB"
     },
     {
       "ID": 11,
       "name": "Hate Speech Detection",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2011%20Hate%20Speech%20Detection/HateSpeechDetection.ipynb",
-      "description": "Description of Project 11",
+      "description": "Hate Speech Detection adalah teknologi pemrosesan bahasa alami yang mengidentifikasi dan menyaring ujaran kebencian dalam teks. Ini penting untuk menjaga lingkungan online yang aman dan bebas dari konten negatif.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wYiyO4Nxy_WgJ12w?e=ca3aW0"
     },
     {
       "ID": 12,
       "name": "Keyword Research",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2012%20Keyword%20Research/KeywordResearch.ipynb",
-      "description": "Description of Project 12",
+      "description": "Keyword Research adalah proses mengidentifikasi kata kunci yang relevan untuk meningkatkan visibilitas dan peringkat konten di mesin pencari. Ini penting untuk strategi SEO dan pemasaran digital.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wZla22svyC_nkGxw?e=YWJKCL"
     },
     {
       "ID": 13,
       "name": "WhatsApp Group Chat Analysis",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2013%20WhatsApp%20Group%20Chat%20Analysis/WhatsappGroupChatAnalysis.ipynb",
-      "description": "Description of Project 13",
+      "description": "WhatsApp Group Chat Analysis adalah proses menganalisis percakapan grup di WhatsApp untuk mengidentifikasi pola, tren, dan sentimen. Ini membantu memahami dinamika kelompok dan menginformasikan keputusan bisnis atau penelitian.",
       "dataUrl": "https://1drv.ms/f/s!AnsimFE4lIw-h-waBRaDOBxiKx_pCQ?e=89f0Wp"
     },
     {
       "ID": 14,
       "name": "Next Word prediction Model",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2014%20Next%20Word%20prediction%20Model/NextWordPrediction.ipynb",
-      "description": "Description of Project 14",
+      "description": "Next Word Prediction Model adalah teknologi kecerdasan buatan yang memprediksi kata berikutnya dalam sebuah kalimat berdasarkan konteks. Ini meningkatkan efisiensi pengetikan dan pengalaman pengguna dalam aplikasi teks.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wb9uHpxHeMKr5uNw?e=LGaoXa"
     },
     {
       "ID": 15,
       "name": "Fake News Detection Model",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2015%20Fake%20News%20Detection%20Model/Fake%20News%20Detection.ipynb",
-      "description": "Description of Project 15",
+      "description": "Fake News Detection Model adalah sistem AI yang menggunakan analisis teks dan sumber daya lainnya untuk mengenali dan memfilter berita palsu dari informasi yang sahih. Ini membantu memerangi penyebaran disinformasi.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wcaTWJ4xI9unAQlQ?e=VG4fky"
     },
     {
       "ID": 16,
       "name": "NLP for whatsapp chats",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2016%20NLP%20for%20whatsapp%20chats/NLP%20for%20whatsapp%20status.ipynb",
-      "description": "Description of Project 16",
+      "description": "NLP for WhatsApp Chats adalah penerapan teknologi pemrosesan bahasa alami untuk menganalisis dan memahami percakapan dalam aplikasi WhatsApp. Ini dapat digunakan untuk analisis sentimen, pengelompokan topik, dan pemrosesan bahasa lainnya.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wdZWZGHbL-8Urvrw?e=NYBvNI"
     },
     {
       "ID": 17,
       "name": "Twitter Sentiment Analysis",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2017%20Twitter%20Sentiment%20Analysis/TwiterSentimentAnalysis.ipynb",
-      "description": "Description of Project 17",
+      "description": "Twitter Sentiment Analysis adalah proses mengidentifikasi dan menganalisis sentimen (positif, negatif, atau netral) dari tweet di platform Twitter. Ini membantu memahami opini dan perasaan pengguna terhadap topik tertentu.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wegQZCy2e9AV-Vkg?e=M8Zwdk"
     },
     {
       "ID": 18,
       "name": "SMS spam detection",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2018%20SMS%20spam%20detection/SMSspam%20detection.ipynb",
-      "description": "Description of Project 18",
+      "description": "SMS spam detection adalah teknologi yang menggunakan analisis teks untuk mengidentifikasi pesan-pesan spam atau tidak diinginkan dalam pesan teks singkat (SMS). Ini membantu pengguna melindungi diri dari pesan-pesan yang merugikan.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wfvc8T77-H1BsZXg?e=6MOB2R"
     },
     {
       "ID": 19,
-      "name": "MoviesReviewSentiments",
+      "name": "Movies Review Sentiments",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2019%20MoviesReviewSentiments/MoviewReviewSentiment.ipynb",
-      "description": "Description of Project 19",
+      "description": "Movies Review Sentiments adalah analisis sentimen terhadap ulasan film, menggunakan teknik pemrosesan bahasa alami untuk menentukan apakah ulasan tersebut positif, negatif, atau netral. Ini membantu dalam mengevaluasi dan memahami pandangan pengguna tentang film.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wgneGz18upqSUmpA?e=4vih5E"
     },
     {
       "ID": 20,
       "name": "Amazon Sentiment Analysis",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2020%20Amazon%20Sentiment%20Analysis/AmazonCentiment_Analysis.ipynb",
-      "description": "Description of Project 20",
+      "description": "Amazon Sentiment Analysis adalah proses menganalisis sentimen pelanggan terhadap produk yang dijual di platform Amazon. Ini membantu merekomendasikan produk, meningkatkan pengalaman belanja, dan memahami preferensi konsumen.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wilCEqOIQLArnwBA?e=V4krs6"
     },
     {
       "ID": 21,
       "name": "Sentiment Analysis - Dow Jones (DJIA) Stock using News Headlines",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2021%20Sentiment%20Analysis%20-%20Dow%20Jones%20(DJIA)%20Stock%20using%20News%20Headlines/Stock%20Sentiment%20Analysis.ipynb",
-      "description": "Description of Project 21",
+      "description": "Sentiment Analysis - Dow Jones (DJIA) Stock using News Headlines adalah analisis sentimen terhadap pergerakan harga saham Dow Jones berdasarkan berita utama, membantu investor dalam pengambilan keputusan investasi.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wqjQq_41ue5DIbIg?e=LJFYvn"
     },
     {
       "ID": 22,
       "name": "Sentiment Analysis - Restaurant Reviews",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2022%20Sentiment%20Analysis%20-%20Restaurant%20Reviews/Sentiment%20Analysis%20of%20Restaurant%20Reviews.ipynb",
-      "description": "Description of Project 22",
+      "description": "Sentiment Analysis - Restaurant Reviews adalah proses menganalisis ulasan pelanggan terhadap restoran untuk menentukan apakah ulasan tersebut positif, negatif, atau netral, membantu pemilik restoran meningkatkan layanan dan pengalaman pelanggan.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wroBSRCNaFGLt5Yg?e=qkv8Yq"
     },
     {
@@ -164,77 +164,77 @@
       "ID": 24,
       "name": "Hillary Clinton and Donald Trump Tweets",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2024%20Hillary%20Clinton%20and%20Donald%20Trump%20Tweets/Hillary%20Clinton%20and%20Donald%20Trump%20tweets%20(2).ipynb",
-      "description": "Description of Project 24",
+      "description": "Hillary Clinton and Donald Trump Tweets adalah analisis sentimen terhadap tweet yang diposting oleh Hillary Clinton dan Donald Trump, membantu memahami opini dan pandangan politik mereka serta reaksi pengguna terhadapnya.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wtpiBNwx7YWzM7tA?e=bkcGkr"
     },
     {
       "ID": 25,
       "name": "Twitter Us Airline Sentiment Analysis",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2025%20Twitter%20Us%20Airline%20Sentiment%20Analysis/Twitter%20US%20Sentiment%20Analysis.ipynb",
-      "description": "Description of Project 25",
+      "description": "Twitter US Airline Sentiment Analysis adalah analisis sentimen terhadap tweet tentang maskapai penerbangan AS di Twitter, membantu maskapai dalam memahami dan merespons umpan balik pelanggan secara efektif.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wuWEaB0ZvbLVav1Q?e=XGyfb7"
     },
     {
       "ID": 26,
       "name": "IMDB Sentiment Analysis using Deep Learning",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2026%20IMDB%20Sentiment%20Analysis%20using%20Deep%20Learning/sentiment-analysis-with-ml.ipynb",
-      "description": "Description of Project 26",
+      "description": "IMDB Sentiment Analysis using Deep Learning adalah analisis sentimen terhadap ulasan film di IMDb menggunakan teknik deep learning untuk mengidentifikasi opini positif atau negatif tentang film tersebut.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wvh7PcK3k6Jsclzw?e=9DxSLj"
     },
     {
       "ID": 27,
       "name": "Amazon Alexa Review Sentiment Analysis",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2027%20Amazon%20Alexa%20Review%20Sentiment%20Analysis/alexa-amazon-reviews(1).ipynb",
-      "description": "Description of Project 27",
+      "description": "Amazon Alexa Review Sentiment Analysis adalah analisis sentimen terhadap ulasan pengguna tentang perangkat Amazon Alexa, membantu dalam memahami kepuasan pengguna dan mengevaluasi kinerja perangkat tersebut.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wweT8wDQckyVkXXw?e=0stoCe"
     },
     {
       "ID": 28,
-      "name": " Build Sentiment Analysis Flask Web App",
+      "name": "Build Sentiment Analysis Flask Web App",
       "link": "https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2028%20Build_Sentiment_Analysis_Flask_Web_App/Sentiment_Analysis_IMDB.ipynb",
-      "description": "Description of Project 28",
+      "description": "Build Sentiment Analysis Flask Web App adalah pembuatan aplikasi web menggunakan Flask yang mampu menganalisis sentimen teks, memungkinkan pengguna untuk memasukkan teks dan melihat hasil analisis sentimennya.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wx_HqtlajLyfLTuQ?e=ZAGj0e"
     },
     {
       "ID": 29,
       "name": "Sentiment Analysis - Restaurant Reviews",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2029%20Sentiment%20Analysis%20-%20Restaurant%20Reviews/Sentiment%20Analysis%20of%20Restaurant%20Reviews.ipynb",
-      "description": "Description of Project 29",
+      "description": "Sentiment Analysis - Restaurant Reviews adalah analisis opini pelanggan terhadap restoran berdasarkan ulasan, membantu pemilik restoran untuk memahami dan meningkatkan kualitas layanan mereka.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-wzlLVcT0htt80Egg?e=oB5LIF"
     },
     {
       "ID": 30,
       "name": "SMS Spam Detection Analysis",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2030%20SMS%20Spam%20Detection%20Analysis/SMS%20Spam%20Detection%20Analysis%20-%20NLP.ipynb",
-      "description": "Description of Project 30",
+      "description": "SMS Spam Detection Analysis adalah proses untuk mengidentifikasi dan memfilter pesan teks singkat (SMS) yang mengandung spam, melindungi pengguna dari pesan yang tidak diinginkan atau berpotensi merugikan.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-w0MQsWrN5lkxJvuQ?e=rkS274"
     },
     {
       "ID": 31,
       "name": "Text Summarization using Word Frequency",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2031%20Text%20Summarization%20using%20Word%20Frequency/Text%20Summarization%20using%20Word%20Frequency%20-%20NLP.ipynb",
-      "description": "Description of Project 31",
+      "description": "Text Summarization using Word Frequency adalah metode untuk membuat ringkasan teks dengan mengidentifikasi kata-kata yang paling sering muncul dalam teks dan mengekstrak kalimat-kalimat kunci berdasarkan frekuensi kata tersebut.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-w1xvtZJCkMRvoCkw?e=e7IXxO"
     },
     {
       "ID": 32,
       "name": "GitHub Bugs Prediction",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2033%20GitHub%20Bugs%20Prediction/github-bugs-prediction-using-transformer.ipynb",
-      "description": "Description of Project 32",
+      "description": "GitHub Bugs Prediction adalah prediksi kemungkinan bug atau masalah perangkat lunak berdasarkan data historis dari repositori GitHub, membantu pengembang dalam perencanaan dan pemeliharaan perangkat lunak.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-w24aX8xwBJT5zBpw?e=sJwJuj"
     },
     {
       "ID": 33,
       "name": "Stop words in 28 Languages",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2034%20Stop%20words%20in%2028%20Languages/hindi-stop-words-w2v(1).ipynb",
-      "description": "Description of Project 33",
+      "description": "Stop words adalah kata-kata yang umumnya diabaikan dalam pemrosesan teks karena kurangnya nilai informatif. Ada 28 bahasa yang memiliki daftar kata-kata stop words yang umum digunakan.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-w3Qc5I5I0nGWvr7w?e=XcENEw"
     },
     {
       "ID": 34,
       "name": "Text Similarity",
       "link":"https://colab.research.google.com/github/projeksainsdata/NLP_Project_V1/blob/main/NLP%20Project%2034%20Text%20Similarity/word-cloud-in-python-for-beginners.ipynb",
-      "description": "Description of Project 34",
+      "description": "Text Similarity adalah metode untuk mengukur seberapa mirip dua atau lebih teks berdasarkan konten, struktur, atau makna mereka. Ini digunakan dalam pencocokan dokumen, pencarian informasi, dan analisis teks.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-h-w4kS9C1RI1_xcytg?e=cjoaP0"
     }
   ]

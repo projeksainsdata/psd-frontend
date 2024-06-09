@@ -91,7 +91,7 @@ const Navbar = () => {
                         </span>
                 </label>
 
-                <button className="text-left items-end w-12 h-12 rounded-full relative md:hidden" onClick={changeTheme}>
+                <button className="text-left items-end w-12 h-12 rounded-sm relative md:hidden" onClick={changeTheme}>
                         <i className={"fi fi-ss-" + ( theme == "light" ?  "moon" : "sun" ) + " text-xl mt-1" }></i>
                 </button>
 

@@ -68,7 +68,7 @@ function ChatAI() {
       </div>
 
       <div className="flex justify-between items-center p-2">
-        <h1 className="text-xl">PSD-GPT</h1>
+        <h1 className="text-xl">PSD-GPT Version 1.0</h1>
         <p className="text-xl font-bold">(Model GPT-4 Turbo Preview)</p>
       </div>
       <div className="chat-container">
