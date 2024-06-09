@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import AnimationWrapper from '../common/page-animation';
 import logopsd from "../imgs/psd2.png"
-import iconpsd from "../imgs/iconpsd.png"
+import iconpsd from "../imgs/logo-dark.png"
 import founderpsd from "../imgs/ardikasatria.jpg";
 import { FaEnvelope } from 'react-icons/fa'
 

@@ -8,7 +8,7 @@ import axios from "axios";
 import { storeInSession } from "../common/session";
 import { UserContext } from "../App";
 import { authWithGoogle } from "../common/firebase";
-import logoo from "../imgs/iconpsd.png";
+import logoo from "../imgs/logo-dark.png";
 
 const UserAuthForm = ({ type }) => {
     let { userAuth: { access_token }, setUserAuth } = useContext(UserContext);

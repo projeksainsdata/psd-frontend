@@ -7,6 +7,7 @@ import UserNavigationPanel from "./user-navigation.component";
 import axios from "axios";
 import { storeInSession } from "../common/session";
 
+
 const Navbar = () => {
 
     const [ searchBoxVisibility, setSearchBoxVisibility ] = useState(false)
@@ -139,7 +140,7 @@ const Navbar = () => {
                     <div className="flex items-center mx-auto">
                     <Link to="/center/learn">
                         <button className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-400 to-pink relative hover:bg-black/10">
-                            <i className="fi fi-sr-objects-column text-center text-dark-blue text-2xl " ></i>
+                            <i className="fi fi-sr-objects-column items-center text-dark-blue text-[20px] " ></i>
                         </button>
                     </Link>
                     </div>

@@ -5,7 +5,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import Loader from '../components/loader.component';
 import NoDataMessage from '../components/nodata.component';
 import { Toaster } from 'react-hot-toast';
-import robotik from "../imgs/Smart_robot.gif";
+import robotik from "../imgs/Smartrobot.gif";
 
 const LearnRobotik = () => {
   const [articles, setArticles] = useState({});
