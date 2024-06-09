@@ -61,8 +61,8 @@ function ChatAI() {
   return (
     <div className="flex flex-col h-full">
       <div className="flex justify-between items-center px-4 py-2">
-        <h1 className="text-xl text-light-green">PSD-GPT Version 1.0</h1>
-        <p className="text-xl font-bold">(GPT-4 Turbo Preview)</p>
+        <h1 className="text-base text-light-green">PSD-GPT Version 1.0</h1>
+        <p className="text-sm font-bold">(GPT-4 Turbo Preview)</p>
       </div>
       
       <div className="flex flex-col flex-grow h-full w-full max-w-6xl mx-auto mb-10 bg-white shadow-xl rounded-xl overflow-hidden">
