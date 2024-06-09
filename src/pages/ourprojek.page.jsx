@@ -1,15 +1,27 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import AnimationWrapper from "../common/page-animation";
 import projectplan from"../imgs/projectplan2.gif";
+import ardikasatria from "../imgs/ardikasatria.jpg"
 
 const OurProjek = () => {
-    const filters = ['Data Science', 'Natural Language Processing', 'Machine Learning', 'Python', 'Deep Learning', 'Computer Vision'];
-    const [selectedFilter, setSelectedFilter] = useState('Data Science');
+    const filters = ['Machine Learning', 'Python', 'Deep Learning', 'Computer Vision', 'Natural Language Processing'];
+    const [selectedFilter, setSelectedFilter] = useState('Machine Learning');
     const [projek, setProjek] = useState(null);
     const [searchQuery, setSearchQuery] = useState('');
     const [currentPage, setCurrentPage] = useState(1);
     const [sortDirection, setSortDirection] = useState('asc');
     const [sortType, setSortType] = useState('name'); // Default sort by name
+
+
+    const handleNavLinkClick = (e) => {
+        if (!isUserLoggedIn()) {
+            e.preventDefault();
+            navigate('/signin');
+        } else {
+            setPageState(e.target.innerText);
+        }
+    };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -68,40 +80,59 @@ const OurProjek = () => {
 
     return (
         <AnimationWrapper>
-            <div className=" flex justify-center items-center">
+            <section>
+            <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
+                <div className='lg:w-1/2 w-auto'>
                     <img src={projectplan} alt="project" className="max-w-[500px] max-h-[500px]" />
-            </div>
-            <div className="container mx-auto max-w-4xl">
-                <h1 className="text-3xl font-bold">Projek Sains Data Repository</h1>
-                <div className="mt-5">
-                    <p className="mt-3"> Last Updated February 2024 </p>
                 </div>
-                
-                <div className="my-8 flex flex-wrap gap-5">
+                <div className='lg:w-1/2 w-auto'>
+                    <h1 className="text-3xl font-bold">Projek Sains Data Repository</h1>
+                    <div className="mt-3">
+                        <p className="mt-3"> Version 1 - Last Updated February 2024 </p>
+                        <div className="mt-3 flex gap-2">
+                                <p className="font-bold text-xl">Contributor : </p>
+                                <img src={ardikasatria} className="w-6 h-6 rounded-full" />
+                                <a href="https://projeksainsdata.com/user/ardika.satria">
+                                    <p className="line-clamp-1">Ardika Satria</p>
+                                </a>
+                        </div>
+                    </div>
+                    <p className="text-gray-500 mt-3 mb-3">
+                        Temukan koleksi proyek, kode, dan sumber data. Akses berbagai skrip untuk mendukung penelitian dan pengembangan Anda.
+                    </p>
+                    <Link className="text-xl flex items-center text-light-green gap-2 mx-auto mb-5 py-2" to="/repository/2" onClick={handleNavLinkClick}>
+                            <i className="fi fi-sr-folder-open text-light-green text-xl " />
+                            Version 2.0
+                    </Link>
+                </div>
+            </div>
+            </section>
+            <div className="container mx-auto max-w-6xl">
+                <div className=" mb-3 flex flex-wrap gap-3">
                     {filters.map((filter, index) => (
                         <button 
                             key={index} 
-                            className={"py-2 flex btn " + (selectedFilter === filter ? "btn-dark" : "btn-light")}
+                            className={"flex btn " + (selectedFilter === filter ? "btn-dark" : "btn-light")}
                             onClick={() => handleFilterChange(filter)}
                         >
                             {filter}
                         </button>
                     ))}
                 </div>
-
-                <div className="my-4">
+                
+                <div>
+                    <h2 className="mb-5">{selectedFilter}</h2>
+                    <div className="text-left">
+                    <p className="mb-2"> Klik Kolom ID untuk urutan projek paling baru</p>
                     <input 
                         type="text" 
                         placeholder="Cari Projek..." 
                         value={searchQuery} 
                         onChange={handleSearch} 
-                        className="search-input bg-grey text-black"
+                        className="search-input bg-grey text-black mb-3"
                     />
-                    <p> Klik Kolom ID untuk urutan projek paling baru</p>
-                </div>
-
-                <div>
-                    <h2>{selectedFilter}</h2>
+    
+                    </div>
                     <table className="table-transparent">
                         <thead>
                             <tr>
@@ -147,7 +178,9 @@ const OurProjek = () => {
                         </div>
                     )}
                 </div>
+
             </div>
+
         </AnimationWrapper>
     );
 };
