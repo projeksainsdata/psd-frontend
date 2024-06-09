@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ChatBubble from './chatbuble.component';
 import ChatInput from './chatinput.component';
-import chatpsd from '../imgs/chattingbot.png'
+
 
 function ChatAI() {
   const [prompt, updatePrompt] = useState("");
   const [loading, setLoading] = useState(false);
   const [messages, setMessages] = useState([]);
   const [loadingText, setLoadingText] = useState("");
-
 
   useEffect(() => {
     if (loading) {
@@ -20,7 +19,6 @@ function ChatAI() {
       setLoadingText("");
     }
   }, [loading]);
-  
 
   const sendMessage = async (message) => {
     setMessages((prevMessages) => [...prevMessages, { message, isUser: true }]);
@@ -61,35 +59,25 @@ function ChatAI() {
   };
 
   return (
-    
-    <div>
-      <div className='position-relative w-auto flex justify-center items-center'>
-        <img src={chatpsd} alt="PSD-GPT" className="max-w-[200px] max-h-[200px]" />
+    <div className="flex flex-col h-full">
+      <div className="flex justify-between items-center px-4 py-2">
+        <h1 className="text-xl text-light-green">PSD-GPT Version 1.0</h1>
+        <p className="text-xl font-bold">(GPT-4 Turbo Preview)</p>
       </div>
-
-      <div className="flex justify-between items-center p-2">
-        <h1 className="text-xl">PSD-GPT Version 1.0</h1>
-        <p className="text-xl font-bold">(Model GPT-4 Turbo Preview)</p>
-      </div>
-      <div className="chat-container">
-        <div className="mx-auto my-10 bg-dark shadow-xl rounded-xl w-full max-w-5xl mt-2">
-          <div className="chat-messages flex flex-col h-auto max-h-screen">
-            <div className="chat-messages overflow-auto flex-grow ">
-              {messages.map((msg, i) => (
-                <ChatBubble key={i} message={msg.message} isUser={msg.isUser} />
-              ))}
-              {loading && <div className="loading-text">{loadingText}</div>}
-            </div>
-            <div className="chat-input">
-              <ChatInput onSubmit={sendMessage} />
-            </div>
-          </div>
+      
+      <div className="flex flex-col flex-grow h-full w-full max-w-6xl mx-auto mb-10 bg-white shadow-xl rounded-xl overflow-hidden">
+        <div className="flex flex-col flex-grow overflow-y-auto p-4 max-h-[58vh]">
+          {messages.map((msg, i) => (
+            <ChatBubble key={i} message={msg.message} isUser={msg.isUser} />
+          ))}
+          {loading && <div className="loading-text">{loadingText}</div>}
+        </div>
+        <div className="bg-white p-4 flex-grow max-h-[40v]">
+          <ChatInput onSubmit={sendMessage} />
         </div>
       </div>
     </div>
   );
-  
-  
 }
 
 export default ChatAI;

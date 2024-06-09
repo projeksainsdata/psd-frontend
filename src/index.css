@@ -134,10 +134,13 @@
     .chat-messages {
         @apply overflow-y-auto p-4 flex flex-col gap-4;
     }
-    
+      
     .chat-container {
-        @apply flex flex-col justify-between w-full max-w-6xl h-screen mx-auto mb-10;
+        @apply flex flex-col justify-between max-w-6xl mx-auto mb-10;
+        height: 58vh; /* Sesuaikan tinggi komponen */
     }
+      
+      
 }
 
 .ce-block__content, .ce-toolbar__content{

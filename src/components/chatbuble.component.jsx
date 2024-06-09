@@ -4,15 +4,10 @@ import ReactMarkdown from 'react-markdown';
 
 const ChatBubble = ({ message, isUser }) => {
   const bubbleClasses = isUser
-    ? 'bg-light-green text-white rounded-br-none self-end'
+    ? 'bg-light-green text-white rounded-full self-end transform rotate-0 text-right'
     : 'bg-grey text-black rounded-bl-none self-start';
 
-  const tailClasses = isUser
-    ? 'right-0 -mr-2 bg-light-green transform rotate-270'
-    : 'left-0 -ml-2 bg-grey';
-
-  // Added flex container class
-  const containerClasses = isUser ? 'd-flex justify-content-end' : 'd-flex justify-content-start';
+  const containerClasses = isUser ? 'd-flex justify-end flex' : 'd-flex justify-content-start flex';
 
   const handleCopy = (text) => {
     navigator.clipboard.writeText(text)
@@ -24,22 +19,37 @@ const ChatBubble = ({ message, isUser }) => {
   };
 
   return (
-    <div className={`${containerClasses} mb-2`}>
-      <div className={`p-2 rounded-lg ${bubbleClasses} relative`}>
-        <ReactMarkdown>{message}</ReactMarkdown>
+    <div className={`${containerClasses} mb-3`}>
+      {isUser && (
+      <button
+        className="flex bottom-2 mt-4 mr-1 text-black hover:text-twitter focus:outline-none"
+        onClick={() => handleCopy(message)}
+      >
+          <i className="fi fi-rr-copy-alt text-dark" />
+        </button>
+      )}
+      <div className={`p-3 rounded-lg ${bubbleClasses} relative`}>
+        <div className='mb-0'>
+          <ReactMarkdown>{message}</ReactMarkdown>
+        </div>
+        
         <div
-          className={`w-4 h-4 absolute top-0 mt-2 rounded-bl-lg ${tailClasses}`}
+          className={`w-4 h-4 absolute top-0 mt-2 rounded-full`}
         />
         {!isUser && (
           <button
-            className="absolute top-0 right-0 mt-2 mr-2 text-gray-600 hover:text-gray-900 focus:outline-none"
+            className="flex bottom-1 mt-2 mr-1 text-black hover:text-gray-900 focus:outline-none"
             onClick={() => handleCopy(message)}
           >
             <i className="fi fi-rr-copy-alt text-dark" />
           </button>
         )}
+
       </div>
+
+
     </div>
+    
   );
 };
 

@@ -1021,3 +1021,10 @@ input:checked + .slider .icon-right {
   opacity: 0;
 }
 
+.chat-input {
+  position: sticky;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 1000; /* Adjust z-index as needed */
+}
+
