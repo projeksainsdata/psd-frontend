@@ -136,7 +136,7 @@ const Navbar = () => {
 
                     <i className="fi fi-rr-search absolute right-[10%] md:pointer-events-none md:left-5 top-1/2 -translate-y-1/2 text-xl text-dark-grey"></i>
                     </div>
-                    <div>
+                    <div className="flex items-center mx-auto">
                     <Link to="/center/learn">
                         <button className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-400 to-pink relative hover:bg-black/10">
                             <i className="fi fi-sr-objects-column text-center text-dark-blue text-2xl " ></i>
@@ -161,7 +161,7 @@ const Navbar = () => {
 
 
                             <div className="relative" onClick={handleUserNavPanel} onBlur={handleBlur}>
-                                <button className="w-12 h-12 mt-1">
+                                <button className="w-12 h-12">
                                     <img src={profile_img} className="w-full h-full object-cover rounded-full" />
                                 </button>
 
