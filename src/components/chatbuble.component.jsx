@@ -4,8 +4,8 @@ import ReactMarkdown from 'react-markdown';
 
 const ChatBubble = ({ message, isUser }) => {
   const bubbleClasses = isUser
-    ? 'bg-light-green text-white rounded-full self-end transform rotate-0 text-right'
-    : 'bg-grey text-black rounded-bl-none self-start';
+    ? 'bg-grey text-black rounded-full py-3 px-3 self-end transform rotate-0 text-right'
+    : 'bg-transparent text-black rounded-bl-none self-start';
 
   const containerClasses = isUser ? 'd-flex justify-end flex' : 'd-flex justify-content-start flex';
 
@@ -28,7 +28,7 @@ const ChatBubble = ({ message, isUser }) => {
           <i className="fi fi-rr-copy-alt text-dark" />
         </button>
       )}
-      <div className={`p-3 rounded-lg ${bubbleClasses} relative`}>
+      <div className={`p-3 rounded-full ${bubbleClasses} relative`}>
         <div className='mb-0'>
           <ReactMarkdown>{message}</ReactMarkdown>
         </div>

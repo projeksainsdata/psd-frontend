@@ -78,6 +78,18 @@ const OurProjek = () => {
     const startIdx = (currentPage - 1) * itemsPerPage;
     const endIdx = currentPage * itemsPerPage;
 
+    const handlePrevPage = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1);
+        }
+    };
+
+    const handleNextPage = () => {
+        if (currentPage < totalPages) {
+            setCurrentPage(currentPage + 1);
+        }
+    };
+
     return (
         <AnimationWrapper>
             <section>
@@ -164,22 +176,22 @@ const OurProjek = () => {
                     </table>
                 </div>
 
-                <div>
-                    {totalPages > 1 && (
-                        <div>
-                            {Array.from({ length: totalPages }).map((_, index) => (
-                                <button 
-                                    key={index} 
-                                    className={currentPage === index + 1 ? 'btn btn-dark mx-1 mt-5' : 'btn btn-light mx-1 mt-5'}
-                                    onClick={() => setCurrentPage(index + 1)}
-                                >
-                                    {index + 1}
-                                </button>
-                            ))}
-                        </div>
-                    )}
+                <div className="flex justify-center mt-5">
+                    <button 
+                        onClick={handlePrevPage} 
+                        className="btn flex items-center btn-light mx-1"
+                        disabled={currentPage === 1}
+                    >
+                        <i className="fi fi-sr-left"></i>
+                    </button>
+                    <button 
+                        onClick={handleNextPage} 
+                        className="btn flex items-center btn-light mx-1"
+                        disabled={currentPage === totalPages}
+                    >
+                        <i className="fi fi-sr-right"></i>
+                    </button>
                 </div>
-
             </div>
 
         </AnimationWrapper>

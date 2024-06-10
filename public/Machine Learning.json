@@ -394,15 +394,106 @@
     {
       "ID": 57,
       "name": "Garbage Classification",
-      "link":"https://colab.research.google.com/github/projeksainsdata/Data-Science-Projek/blob/main/Data%20Science%20Projects%2058%20-%20Garbage%20Classification/garbage-classification.ipynb`",
+      "link":"https://colab.research.google.com/github/projeksainsdata/Data-Science-Projek/blob/main/Data%20Science%20Projects%2058%20-%20Garbage%20Classification/garbage-classification.ipynb",
       "description": "Garbage Classification dalam data sains melibatkan pengumpulan, analisis, dan pemodelan data terkait jenis sampah untuk meningkatkan efisiensi daur ulang. Pendekatan ini memungkinkan pengelolaan limbah yang lebih berkelanjutan melalui teknologi informasi dan pemahaman mendalam terhadap karakteristik setiap jenis sampah.",
       "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-nZgXEuT2fSngqOIZcw?e=kNFoBR"
     },
     {
         "ID": 58,
         "name": "Bitcoin Price Prediction",
-        "link":"https://colab.research.google.com/github/projeksainsdata/Data-Science-Projek/blob/main/Data%20Science%20Projects%2058%20-%20Garbage%20Classification/garbage-classification.ipynb`",
-        "description": "Garbage Classification dalam data sains melibatkan pengumpulan, analisis, dan pemodelan data terkait jenis sampah untuk meningkatkan efisiensi daur ulang. Pendekatan ini memungkinkan pengelolaan limbah yang lebih berkelanjutan melalui teknologi informasi dan pemahaman mendalam terhadap karakteristik setiap jenis sampah.",
-        "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-nZgXEuT2fSngqOIZcw?e=kNFoBR"
-      }
-  ]
+        "link":"https://colab.research.google.com/github/projeksainsdata/Machine-Learning-V1/blob/main/ML%20Bitcoin%20Price%20Prediction/ML1.ipynb",
+        "description": "Prediksi harga Bitcoin melibatkan analisis tren pasar, data historis, dan algoritma AI untuk memperkirakan nilai masa depan Bitcoin, membantu investor membuat keputusan yang lebih terinformasi.",
+        "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-naYgzcKMbcvUpFO5iQ?e=Msac56"
+    },
+    {
+      "ID": 59,
+      "name": "Imdb sentiment review Analysis using ML",
+      "link":"https://colab.research.google.com/github.com/projeksainsdata/Machine-Learning-V1/blob/main/ML%20Imdb%20sentiment%20review%20Analysis%20using%20ML/ML3.ipynb",
+      "description": "Analisis sentimen review IMDb menggunakan Machine Learning melibatkan pengolahan data teks untuk mengidentifikasi sentimen positif atau negatif, membantu memahami reaksi audiens terhadap film atau acara TV.",
+      "dataUrl":"none"
+    },
+    {
+      "ID": 60,
+      "name": "Income Classification using ML",
+      "link":"https://colab.research.google.com//github.com/projeksainsdata/Machine-Learning-V1/blob/main/ML%20Income%20Classification%20using%20ML/ML2.ipynb",
+      "description": "Klasifikasi pendapatan menggunakan Machine Learning melibatkan analisis data demografis dan keuangan untuk mengelompokkan individu ke dalam kategori pendapatan, membantu dalam pengambilan keputusan bisnis dan kebijakan ekonomi.",
+      "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-naYujboXvUp4yt4ZrQ?e=7U8eq0"
+    },
+    {
+      "ID": 61,
+      "name": "Advandced Hyperparameter Tunning",
+      "link":"https://colab.research.google.com/github.com/projeksainsdata/Machine-Learning-V1/blob/main/Machine%20Learning%20Project%207%20-%20Advandced%20Hyperparameter%20Tunning/Hyper_Parameter_Tunning.ipynb",
+      "description": "Tuning hyperparameter lanjutan menggunakan teknik optimasi untuk menyesuaikan parameter model Machine Learning secara efektif, meningkatkan kinerja dan akurasi model prediksi dalam berbagai aplikasi data.",
+      "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-3HorugR3demhux35?e=3VSHc9"
+    },
+    {
+      "ID": 62,
+      "name": "House_Price_Prediction Detailed Analysis",
+      "link":"https://colab.research.google.com/github.com/projeksainsdata/Machine-Learning-V1/blob/main/Machine%20Learning%20Project%207%20-%20Advandced%20Hyperparameter%20Tunning/Hyper_Parameter_Tunning.ipynb",
+      "description": "Tuning hyperparameter lanjutan menggunakan teknik optimasi untuk menyesuaikan parameter model Machine Learning secara efektif, meningkatkan kinerja dan akurasi model prediksi dalam berbagai aplikasi data.",
+      "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-3HorugR3demhux35?e=3VSHc9"
+    },
+    {
+      "ID": 63,
+      "name": "Heart Disease Prediction",
+      "link":"https://colab.research.google.com/github.com/projeksainsdata/Machine-Learning-V1/blob/main/Machine%20Learning%20Project%207%20-%20Advandced%20Hyperparameter%20Tunning/Hyper_Parameter_Tunning.ipynb",
+      "description": "Tuning hyperparameter lanjutan menggunakan teknik optimasi untuk menyesuaikan parameter model Machine Learning secara efektif, meningkatkan kinerja dan akurasi model prediksi dalam berbagai aplikasi data.",
+      "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-3HorugR3demhux35?e=3VSHc9"
+    },
+    {
+      "ID": 64,
+      "name": "Creadit Card Fraud Problem Handling Imbalanced Dataset",
+      "link":"https://colab.research.google.com/github.com/projeksainsdata/Machine-Learning-V1/blob/main/Machine%20Learning%20Project%207%20-%20Advandced%20Hyperparameter%20Tunning/Hyper_Parameter_Tunning.ipynb",
+      "description": "Tuning hyperparameter lanjutan menggunakan teknik optimasi untuk menyesuaikan parameter model Machine Learning secara efektif, meningkatkan kinerja dan akurasi model prediksi dalam berbagai aplikasi data.",
+      "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-3HorugR3demhux35?e=3VSHc9"
+    },
+    {
+      "ID": 65,
+      "name": "Hand Digit Recognition Using ML",
+      "link":"https://colab.research.google.com/github.com/projeksainsdata/Machine-Learning-V1/blob/main/Machine%20Learning%20Project%207%20-%20Advandced%20Hyperparameter%20Tunning/Hyper_Parameter_Tunning.ipynb",
+      "description": "Tuning hyperparameter lanjutan menggunakan teknik optimasi untuk menyesuaikan parameter model Machine Learning secara efektif, meningkatkan kinerja dan akurasi model prediksi dalam berbagai aplikasi data.",
+      "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-3HorugR3demhux35?e=3VSHc9"
+    },
+    {
+      "ID": 66,
+      "name": "Forecasting using ARIMA",
+      "link":"https://colab.research.google.com/github.com/projeksainsdata/Machine-Learning-V1/blob/main/Machine%20Learning%20Project%207%20-%20Advandced%20Hyperparameter%20Tunning/Hyper_Parameter_Tunning.ipynb",
+      "description": "Tuning hyperparameter lanjutan menggunakan teknik optimasi untuk menyesuaikan parameter model Machine Learning secara efektif, meningkatkan kinerja dan akurasi model prediksi dalam berbagai aplikasi data.",
+      "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-3HorugR3demhux35?e=3VSHc9"
+    },
+    {
+      "ID": 67,
+      "name": "Flight Fare Prediction",
+      "link":"https://colab.research.google.com/github.com/projeksainsdata/Machine-Learning-V1/blob/main/Machine%20Learning%20Project%207%20-%20Advandced%20Hyperparameter%20Tunning/Hyper_Parameter_Tunning.ipynb",
+      "description": "Tuning hyperparameter lanjutan menggunakan teknik optimasi untuk menyesuaikan parameter model Machine Learning secara efektif, meningkatkan kinerja dan akurasi model prediksi dalam berbagai aplikasi data.",
+      "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-3HorugR3demhux35?e=3VSHc9"
+    },
+    {
+      "ID": 68,
+      "name": "Fashion Mnist Data Analysis Using ML",
+      "link":"https://colab.research.google.com/github.com/projeksainsdata/Machine-Learning-V1/blob/main/Machine%20Learning%20Project%207%20-%20Advandced%20Hyperparameter%20Tunning/Hyper_Parameter_Tunning.ipynb",
+      "description": "Tuning hyperparameter lanjutan menggunakan teknik optimasi untuk menyesuaikan parameter model Machine Learning secara efektif, meningkatkan kinerja dan akurasi model prediksi dalam berbagai aplikasi data.",
+      "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-3HorugR3demhux35?e=3VSHc9"
+    },
+    {
+      "ID": 69,
+      "name": "Face Mask Detection using ML",
+      "link":"https://colab.research.google.com/github.com/projeksainsdata/Machine-Learning-V1/blob/main/Machine%20Learning%20Project%207%20-%20Advandced%20Hyperparameter%20Tunning/Hyper_Parameter_Tunning.ipynb",
+      "description": "Tuning hyperparameter lanjutan menggunakan teknik optimasi untuk menyesuaikan parameter model Machine Learning secara efektif, meningkatkan kinerja dan akurasi model prediksi dalam berbagai aplikasi data.",
+      "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-3HorugR3demhux35?e=3VSHc9"
+    },
+    {
+      "ID": 70,
+      "name": "Face Expression Identifier",
+      "link":"https://colab.research.google.com/github.com/projeksainsdata/Machine-Learning-V1/blob/main/Machine%20Learning%20Project%207%20-%20Advandced%20Hyperparameter%20Tunning/Hyper_Parameter_Tunning.ipynb",
+      "description": "Tuning hyperparameter lanjutan menggunakan teknik optimasi untuk menyesuaikan parameter model Machine Learning secara efektif, meningkatkan kinerja dan akurasi model prediksi dalam berbagai aplikasi data.",
+      "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-3HorugR3demhux35?e=3VSHc9"
+    },
+    {
+      "ID": 71,
+      "name": "Employee Turnover Prediction",
+      "link":"https://colab.research.google.com/github.com/projeksainsdata/Machine-Learning-V1/blob/main/Machine%20Learning%20Project%207%20-%20Advandced%20Hyperparameter%20Tunning/Hyper_Parameter_Tunning.ipynb",
+      "description": "Tuning hyperparameter lanjutan menggunakan teknik optimasi untuk menyesuaikan parameter model Machine Learning secara efektif, meningkatkan kinerja dan akurasi model prediksi dalam berbagai aplikasi data.",
+      "dataUrl":"https://1drv.ms/f/s!AnsimFE4lIw-3HorugR3demhux35?e=3VSHc9"
+    }
+]
