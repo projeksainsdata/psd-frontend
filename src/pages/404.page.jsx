@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import lightPageNotFoundImg from "../imgs/404-psd.png";
-import darkPageNotFoundImg from "../imgs/404-psd.png";
+import lightPageNotFoundImg from "../imgs/404.svg";
+import darkPageNotFoundImg from "../imgs/404.svg";
 import lightFullLogo from "../imgs/psdDark.png";
 import darkFullLogo from "../imgs/PSDNormal.png";
 import { ThemeContext } from "../App";
