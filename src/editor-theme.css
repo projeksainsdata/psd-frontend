@@ -125,7 +125,6 @@ body[data-theme="dark"] .ce-conversion-tool:hover{
   color: #abb2bf;
   border-radius: 5px;
   padding: 0.75rem;
-  font-size: 1.1rem;
 
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
@@ -466,13 +465,16 @@ body[data-theme="dark"] .ce-conversion-tool:hover{
   background-color: #333; /* Warna latar belakang untuk mode gelap */
   color: #abb2bf; /* Warna teks untuk mode gelap */
   border-radius: 5px; /* Radius sudut */
-  font-family: 'Courier New', Courier, monospace; /* Font family */
+  font-family: "Sans Mono", "Consolas", "Courier", monospace; /* Font family */
   overflow-x: auto; /* Scroll horizontal jika terlalu panjang */
 }
 
 .code-blog code {
   color: #ffff; /* Warna teks dalam kode */
-  font-size: medium;
+}
+
+pre > code {
+  font-size: small;
 }
 
 /* Latar belakang untuk mode terang */
