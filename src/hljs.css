@@ -1,0 +1,95 @@
+.hljs {
+    font-size: medium;
+    display: block;
+    padding: 1em;
+    color: #abb2bf; /* Warna teks netral */
+    border-radius: 0.5em; /* Sudut membulat */
+    overflow-x: auto; /* Scroll horizontal jika terlalu panjang */
+    font-family: "Fira Code", "Consolas", "Courier", monospace; /* Font modern */
+    line-height: 1; /* Jarak antar baris yang lebih nyaman */
+  
+}
+
+/* Warna komentar dan kutipan */
+.hljs-comment {
+    font-size: medium;
+}
+.hljs-quote {
+
+    color: #5c6370;
+    font-style: italic;
+    font-size: medium;
+}
+
+/* Warna untuk kata kunci dan tag selector */
+.hljs-keyword {
+    font-size: medium;
+}
+.hljs-selector-tag {
+    font-size: medium;
+}
+
+.hljs-literal{
+    font-size: medium;
+}
+.hljs-name {
+    color: #c678dd;
+    font-size: medium;
+}
+
+/* Warna atribut dan meta */
+.hljs-attribute{
+    font-size: medium;
+}
+.hljs-meta {
+    color: #e06c75; /* Merah cerah */
+    font-size: medium;
+}
+
+/* Warna untuk angka, regexp, dan link */
+.hljs-number{
+    font-size: medium;
+}
+.hljs-regexp{
+    font-size: medium;
+}
+.hljs-link {
+    color: #d19a66; /* Orange cerah */
+    font-size: medium;
+}
+
+/* Warna untuk string, simbol, bullet, dan subst */
+.hljs-string{
+    font-size: medium;
+}
+.hljs-symbol{
+    font-size: medium;
+}
+.hljs-bullet{
+    font-size: medium;
+}
+.hljs-subst {
+    color: #98c379; /* Hijau cerah */
+    font-size: medium;
+}
+
+/* Warna untuk judul dan bagian */
+.hljs-title{
+    font-size: medium;
+}
+.hljs-section {
+    color: #61afef; /* Biru cerah */
+    font-size: medium;
+}
+
+/* Gaya untuk penekanan dan ketebalan */
+.hljs-emphasis {
+    font-style: italic;
+    font-size: medium;
+}
+
+.hljs-strong {
+    font-weight: bold;
+    font-size: medium;
+}
+  

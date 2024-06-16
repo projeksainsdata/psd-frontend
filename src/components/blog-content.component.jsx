@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useRef, useState } from 'react';
 import hljs from 'highlight.js/lib/core';
-import { MathTex } from 'editorjs-math';
-import EJLatex from 'editorjs-latex';
+import 'highlight.js/styles/atom-one-dark.css';
 import { BlockMath } from 'react-katex';
 
 
@@ -16,13 +15,24 @@ const Img = ({ url, caption }) => {
 }
 
 const Quote = ({ quote, caption }) => {
+    // Replace &nbsp; with HTML entity &#160;
+    quote = quote.replace(/&nbsp;/g, '&#160;');
+    // Replace newline characters with <br> tags
+    quote = quote.replace(/\n/g, '<br>');
+
     return (
-        <div className="bg-purple/10 p-3 pl-5 border-l-4 border-purple">
-            <p className="text-xl leading-10 md:text-2xl">{quote}</p>
-            {caption.length ? <p className="w-full text-purple text-base">{caption}</p> : ""}
+        <div className="border-l-4 border-light-green text-black bg-grey p-4 rounded-lg shadow-md">
+            <p className="text-lg italic" dangerouslySetInnerHTML={{ __html: quote }}></p>
+            {caption && <p className="text-sm font-bold text-light-green">{caption}</p>}
         </div>
-    )
-}
+    );
+};
+
+
+
+
+
+
 
 const List = ({ style, items }) => {
     return (
@@ -38,16 +48,24 @@ const List = ({ style, items }) => {
     )
 }
 
-const CodeBlog = ({ code }) => {
-    const codeRef = useRef(null);
-  
+hljs.configure({
+    languages: ['python'],
+    es: {
+      next: true,
+    },
+});
+
+const CodeBlog = ({ language = 'python', code }) => {
+    const codeRef = useRef();
     useEffect(() => {
-      hljs.highlightBlock(codeRef.current);
+      if (codeRef && codeRef.current) {
+        hljs.highlightBlock(codeRef.current);
+      }
     }, [code]);
   
     return (
-      <pre className="code-blog rounded-lg">
-        <code ref={codeRef} className="language-python">
+      <pre className='rounded-lg code-blog'>
+        <code className={`language-${language}`} ref={codeRef}>
           {code}
         </code>
       </pre>
@@ -62,7 +80,7 @@ const BlogContent = ({ block }) => {
     let { type, data } = block;
 
     if (type === "paragraph") {
-        return <p dangerouslySetInnerHTML={{ __html: data.text }} />;
+        return <p dangerouslySetInnerHTML={{ __html: data.text }} className='text-xl leading-9' />;
     } 
 
     if (type === "header") {

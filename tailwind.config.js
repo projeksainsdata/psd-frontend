@@ -1,4 +1,5 @@
 import { createThemes } from 'tw-colors';
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -19,7 +20,8 @@ export default {
             fontFamily: {
               inter: ["'Inter'", "sans-serif"],
               gelasio: ["'Gelasio'", "serif"],
-              monospace: ["Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace"]
+              monospace: ["Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace"],
+              linearsans: ["linearsans", ...defaultTheme.fontFamily.sans]
             },
             colors: {
                 'purple-pink-gradient': 'linear-gradient(to right, #805AD5, #FA709A)',

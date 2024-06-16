@@ -204,7 +204,7 @@ const BlogEditor = () => {
                         <textarea
                             defaultValue={title}
                             placeholder="Judul Artikel"
-                            className="text-4xl font-medium w-full h-20 outline-none resize-none mt-10 leading-tight placeholder:opacity-40 bg-white"
+                            className="text-4xl font-linearsans w-full h-20 outline-none resize-none mt-10 leading-tight placeholder:opacity-40 bg-white"
                             onKeyDown={handleTitleKeyDown}
                             onChange={handleTitleChange}
                         ></textarea>

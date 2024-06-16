@@ -125,7 +125,7 @@ const HomePage = () => {
 
     return (
         <AnimationWrapper>
-             <section>
+            <section>
             <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
                 <div className='lg:w-1/2'>
                     <h1 className='text-3xl font-bold lg:text-6xl'>
@@ -296,7 +296,7 @@ const HomePage = () => {
  
 
                         <div>
-                            <h1 className="font-medium text-xl mb-8 text-light-green">
+                            <h1 className="font-bold text-xl mb-8 text-light-green">
                                  <i className="fi fi-rs-rocket-lunch"></i> Trending
                             </h1>
 

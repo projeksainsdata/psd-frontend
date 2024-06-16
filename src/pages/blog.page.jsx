@@ -105,7 +105,7 @@ const BlogPage = () => {
                     }}
                 >
                     <CommentsContainer />
-                    <div className="max-w-[900px] center py-10 max-lg:px-[5vw]">
+                    <div className="max-w-[900px] center py-6 max-lg:px-[2vw]">
                         <img src={banner} className="aspect-video" />
                         <div className="mt-12">
                             <h2>{title}</h2>
@@ -122,9 +122,9 @@ const BlogPage = () => {
                             </div>
                         </div>
                         <BlogInteraction />
-                        <div className="my-12 font-gelasio blog-page-content">
+                        <div className="my-6 font-linearsans blog-page-content max-w-[650px] center py-3 max-lg:px-[2vw]">
                             {content[0].blocks.map((block, i) => (
-                                <div key={i} className="my-4 md:my-8">
+                                <div key={i} className="my-4 md:my-6">
                                     <BlogContent block={block} />
                                 </div>
                             ))}
