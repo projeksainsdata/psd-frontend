@@ -150,6 +150,10 @@
         @apply text-2xl font-linearsans font-medium leading-7 line-clamp-3 sm:line-clamp-2;
     }
 
+    .blog-trending{
+        @apply text-xl font-linearsans leading-7 line-clamp-3 sm:line-clamp-2;
+    }
+
     .blog-index{
         @apply text-4xl sm:text-3xl lg:text-5xl font-linearsans font-bold text-grey leading-none;
     }
