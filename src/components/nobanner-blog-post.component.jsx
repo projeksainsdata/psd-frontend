@@ -18,10 +18,10 @@ const MinimalBlogPost = ({ blog, index }) => {
             <div>
                 <div className="flex gap-2 items-center mb-2">
                     <img src={profile_img} className="w-6 h-6 rounded-full" />
-                    <p className="line-clamp-1">{capitalizeFullname(fullname)}</p>
+                    <p className="line-clamp-1 text-gray-500">{capitalizeFullname(fullname)}</p>
                 </div>
 
-                <h1 className="blog-trending font-bold">{title}</h1>
+                <h1 className="blog-trending ">{title}</h1>
             </div>
         </Link>
     )

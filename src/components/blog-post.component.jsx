@@ -24,19 +24,19 @@ const BlogPostCard = ({ content, author }) => {
                 <div className="flex">
                     <div className="w-1/6 h-10 mt-5 items-center">
                         <div className="relative w-full h-0 pb-[100%]"> {/* This creates a square container */}
-                            <img src={banner} className="absolute top-0 left-0 w-full h-full rounded-lg object-cover opacity-50 hover:opacity-100" />
+                            <img src={banner} className="absolute top-0 left-0 w-full h-full rounded-lg object-cover" />
                         </div>
                     </div>
                     <div className="w-4/5 p-4">
                         <h1 className="blog-title font-bold">{title}</h1>
-                        <p className="my-3 text-base font-linearsans leading-7 md:max-[1100px]:hidden line-clamp-2">{des}</p>
+                        <p className="my-3 text-gray-500 text-base font-linearsans leading-7 md:max-[1100px]:hidden line-clamp-2">{des}</p>
                         <div className="flex gap-4 items-center">
-                            <span className="flex items-center gap-2 text-xl text-black">
-                                <i className="fi fi-ss-rocket-lunch text-dark-grey"></i>
+                            <span className="flex items-center gap-2 text-xl text-gray-400">
+                                <i className="fi fi-bs-rocket-lunch text-gray-400"></i>
                                 {total_likes}
                             </span>
-                            <span className="flex items-center gap-2 text-xl text-black">
-                                <i className="fi fi-ss-comment-dots text-dark-grey"></i>
+                            <span className="flex items-center gap-2 text-xl text-gray-400">
+                                <i className="fi fi-bs-comment-dots text-gray-400"></i>
                                 {total_comments}
                             </span>
                         </div>
