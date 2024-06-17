@@ -132,7 +132,6 @@ body[data-theme="dark"] .ce-conversion-tool:hover{
 
 .blog-page-content {
   font-family: "linearsans";
-  font-size: 12px; /* Ukuran font besar */
   font-weight: normal; /* Ketebalan font normal */
   line-height: 1.6;
 }

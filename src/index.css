@@ -132,7 +132,7 @@
         @apply font-linearsans text-3xl leading-loose max-md:text-2xl max-md:leading-normal !important;
     }
     #textEditor *, .blog-page-content *{
-        @apply text-2xl leading-10 md:text-2xl;
+        @apply text-xl leading-9 md:text-xl;
     }
     #textEditor *, .code-blog *{
         @apply text-base md:text-base leading-6;

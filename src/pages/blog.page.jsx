@@ -124,7 +124,7 @@ const BlogPage = () => {
                         <BlogInteraction />
                         <div className="my-6 font-linearsans blog-page-content max-w-[650px] center py-3 max-lg:px-[2vw]">
                             {content[0].blocks.map((block, i) => (
-                                <div key={i} className="my-4 md:my-6">
+                                <div key={i} className="my-4 md:my-6 text-xl">
                                     <BlogContent block={block} />
                                 </div>
                             ))}

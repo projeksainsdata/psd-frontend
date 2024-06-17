@@ -80,7 +80,7 @@ const BlogContent = ({ block }) => {
     let { type, data } = block;
 
     if (type === "paragraph") {
-        return <p dangerouslySetInnerHTML={{ __html: data.text }} className='text-xl leading-9' />;
+        return <p dangerouslySetInnerHTML={{ __html: data.text }} className='text-xl font-linearsans leading-9' />;
     } 
 
     if (type === "header") {
