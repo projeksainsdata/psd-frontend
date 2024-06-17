@@ -11,7 +11,7 @@ import { filterPaginationData } from "../common/filter-pagination-data";
 import LoadMoreDataBtn from "../components/load-more.component";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
-import ban from "../imgs/hero2.gif";
+import ban from "../imgs/hero2.png";
 import band from "../imgs/dpsd.jpg"
 import React from 'react'
 import { FaDiscord } from 'react-icons/fa'
@@ -126,7 +126,7 @@ const HomePage = () => {
     return (
         <AnimationWrapper>
             <section>
-            <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
+            <div className='flex flex-col mb-0 lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
                 <div className='lg:w-1/2'>
                     <h1 className='text-3xl font-bold lg:text-6xl'>
                         Welcome to{' '}
@@ -144,7 +144,7 @@ const HomePage = () => {
                             <i className="fi fi-rr-workflow-alt mr-2 text-light-green " />
                             Explore our latest projects and collaborations
                     </Link>
-                    <p className="mt-5 items-center"></p>
+                    <p className=" items-center"></p>
 
                     <p className='text-gray-500 mt-5 mb-5 text-xl'>
                         Here you'll find a variety of articles and tutorials on topics such as Data Science,
@@ -162,16 +162,17 @@ const HomePage = () => {
                     </Link>
                 </div>
 
-                <div className='lg:w-1/2 w-auto'>
-                    <div className='banner-img position-relative w-auto'>
-                     <img src={ban} alt="PSD" className="img-fluid" />
+                <div className='lg:w-1/2 ml-10 justify-center items-center'>
+                    <div className='relative'>
+                        <img src={ban} alt="PSD" className="w-11/12 h-11/12 object-cover" />
                     </div>
                 </div>
+
             </div>
             </section>
 
-            <section className="rounded-xl flex p-4 items-center justify-between mb-3">
-            <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
+            <section className="rounded-xl flex p-2 items-center justify-between mb-3">
+            <div className='flex flex-col lg:flex-row gap-6 p-3 ml-30 px-3 max-w-6xl mx-auto'>
                 <div className='lg:w-1/2 w-auto'>
                         <div className=' banner-content position-relative w-auto'>
                         <img src={band} alt="DPSD" className="banner-content rounded-3xl shadow-2xl img-fluid" />
