@@ -9,7 +9,7 @@ const Img = ({ url, caption }) => {
     return (
         <div>
             <img src={url} />
-            { caption.length ? <p className="w-full text-center my-3 md:mb-12 text-base text-dark-grey">{caption}</p> : "" }
+            { caption.length ? <p className="w-full text-center my-3 md:mb-12 text-xl text-dark-grey">{caption}</p> : "" }
         </div>
     )
 }
@@ -22,7 +22,7 @@ const Quote = ({ quote, caption }) => {
 
     return (
         <div className="border-l-4 border-light-green text-black bg-grey p-4 rounded-lg shadow-md">
-            <p className="text-lg italic" dangerouslySetInnerHTML={{ __html: quote }}></p>
+            <p className="text-lg text-xl leading-7 italic" dangerouslySetInnerHTML={{ __html: quote }}></p>
             {caption && <p className="text-sm font-bold text-light-green">{caption}</p>}
         </div>
     );
@@ -40,7 +40,7 @@ const List = ({ style, items }) => {
 
             {
                items.map((listItem, i) => {
-                    return <li key={i} className="my-4" dangerouslySetInnerHTML={{ __html: listItem }}></li>
+                    return <li key={i} className="my-4 text-xl leading-7 font-linearsans" dangerouslySetInnerHTML={{ __html: listItem }}></li>
                }) 
             }
 
