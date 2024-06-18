@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import AnimationWrapper from "../common/page-animation";
-import projectplan from"../imgs/projectplan2.gif";
-import ardikasatria from "../imgs/ardikasatria.jpg"
+import projectplan from "../imgs/dashboard-projek.png";
+import ardikasatria from "../imgs/ardikasatria.jpg";
 
 const OurProjek = () => {
     const filters = ['Machine Learning', 'Python', 'Deep Learning', 'Computer Vision', 'Natural Language Processing'];
@@ -11,8 +11,7 @@ const OurProjek = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [currentPage, setCurrentPage] = useState(1);
     const [sortDirection, setSortDirection] = useState('asc');
-    const [sortType, setSortType] = useState('name'); // Default sort by name
-
+    const [sortType, setSortType] = useState('name');
 
     const handleNavLinkClick = (e) => {
         if (!isUserLoggedIn()) {
@@ -58,7 +57,6 @@ const OurProjek = () => {
                 return name.includes(query) || description.includes(query);
             });
         }
-        // Sorting
         filteredData.sort((a, b) => {
             if (sortType === 'name') {
                 const nameA = a.name.toUpperCase();
@@ -78,53 +76,45 @@ const OurProjek = () => {
     const startIdx = (currentPage - 1) * itemsPerPage;
     const endIdx = currentPage * itemsPerPage;
 
-    const handlePrevPage = () => {
-        if (currentPage > 1) {
-            setCurrentPage(currentPage - 1);
-        }
-    };
-
-    const handleNextPage = () => {
-        if (currentPage < totalPages) {
-            setCurrentPage(currentPage + 1);
-        }
+    const handlePageChange = (pageNumber) => {
+        setCurrentPage(pageNumber);
     };
 
     return (
         <AnimationWrapper>
             <section>
-            <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
-                <div className='lg:w-1/2 w-auto'>
-                    <img src={projectplan} alt="project" className="max-w-[500px] max-h-[500px]" />
-                </div>
-                <div className='lg:w-1/2 w-auto'>
-                    <h1 className="text-3xl font-bold">Projek Sains Data Repository</h1>
-                    <div className="mt-3">
-                        <h1 className="text-2xl text-light-green font-bold">Version 1.0</h1>
-                        <p className="mt-2 text-sm"> Last Updated February 2024 </p>
-                        <div className="mt-3 flex gap-2">
+                <div className='flex flex-col lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
+                    <div className='lg:w-1/2 w-auto'>
+                        <img src={projectplan} alt="project" className="max-w-[700px] max-h-[300px]" />
+                    </div>
+                    <div className='lg:w-1/2 w-auto'>
+                        <h1 className="text-3xl font-bold">Projek Sains Data Repository</h1>
+                        <div className="mt-3">
+                            <h1 className="text-2xl text-light-green font-bold">Version 1.0</h1>
+                            <p className="mt-2 text-sm"> Last Updated February 2024 </p>
+                            <div className="mt-3 flex gap-2">
                                 <p className="font-bold text-xl">Contributor : </p>
                                 <img src={ardikasatria} className="w-6 h-6 rounded-full" />
                                 <a href="https://projeksainsdata.com/user/ardika.satria">
                                     <p className="line-clamp-1">Ardika Satria</p>
                                 </a>
+                            </div>
                         </div>
-                    </div>
-                    <p className="text-gray-500 mt-3 mb-3">
-                        Temukan koleksi proyek, kode, dan sumber data. Akses berbagai skrip untuk mendukung penelitian dan pengembangan Anda.
-                    </p>
-                    <Link className="text-xl flex items-center text-light-green gap-2 mx-auto mb-5 py-2" to="/repository/2" onClick={handleNavLinkClick}>
-                            <i className="fi fi-sr-folder-open text-light-green text-xl " />
+                        <p className="text-gray-500 mt-3 mb-3">
+                            Temukan koleksi proyek, kode, dan sumber data. Akses berbagai skrip untuk mendukung penelitian dan pengembangan Anda.
+                        </p>
+                        <Link className="text-xl flex items-center text-light-green gap-2 mx-auto mb-5 py-2" to="/repository/2" onClick={handleNavLinkClick}>
+                            <i className="fi fi-sr-folder-open text-light-green text-xl" />
                             Coming Soon Version 2.0
-                    </Link>
+                        </Link>
+                    </div>
                 </div>
-            </div>
             </section>
             <div className="container mx-auto max-w-6xl">
-                <div className=" mb-3 flex flex-wrap gap-3">
+                <div className="mb-3 flex flex-wrap gap-3">
                     {filters.map((filter, index) => (
-                        <button 
-                            key={index} 
+                        <button
+                            key={index}
                             className={"flex btn " + (selectedFilter === filter ? "btn-dark" : "btn-light")}
                             onClick={() => handleFilterChange(filter)}
                         >
@@ -132,19 +122,28 @@ const OurProjek = () => {
                         </button>
                     ))}
                 </div>
-                
                 <div>
                     <h2 className="mb-5">{selectedFilter}</h2>
                     <div className="text-left">
-                    <p className="mb-2"> Klik Kolom ID untuk urutan projek paling baru</p>
-                    <input 
-                        type="text" 
-                        placeholder="Cari Projek..." 
-                        value={searchQuery} 
-                        onChange={handleSearch} 
-                        className="search-input bg-grey text-black mb-3"
-                    />
-    
+                        <p className="mb-2"> Klik Kolom ID untuk urutan projek paling baru</p>
+                        <input
+                            type="text"
+                            placeholder="Cari Projek..."
+                            value={searchQuery}
+                            onChange={handleSearch}
+                            className="search-input bg-grey text-black mb-3"
+                        />
+                    </div>
+                    <div className="flex text-xl justify-center items-center mt-2 mb-5">
+                        {[...Array(totalPages)].map((_, index) => (
+                            <button
+                                key={index}
+                                onClick={() => handlePageChange(index + 1)}
+                                className={`w-10 h-10 rounded-full justify-center flex items-center mx-1 ${currentPage === index + 1 ? 'bg-light-green text-white' : 'bg-grey'}`}
+                            >
+                                {index + 1}
+                            </button>
+                        ))}
                     </div>
                     <table className="table-transparent">
                         <thead>
@@ -152,7 +151,7 @@ const OurProjek = () => {
                                 <th onClick={() => handleSort('id')} style={{ cursor: 'pointer' }}>ID</th>
                                 <th onClick={() => handleSort('name')} style={{ cursor: 'pointer' }}>Name (Link GoogleColab)</th>
                                 <th>Description</th>
-                                <th>Download Data</th> {/* Kolom baru untuk download data */}
+                                <th>Download Data</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -162,12 +161,12 @@ const OurProjek = () => {
                                     <td><a href={item.link} target="_blank" rel="noopener noreferrer" className="text-md text-light-green font-bold">{item.name} </a></td>
                                     <td className="text-left">{item.description}</td>
                                     <td>
-                                        {item.dataUrl ? ( // Cek apakah ada URL data
+                                        {item.dataUrl ? (
                                             <a href={item.dataUrl} target="_blank" rel="noopener noreferrer" className="text-xl text-light-blue">
                                                 <i className="fi fi-rr-file-download text-2xl text-twitter" aria-hidden="true" />
                                             </a>
                                         ) : (
-                                            'No Data' // Tampilkan 'No Data' jika tidak ada URL
+                                            'No Data'
                                         )}
                                     </td>
                                 </tr>
@@ -175,25 +174,18 @@ const OurProjek = () => {
                         </tbody>
                     </table>
                 </div>
-
-                <div className="flex justify-center mt-5">
-                    <button 
-                        onClick={handlePrevPage} 
-                        className="btn flex items-center btn-light mx-1"
-                        disabled={currentPage === 1}
-                    >
-                        <i className="fi fi-sr-left"></i>
-                    </button>
-                    <button 
-                        onClick={handleNextPage} 
-                        className="btn flex items-center btn-light mx-1"
-                        disabled={currentPage === totalPages}
-                    >
-                        <i className="fi fi-sr-right"></i>
-                    </button>
+                <div className="flex text-xl justify-center items-center mt-2 mb-5">
+                    {[...Array(totalPages)].map((_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => handlePageChange(index + 1)}
+                            className={`w-10 h-10 rounded-full justify-center flex items-center mx-1 ${currentPage === index + 1 ? 'bg-light-green text-white' : 'bg-grey'}`}
+                        >
+                            {index + 1}
+                        </button>
+                    ))}
                 </div>
             </div>
-
         </AnimationWrapper>
     );
 };
