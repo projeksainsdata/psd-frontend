@@ -9,7 +9,7 @@ const Img = ({ url, caption }) => {
     return (
         <div>
             <img src={url} />
-            { caption.length ? <p className="w-full text-center my-3 md:mb-12 text-xl text-dark-grey">{caption}</p> : "" }
+            { caption.length ? <p className="w-full text-center leading-7 my-3 md:mb-12 text-xl text-dark-grey">{caption}</p> : "" }
         </div>
     )
 }
