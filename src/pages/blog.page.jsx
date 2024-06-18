@@ -132,7 +132,7 @@ const BlogPage = () => {
                         <BlogInteraction />
                         {similarBlogs != null && similarBlogs.length ? (
                             <div className="my-6 max-w-[650px] center py-3 max-lg:px-[2vw]">
-                                <h1 className="text-2xl mt-6 mb-8 font-linearsans">Baca Juga Artikel yang Sama</h1>
+                                <h1 className="text-2xl mt-6 mb-8 font-bold font-linearsans">Baca Juga Artikel yang Sama</h1>
                                 {similarBlogs.map((blog, i) => (
                                     <AnimationWrapper key={i} transition={{ duration: 1, delay: i * 0.08 }}>
                                         <BlogPostCard content={blog} author={blog.author.personal_info} />
