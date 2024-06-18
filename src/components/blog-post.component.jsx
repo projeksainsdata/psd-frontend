@@ -22,9 +22,9 @@ const BlogPostCard = ({ content, author }) => {
                 </div>
                 
                 <div className="flex">
-                    <div className="w-1/6 h-10 mt-5 items-center">
+                    <div className="w-1/6 mt-5 items-center">
                         <div className="relative w-full h-0 pb-[100%]"> {/* This creates a square container */}
-                            <img src={banner} className="absolute top-0 left-0 w-full h-full rounded-lg object-cover" />
+                            <img src={banner} className="absolute top-0 left-0 w-full h-full rounded-lg object-cover" alt="banner" />
                         </div>
                     </div>
                     <div className="w-4/5 p-4">
