@@ -122,9 +122,9 @@ const BlogInteraction = () => {
                         </Link>
                     ))}
             </div>
-            <hr className="border-grey my-2" />
+            <hr className="border-grey my-2 mt-8" />
 
-            <div className="flex justify-between items-center">
+            <div className="flex items-center justify-center mb-6">
                 <div className="flex gap-3 items-center">
                     <button
                         onClick={handleLike}
@@ -132,7 +132,7 @@ const BlogInteraction = () => {
                     >
                         <i className={"fi " + (islikedByUser ? "fi fi-bs-rocket-lunch" : "fi fi-rs-rocket-lunch")}></i>
                     </button>
-                    <p className="text-xl text-dark-grey">{total_likes}</p>
+                    <p className="text-xl text-dark-grey">{total_likes} Rocket</p>
 
                     <button
                         onClick={() => setCommentsWrapper(prevVal => !prevVal)}
@@ -140,14 +140,14 @@ const BlogInteraction = () => {
                     >
                         <i className="fi fi-rr-comment-dots"></i>
                     </button>
-                    <p className="text-xl text-dark-grey">{total_comments}</p>
+                    <p className="text-xl text-dark-grey">{total_comments} Comments</p>
                     <button
                         onClick={handleBookmark}
                         className={"w-10 h-10 rounded-full flex items-center justify-center " + (issavedByUser ? "bg-twitter/20 text-twitter" : "bg-grey/80")}
                     >
                         <i className={"fi " + (issavedByUser ? "fi-sr-bookmark" : "fi-rr-bookmark")}></i>
                     </button>
-                    <p className="text-xl text-dark-grey">{total_saved}</p>
+                    <p className="text-xl text-dark-grey">{total_saved} Saved</p>
                 </div>
 
                 <div className="flex gap-6 items-center">
@@ -161,9 +161,9 @@ const BlogInteraction = () => {
 
 
 
-            <hr className="border-grey my-2" />
+            
 
-            <div className="flex justify-end gap-6 items-center">
+            <div className="flex gap-6 items-center justify-center ">
                 <p className="text-dark-grey opacity-75 ">Share on</p>
                 <Link to={`https://twitter.com/intent/tweet?text=Read ${title}&url=${location.href}`} target="_blank" rel="noopener noreferrer"><i className="fi fi-brands-twitter text-xl hover:text-twitter"></i></Link>
                 <Link to={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(location.href)}&title=${encodeURIComponent(title)}`} target="_blank" rel="noopener noreferrer">
@@ -179,7 +179,7 @@ const BlogInteraction = () => {
                     <i className="fi fi-brands-telegram text-xl hover:text-telegram" aria-hidden="true"></i>
                 </Link>
                 <button onClick={handleCopyLink} className="text-base hover:text-grey">
-                    <i className="fi fi-rr-link"></i> Copy Link
+                    <i className="fi fi-rr-link"></i> Link
                 </button>
             </div>
 

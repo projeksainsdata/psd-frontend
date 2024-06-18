@@ -106,7 +106,7 @@ const BlogPage = () => {
                 >
                     <CommentsContainer />
                     <div className="max-w-[900px] center py-6 max-lg:px-[2vw]">
-                        <img src={banner} className="aspect-video" />
+                        <img src={banner} className="rounded-lg object-cover" />
                         <div className="mt-12">
                             <h2>{title}</h2>
                             <div className="flex max-sm:flex-col justify-between my-8">
@@ -131,14 +131,14 @@ const BlogPage = () => {
                         </div>
                         <BlogInteraction />
                         {similarBlogs != null && similarBlogs.length ? (
-                            <>
-                                <h1 className="text-2xl mt-14 mb-10 font-medium">Similar Blogs</h1>
+                            <div className="my-6 max-w-[650px] center py-3 max-lg:px-[2vw]">
+                                <h1 className="text-2xl mt-6 mb-8 font-linearsans">Baca Juga Artikel yang Sama</h1>
                                 {similarBlogs.map((blog, i) => (
                                     <AnimationWrapper key={i} transition={{ duration: 1, delay: i * 0.08 }}>
                                         <BlogPostCard content={blog} author={blog.author.personal_info} />
                                     </AnimationWrapper>
                                 ))}
-                            </>
+                            </div>
                         ) : (
                             " "
                         )}
