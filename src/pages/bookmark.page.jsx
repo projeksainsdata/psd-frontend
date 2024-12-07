@@ -4,28 +4,33 @@ import axios from "axios";
 import NoDataMessage from "../components/nodata.component";
 
 const BookmarkPage = () => {
-    const { userAuth: { access_token, username } } = useContext(UserContext);
-    const [ bookmarks, setBookmarks ] = useState([]);
+    const {
+        userAuth: { access_token, username },
+    } = useContext(UserContext);
+    const [bookmarks, setBookmarks] = useState([]);
+    const [totalBookmarks, setTotalBookmarks] = useState(0); // Tambahkan state untuk total bookmarks
 
     useEffect(() => {
-        if(access_token){
-            axios.get(import.meta.env.VITE_SERVER_DOMAIN + `/user-bookmarks/${username}`, {
-                headers: {
-                    'Authorization': `Bearer ${access_token}`
-                }
-            })
-            .then(({ data }) => {
-                setBookmarks(data.bookmarks);
-            })
-            .catch(err => {
-                console.log(err);
-            });
+        if (access_token) {
+            axios
+                .get(import.meta.env.VITE_SERVER_DOMAIN + `/user-bookmarks/${username}`, {
+                    headers: {
+                        Authorization: `Bearer ${access_token}`,
+                    },
+                })
+                .then(({ data }) => {
+                    setBookmarks(data.bookmarks || []); // Simpan data bookmarks
+                    setTotalBookmarks(data.totalDocs || data.bookmarks.length); // Perbaiki logika total
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
         }
     }, [access_token, username]);
 
     return (
         <div>
-            <h1 className="mb-10">Blogs yang disimpan</h1>
+            <h1 className="mb-10">Blogs yang disimpan ({totalBookmarks} Blog)</h1>
             {bookmarks.length === 0 ? <NoDataMessage message="Tidak ada blogs yang disimpan" /> : (
                 <>
                     {bookmarks.map((bookmark, index) => (
