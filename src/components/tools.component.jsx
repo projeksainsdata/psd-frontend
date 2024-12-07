@@ -87,10 +87,7 @@ export const tools = {
   },
   delimiter: Delimiter,
   link: {
-    class: Link,
-    config: {
-        endpoint: '/fetchUrl',
-    },
+    class: Link
   },
   embed: {
     class: Embed,
