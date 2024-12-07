@@ -118,6 +118,8 @@ const BlogPage = () => {
                         <meta name="twitter:description" content={blog.des || "Artikel terbaru dari Projek Sains Data"} />
                         <meta name="twitter:image" content={banner || "https://projeksainsdata.com/default-banner.jpg"} />
                     </Helmet>
+                    
+
 
                     <CommentsContainer />
                     <div className="max-w-[900px] center py-6 max-lg:px-[2vw]">
