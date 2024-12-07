@@ -86,7 +86,13 @@ export const tools = {
     inlineToolbar: true,
   },
   delimiter: Delimiter,
-  link: LinkTool,
+  link: {
+    class: LinkTool,
+    inlineToolbar: true,
+    config: {
+      endpoint: null, // Hilangkan API untuk metadata
+    },
+  },
   embed: {
     class: Embed,
     inlineToolbar: true,
@@ -121,5 +127,6 @@ export const tools = {
   marker: Marker,
   inlineCode: InlineCode,
   raw: RawTool,
-  underline: Underline
+  underline: Underline,
+  link: Link
 }
