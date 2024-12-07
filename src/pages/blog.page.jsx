@@ -8,6 +8,7 @@ import BlogInteraction from "../components/blog-interaction.component";
 import BlogPostCard from "../components/blog-post.component";
 import BlogContent from "../components/blog-content.component";
 import CommentsContainer, { fetchComments } from "../components/comments.component";
+import { Helmet } from "react-helmet-async";
 
 export const blogStructure = {
     title: '',
@@ -104,6 +105,20 @@ const BlogPage = () => {
                         setTotalParentCommentsLoaded,
                     }}
                 >
+                   <Helmet>
+                        <title>{title || "Loading..."} - Projek Sains Data</title>
+                        <meta name="description" content={blog.des || "Artikel terbaru dari Projek Sains Data"} />
+                        <meta property="og:title" content={`${title || "Artikel"} - Projek Sains Data`} />
+                        <meta property="og:description" content={blog.des || "Artikel terbaru dari Projek Sains Data"} />
+                        <meta property="og:url" content={`https://projeksainsdata.com/blog/${blog_id}`} />
+                        <meta property="og:type" content="article" />
+                        <meta property="og:image" content={banner || "https://projeksainsdata.com/default-banner.jpg"} />
+                        <meta name="twitter:card" content="summary_large_image" />
+                        <meta name="twitter:title" content={`${title || "Artikel"} - Projek Sains Data`} />
+                        <meta name="twitter:description" content={blog.des || "Artikel terbaru dari Projek Sains Data"} />
+                        <meta name="twitter:image" content={banner || "https://projeksainsdata.com/default-banner.jpg"} />
+                    </Helmet>
+
                     <CommentsContainer />
                     <div className="max-w-[900px] center py-6 max-lg:px-[2vw]">
                         <img src={banner} className="rounded-lg object-cover" />
