@@ -22,7 +22,7 @@ const HomePage = () => {
     let [ pageState, setPageState ] = useState("beranda");
 
     let categories = [
-        "Pemrograman Berbasis Fungsi",
+        "Python",
         "Machine Learning",
         "Deep Learning",
         "Time Series",
@@ -30,7 +30,7 @@ const HomePage = () => {
         "Sains",
         "Data",
         "Artificial Intelligence",
-        "High Performance Computing",
+        "Natural Language Processing",
     ];
 
     const fetchLatestBlogs = ({ page = 1 }) => {
@@ -128,50 +128,43 @@ const HomePage = () => {
             <section>
             <div className='flex flex-col mb-0 lg:flex-row gap-6 p-5 ml-30 px-3 max-w-6xl mx-auto'>
                 <div className='lg:w-1/2'>
-                    <h1 className='text-3xl font-bold lg:text-6xl'>
-                        Welcome to{' '}
-                    <Typewriter
-                        options={{
-                        wrapperClassName: 'typewrite color-linear text-3xl font-bold lg:text-6xl',
-                        strings: ['Projek', 'Sains', 'Data'],
-                        autoStart: true,
-                        loop: true,
-                        }}
-                    />
-                    </h1>
+                    <span className="text-xl font-bold">Welcome to Projek Sains Data</span>
                     <p className="mt-5 items-center"></p>
-                    <Link className="text-xl text-light-green gap-10 mx-auto mb-5 py-2" to="/projek-kami" onClick={handleNavLinkClick}>
+                    <Link className="text-base text-light-green gap-10 mx-auto mb-5 py-2" to="/projek-kami" onClick={handleNavLinkClick}>
                             <i className="fi fi-rr-workflow-alt mr-2 text-light-green " />
-                            Explore our latest projects and collaborations
+                            Lihat Kumpulan Proyek Sains Data Terkini PSD
                     </Link>
                     <p className=" items-center"></p>
 
-                    <p className='text-gray-500 mt-5 mb-5 text-xl'>
-                        Here you'll find a variety of articles and tutorials on topics such as Data Science,
-                        Data Engineering, Big Data, Data Analysis, Artificial Intelligence, Science, and
-                        Technology Data and Computing.
+                    <p className='text-gray-500 mt-5 mb-5 text-base'>
+                        Di sini, kalian akan menemukan beragam artikel dan tutorial menarik yang membahas topik-topik 
+                        seperti Sains Data, Rekayasa Data, Big Data, Analisis Data, Kecerdasan Buatan, Sains, hingga 
+                        Teknologi Data dan Komputasi.
                     </p>
                     <Link className="btn-light bg-grey rounded-full gap-5 mb-6 py-2" to="/ai/tanya-psd" onClick={handleNavLinkClick}>
-                        Any Question? Let's Talk With Our GPT!
+                        Ada Pertanyaan? Ayo ngobrol dengan PSD-GPT!
                     </Link>
-                    <Link className="gap-10 mx-auto mb-5 py-2" to="/center/learn" onClick={handleNavLinkClick}>
+                    {/* <Link className="gap-10 mx-auto mb-5 py-2" to="/center/learn" onClick={handleNavLinkClick}>
                         <h1 className="font-medium text-xl mt-7 mb-5 flex items-center gap-3 text-light-green">
                             <i className="fi fi-rr-user-robot"></i>
                             <span>Try out our new technology integrated with artificial intelligence for your projects in the industry</span>
                         </h1>
-                    </Link>
+                    </Link> */}
                 </div>
 
-                <div className='lg:w-1/2 ml-10 justify-center items-center'>
-                    <div className='relative'>
-                        <img src={ban} alt="PSD" className="w-11/12 h-11/12 object-cover" />
+                <div className='lg:w-1/2 justify-center items-center'>
+                    <div className=' banner-content position-relative w-auto'>
+                        <img src={band} alt="DPSD" className="banner-content w-11/12 h-1/2 object-cover rounded-3xl shadow-2xl img-fluid" />
                     </div>
+                    {/* <div className='relative'>
+                        <img src={ban} alt="PSD" className="w-11/12 h-11/12 object-cover" />
+                    </div> */}
                 </div>
 
             </div>
             </section>
 
-            <section className="rounded-xl flex p-2 items-center justify-between mb-3">
+            {/* <section className="rounded-xl flex p-2 items-center justify-between mb-3">
             <div className='flex flex-col lg:flex-row gap-6 p-3 ml-30 px-3 max-w-6xl mx-auto'>
                 <div className='lg:w-1/2 w-auto'>
                         <div className=' banner-content position-relative w-auto'>
@@ -198,13 +191,13 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            </section>
+            </section> */}
             <section className="mx-auto">
             <div className="flex flex-col gap-10 justify-center">
                 <div>
                     <h1 className="font-medium text-xl mb-8 flex items-center gap-3 text-twitter">
                         <i className="fi fi-rr-star"></i>
-                        <span>Find Your Favorite Topics</span>
+                        <span>Eksplor Topik Terbaru Hari ini </span>
                     </h1>
 
                     <div className="flex gap-3 flex-wrap">
