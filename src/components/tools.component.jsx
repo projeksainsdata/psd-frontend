@@ -86,13 +86,7 @@ export const tools = {
     inlineToolbar: true,
   },
   delimiter: Delimiter,
-  link: {
-    class: LinkTool,
-    inlineToolbar: true,
-    config: {
-      endpoint: null, // Hilangkan API untuk metadata
-    },
-  },
+  link: LinkTool,
   embed: {
     class: Embed,
     inlineToolbar: true,
