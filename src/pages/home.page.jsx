@@ -141,7 +141,7 @@ const HomePage = () => {
                         seperti Sains Data, Rekayasa Data, Big Data, Analisis Data, Kecerdasan Buatan, Sains, hingga 
                         Teknologi Data dan Komputasi.
                     </p>
-                    <Link className="btn-light bg-grey rounded-full gap-5 mb-6 py-2" to="/ai/tanya-psd" onClick={handleNavLinkClick}>
+                    <Link className="text-base btn-light bg-grey rounded-full gap-5 mb-6 py-2" to="/ai/tanya-psd" onClick={handleNavLinkClick}>
                         Ada Pertanyaan? Ayo ngobrol dengan PSD-GPT!
                     </Link>
                     {/* <Link className="gap-10 mx-auto mb-5 py-2" to="/center/learn" onClick={handleNavLinkClick}>
