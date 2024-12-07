@@ -8,6 +8,7 @@ import InlineCode from "@editorjs/inline-code";
 import Table from "@editorjs/table";
 import Code from "@editorjs/code";
 import Delimiter from "@editorjs/delimiter"
+import Link from "@editorjs/link"
 import { uploadImage } from "../common/aws";
 import hljs from 'highlight.js/lib/core'; 
 import python from 'highlight.js/lib/languages/python';
@@ -86,9 +87,9 @@ export const tools = {
   },
   delimiter: Delimiter,
   link: {
-    class: LinkTool, // Tambahkan tool link
+    class: Link,
     config: {
-        endpoint: '/fetchUrl', // API untuk mem-fetch metadata link (opsional)
+        endpoint: '/fetchUrl',
     },
   },
   embed: {
