@@ -4,22 +4,6 @@ import hljs from 'highlight.js/lib/core';
 import 'highlight.js/styles/atom-one-dark.css';
 import { BlockMath } from 'react-katex';
 
-const Link = ({ url, text }) => {
-    return (
-        <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-light-blue underline hover:text-dark-blue"
-        >
-            {text}
-        </a>
-    );
-};
-
-
-
-
 
 const Img = ({ url, caption }) => {
     return (
@@ -89,11 +73,6 @@ const CodeBlog = ({ language = 'python', code }) => {
 };
 
 
-const Delimiter = () => {
-    return (
-        <hr className="my-6 border-t-2 border-gray-300" />
-    );
-};
 
 
 
@@ -128,28 +107,7 @@ const BlogContent = ({ block }) => {
     if (type === "Math") {
         return <BlockMath math={data.math} />;
     }
-    if (type === "link") {
-        return <Link url={data.url} text={data.text} />;
-    }
-    if (type === "delimiter") {
-        return <Delimiter />;
-    }
-    if (type === "link") {
-        return (
-            <div className="border rounded-md p-4 shadow-md">
-                <a
-                    href={data.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 underline"
-                >
-                    {data.meta.title || data.link}
-                </a>
-                {data.meta.description && <p>{data.meta.description}</p>}
-                {data.meta.image?.url && <img src={data.meta.image.url} alt="Link Preview" />}
-            </div>
-        );
-    }
+
 
 }
 
