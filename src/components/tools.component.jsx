@@ -87,7 +87,10 @@ export const tools = {
   },
   delimiter: Delimiter,
   link: {
-    class: Link
+    class: Link,
+    config: {
+      endpoint: null, // Hilangkan API untuk metadata
+    },
   },
   embed: {
     class: Embed,
