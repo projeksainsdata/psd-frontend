@@ -30,6 +30,7 @@ const BlogEditor = () => {
                     holder: "textEditor",
                     data: Array.isArray(content) ? content[0] : content,
                     tools: tools, // Menggunakan tools yang diperbarui
+                    inlineToolbar: True,
                     placeholder: "Tuangkan Ide Brilian Menjadi Tulisan",
                 })
             );

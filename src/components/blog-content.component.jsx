@@ -128,6 +128,9 @@ const BlogContent = ({ block }) => {
     if (type === "Math") {
         return <BlockMath math={data.math} />;
     }
+    if (type === "link") {
+        return <Link url={data.url} text={data.text} />;
+    }
     if (type === "delimiter") {
         return <Delimiter />;
     }
