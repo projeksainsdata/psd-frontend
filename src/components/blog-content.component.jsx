@@ -18,6 +18,9 @@ const Link = ({ url, text }) => {
 };
 
 
+
+
+
 const Img = ({ url, caption }) => {
     return (
         <div>
@@ -125,11 +128,24 @@ const BlogContent = ({ block }) => {
     if (type === "Math") {
         return <BlockMath math={data.math} />;
     }
-    if (type === "link") {
-        return <Link url={data.url} text={data.text} />;
-    }
     if (type === "delimiter") {
         return <Delimiter />;
+    }
+    if (type === "link") {
+        return (
+            <div className="border rounded-md p-4 shadow-md">
+                <a
+                    href={data.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                >
+                    {data.meta.title || data.link}
+                </a>
+                {data.meta.description && <p>{data.meta.description}</p>}
+                {data.meta.image?.url && <img src={data.meta.image.url} alt="Link Preview" />}
+            </div>
+        );
     }
 
 }

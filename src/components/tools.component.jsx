@@ -48,6 +48,8 @@ const uploadImageByURL = (e) => {
   }));
 };
 
+
+
 export const tools = {
   list: {
     class: List,
@@ -82,9 +84,12 @@ export const tools = {
     class: Code,
     inlineToolbar: true,
   },
-  delimiter: {
-    class: Delimiter,
-    inlineToolbar: true,
+  delimiter: Delimiter,
+  link: {
+    class: LinkTool, // Tambahkan tool link
+    config: {
+        endpoint: '/fetchUrl', // API untuk mem-fetch metadata link (opsional)
+    },
   },
   embed: {
     class: Embed,

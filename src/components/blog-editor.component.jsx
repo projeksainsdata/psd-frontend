@@ -23,17 +23,19 @@ const BlogEditor = () => {
 
     let navigate = useNavigate();
 
-    // useEffect
     useEffect(() => {
-        if(!textEditor.isReady){
-            setTextEditor(new EditorJS({
-                holder: "textEditor",
-                data: Array.isArray(content) ? content[0] : content,
-                tools: tools,
-                placeholder: "Tuangkan Ide Brilian Menjadi Tulisan"
-            }))
+        if (!textEditor.isReady) {
+            setTextEditor(
+                new EditorJS({
+                    holder: "textEditor",
+                    data: Array.isArray(content) ? content[0] : content,
+                    tools: tools, // Menggunakan tools yang diperbarui
+                    placeholder: "Tuangkan Ide Brilian Menjadi Tulisan",
+                })
+            );
         }
-    }, [])
+    }, []);
+    
 
     const handleBannerUpload = (e) => {
         let img = e.target.files[0];
