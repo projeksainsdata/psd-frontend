@@ -111,8 +111,13 @@ const BlogInteraction = () => {
         <>
             <Toaster />
 
+
+
+            <div className="flex items-center justify-between gap-4">
+            {/* Tags */}
             <div className="flex flex-wrap gap-2">
-                    {tags && tags.map(tag => (
+                {tags &&
+                    tags.map(tag => (
                         <Link
                             key={tag}
                             to={`/search/${tag}`}
@@ -122,8 +127,20 @@ const BlogInteraction = () => {
                         </Link>
                     ))}
             </div>
-            <hr className="border-grey my-2 mt-8" />
 
+            {/* Edit This Post Button */}
+            {username === author_username && (
+                <Link
+                    to={`/editor/${blog_id}`}
+                    className="flex items-center gap-2 bg-light-green text-white px-3 py-1 rounded-full"
+                >
+                    <i className="fi fi-rr-pen-field"></i>
+                    <span>Edit This Post</span>
+                </Link>
+            )}
+        </div>
+
+            <hr className="border-grey my-2 mt-8" />
             <div className="flex items-center justify-center mb-6">
                 <div className="flex gap-3 items-center">
                     <button
@@ -148,12 +165,7 @@ const BlogInteraction = () => {
                         <i className={"fi " + (issavedByUser ? "fi-sr-bookmark" : "fi-rr-bookmark")}></i>
                     </button>
                     <p className="text-xl text-dark-grey">{total_saved} Saved</p>
-                </div>
-
-                <div className="flex gap-6 items-center">
-                    {username == author_username ? (
-                        <Link to={`/editor/${blog_id}`} className="underline hover:text-purple">Edit</Link>
-                    ) : ""}
+                    
                 </div>
             </div>
 
