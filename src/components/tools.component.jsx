@@ -127,6 +127,5 @@ export const tools = {
   marker: Marker,
   inlineCode: InlineCode,
   raw: RawTool,
-  underline: Underline,
-  link: Link
+  underline: Underline
 }
